@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tristara IT Solutions — Academic Excellence & Assignment Assistance</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<!-- ==============================
+     NAVBAR
+     ============================== -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/images/tristara-official-logo.png" alt="Tristara IT Solutions" class="nav-logo-img">
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="services.html">Services</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="nav-btns-group">
+      <a href="https://wa.me/919313118267?text=Hi,%20I%20need%20academic%20assignment%20assistance%20from%20Tristara!" target="_blank" class="nav-btn whatsapp-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        WhatsApp
+      </a>
+      <a href="contact.html" class="nav-btn hire-btn">Hire Us →</a>
+    </div>
+
+    <button class="mobile-toggle" onclick="toggleMobile()" aria-label="Toggle Navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu-overlay" id="mobileOverlay" onclick="toggleMobile()"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="toggleMobile()" aria-label="Close Navigation">
+    <svg width="24" height="24" fill="none" stroke="#ffffff" stroke-width="2">
+      <line x1="18" y1="6" x2="6" y2="18"/>
+      <line x1="6" y1="6" x2="18" y2="18"/>
+    </svg>
+  </button>
+  <a href="index.html" class="active" onclick="toggleMobile()">Home</a>
+  <a href="services.html" onclick="toggleMobile()">Services</a>
+  <a href="how-it-works.html" onclick="toggleMobile()">How It Works</a>
+  <a href="about.html" onclick="toggleMobile()">About Us</a>
+  <a href="contact.html" onclick="toggleMobile()">Contact</a>
+  <div style="margin-top: 24px; display: flex; flex-direction: column; gap: 12px;">
+    <a href="https://wa.me/919313118267?text=Hi,%20I%20need%20academic%20assignment%20assistance%20from%20Tristara!" target="_blank" class="nav-btn whatsapp-btn" style="justify-content: center;">
+      WhatsApp Quote
+    </a>
+    <a href="contact.html" class="nav-btn hire-btn" style="justify-content: center;">Hire Us</a>
+  </div>
+</div>
+
+
+<!-- ==============================
+     SECTION 1 — HERO
+     ============================== -->
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span>●</span> Trusted by 5,000+ Students Worldwide
+      </div>
+      <h1>
+        Academic Excellence<br>
+        <span class="gradient-text">Starts Here</span>
+      </h1>
+      <p>Get expert assistance for assignments, research projects, programming tasks, dissertations, reports and presentations — delivered by specialists across 50+ subjects.</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn-primary">Get Assignment Help →</a>
+        <a href="#contact" class="btn-secondary">Free Consultation</a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="trust-text">
+            <div class="trust-number">5,000+</div>
+            <div class="trust-label">Students Assisted</div>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+          <div class="trust-text">
+            <div class="trust-number">50+</div>
+            <div class="trust-label">Subjects</div>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <div class="trust-text">
+            <div class="trust-number">Global</div>
+            <div class="trust-label">Support</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Visual -->
+    <div class="hero-visual">
+      <!-- Floating Elements -->
+      <div class="floating-el float-book">
+        <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
+          <rect x="4" y="6" width="44" height="40" rx="4" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+          <rect x="12" y="14" width="28" height="3" rx="1.5" fill="#2563EB" opacity="0.5"/>
+          <rect x="12" y="22" width="20" height="3" rx="1.5" fill="#2563EB" opacity="0.3"/>
+          <rect x="12" y="30" width="24" height="3" rx="1.5" fill="#2563EB" opacity="0.3"/>
+        </svg>
+      </div>
+      <div class="floating-el float-paper">
+        <svg width="48" height="56" viewBox="0 0 48 56" fill="none">
+          <path d="M4 4h28l12 12v36a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V4z" fill="#fff" stroke="#2563EB" stroke-width="2"/>
+          <path d="M32 4v12h12" stroke="#2563EB" stroke-width="2"/>
+          <rect x="12" y="24" width="24" height="2" rx="1" fill="#DBEAFE"/>
+          <rect x="12" y="30" width="18" height="2" rx="1" fill="#DBEAFE"/>
+          <rect x="12" y="36" width="20" height="2" rx="1" fill="#DBEAFE"/>
+        </svg>
+      </div>
+      <div class="floating-el float-laptop">
+        <svg width="56" height="40" viewBox="0 0 56 40" fill="none">
+          <rect x="8" y="2" width="40" height="28" rx="4" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+          <rect x="14" y="8" width="28" height="16" rx="2" fill="#fff"/>
+          <path d="M2 34h52a2 2 0 0 1-2 4H4a2 2 0 0 1-2-4z" fill="#2563EB" opacity="0.6"/>
+          <rect x="18" y="12" width="12" height="2" rx="1" fill="#2563EB" opacity="0.4"/>
+          <rect x="18" y="16" width="8" height="2" rx="1" fill="#2563EB" opacity="0.3"/>
+        </svg>
+      </div>
+      <div class="floating-el float-bulb">
+        <svg width="40" height="48" viewBox="0 0 40 48" fill="none">
+          <circle cx="20" cy="18" r="14" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+          <path d="M14 32h12v4a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4v-4z" fill="#2563EB" opacity="0.4"/>
+          <path d="M20 10v4M14 14l2 2M26 14l-2 2" stroke="#2563EB" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="floating-el float-code">
+        <svg width="48" height="40" viewBox="0 0 48 40" fill="none">
+          <rect x="2" y="2" width="44" height="36" rx="6" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+          <path d="M14 14l-6 6 6 6M34 14l6 6-6 6" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="22" y1="10" x2="26" y2="30" stroke="#2563EB" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+
+      <!-- Main Student Illustration -->
+      <div class="hero-illustration">
+        <svg viewBox="0 0 500 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="250" cy="230" r="180" fill="#DBEAFE" opacity="0.4"/>
+          <circle cx="250" cy="230" r="140" fill="#DBEAFE" opacity="0.3"/>
+          <!-- Desk -->
+          <rect x="100" y="300" width="300" height="12" rx="6" fill="#2563EB" opacity="0.15"/>
+          <rect x="130" y="312" width="8" height="80" rx="4" fill="#2563EB" opacity="0.1"/>
+          <rect x="362" y="312" width="8" height="80" rx="4" fill="#2563EB" opacity="0.1"/>
+          <!-- Laptop -->
+          <rect x="175" y="260" width="150" height="100" rx="8" fill="#1E40AF"/>
+          <rect x="182" y="267" width="136" height="80" rx="4" fill="#DBEAFE"/>
+          <rect x="194" y="280" width="60" height="6" rx="3" fill="#2563EB" opacity="0.5"/>
+          <rect x="194" y="292" width="80" height="4" rx="2" fill="#2563EB" opacity="0.3"/>
+          <rect x="194" y="300" width="50" height="4" rx="2" fill="#2563EB" opacity="0.3"/>
+          <rect x="194" y="308" width="70" height="4" rx="2" fill="#2563EB" opacity="0.3"/>
+          <rect x="194" y="320" width="40" height="12" rx="4" fill="#2563EB" opacity="0.4"/>
+          <path d="M160 360h180a4 4 0 0 1-4 8H164a4 4 0 0 1-4-8z" fill="#1E40AF" opacity="0.8"/>
+          <!-- Student -->
+          <path d="M250 230c-10 0-18 5-22 12l-12 40v20h68v-20l-12-40c-4-7-12-12-22-12z" fill="#2563EB"/>
+          <circle cx="250" cy="200" r="32" fill="#ffd5c2"/>
+          <path d="M220 190c0-20 13-36 30-36s30 16 30 36c0 2-1 4-1 6-4-10-14-16-29-16s-25 6-29 16c-1-2-1-4-1-6z" fill="#1a1a2e"/>
+          <circle cx="240" cy="200" r="3" fill="#1a1a2e"/>
+          <circle cx="260" cy="200" r="3" fill="#1a1a2e"/>
+          <path d="M243 210c3 4 10 4 14 0" stroke="#1a1a2e" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="240" cy="200" r="9" stroke="#1E40AF" stroke-width="2" fill="none"/>
+          <circle cx="260" cy="200" r="9" stroke="#1E40AF" stroke-width="2" fill="none"/>
+          <line x1="249" y1="200" x2="251" y2="200" stroke="#1E40AF" stroke-width="2"/>
+          <!-- Arms -->
+          <path d="M228 250l-20 30" stroke="#ffd5c2" stroke-width="10" stroke-linecap="round"/>
+          <path d="M272 250l20 30" stroke="#ffd5c2" stroke-width="10" stroke-linecap="round"/>
+          <circle cx="208" cy="290" r="8" fill="#ffd5c2"/>
+          <circle cx="292" cy="290" r="8" fill="#ffd5c2"/>
+          <!-- A+ badge -->
+          <rect x="350" y="180" width="60" height="40" rx="10" fill="#ffffff" stroke="#2563EB" stroke-width="2"/>
+          <text x="380" y="206" font-family="Poppins, sans-serif" font-weight="700" font-size="18" fill="#2563EB" text-anchor="middle">A+</text>
+          <!-- Graduation cap -->
+          <polygon points="250,130 210,148 250,165 290,148" fill="#1E40AF"/>
+          <rect x="247" y="118" width="6" height="14" fill="#1E40AF"/>
+          <circle cx="250" cy="116" r="4" fill="#2563EB"/>
+          <line x1="290" y1="148" x2="290" y2="165" stroke="#1E40AF" stroke-width="2"/>
+          <circle cx="290" cy="167" r="3" fill="#2563EB"/>
+          <!-- Coffee -->
+          <rect x="120" y="275" width="25" height="30" rx="4" fill="#ffffff" stroke="#2563EB" stroke-width="2"/>
+          <path d="M145 285h8a5 5 0 0 1 0 10h-8" stroke="#2563EB" stroke-width="2"/>
+          <path d="M128 272c2-4 4-2 6-6s4-2 6-6" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+          <!-- Book stack -->
+          <rect x="340" y="290" width="50" height="8" rx="2" fill="#2563EB" opacity="0.3"/>
+          <rect x="338" y="298" width="54" height="8" rx="2" fill="#2563EB" opacity="0.2"/>
+          <rect x="342" y="282" width="46" height="8" rx="2" fill="#2563EB" opacity="0.4"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==============================
+     SECTION 2 — TRUST BAR
+     ============================== -->
+<section class="trust-bar">
+  <div class="container">
+    <div class="trust-stat reveal">
+      <div class="trust-stat-number" data-target="10000" data-suffix="+">0</div>
+      <div class="trust-stat-label">Assignments Completed</div>
+    </div>
+    <div class="trust-stat reveal">
+      <div class="trust-stat-number" data-target="5000" data-suffix="+">0</div>
+      <div class="trust-stat-label">Students Supported</div>
+    </div>
+    <div class="trust-stat reveal">
+      <div class="trust-stat-number" data-target="50" data-suffix="+">0</div>
+      <div class="trust-stat-label">Subjects Covered</div>
+    </div>
+    <div class="trust-stat reveal">
+      <div class="trust-stat-number" data-target="30" data-suffix="+">0</div>
+      <div class="trust-stat-label">Countries Served</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==============================
+     SECTION 3 — HOW IT WORKS
+     ============================== -->
+<section class="how-it-works" id="how-it-works">
+  <!-- Paper airplane path -->
+  <div class="airplane-path-container" id="airplanePath">
+    <svg width="100%" height="100%" preserveAspectRatio="none">
+      <path id="flightPath" class="flight-path" d=""/>
+    </svg>
+    <div class="paper-airplane" id="paperAirplane">
+      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+        <path d="M4 4l28 14L4 32l4-14L4 4z" fill="#2563EB"/>
+        <path d="M8 18l24-4" stroke="#1E40AF" stroke-width="1.5"/>
+        <path d="M4 4l4 14" stroke="#1E40AF" stroke-width="1"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="how-header reveal">
+      <div class="section-label">How It Works</div>
+      <h2 class="section-title">Your Journey to Better Grades</h2>
+      <p class="section-desc">A simple, streamlined process designed to make academic assistance effortless and stress-free.</p>
+    </div>
+
+    <div class="steps-wrapper">
+      <!-- Step 1 -->
+      <div class="step-row">
+        <div class="step-visual reveal-left">
+          <div class="step-illustration">
+            <svg viewBox="0 0 400 320" fill="none">
+              <circle cx="200" cy="160" r="130" fill="#DBEAFE" opacity="0.4"/>
+              <rect x="140" y="200" width="120" height="80" rx="8" fill="#1E40AF"/>
+              <rect x="148" y="208" width="104" height="60" rx="4" fill="#e0e7ff"/>
+              <path d="M130 280h140a4 4 0 0 1-4 6H134a4 4 0 0 1-4-6z" fill="#1E40AF" opacity="0.7"/>
+              <path d="M200 225l-12 14h8v10h8v-10h8l-12-14z" fill="#2563EB"/>
+              <circle cx="200" cy="150" r="28" fill="#ffd5c2"/>
+              <path d="M174 140c0-18 12-32 26-32s26 14 26 32" fill="#3b2314"/>
+              <circle cx="192" cy="150" r="2.5" fill="#1a1a2e"/>
+              <circle cx="208" cy="150" r="2.5" fill="#1a1a2e"/>
+              <path d="M195 160c2 3 8 3 10 0" stroke="#1a1a2e" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M200 178c-8 0-16 5-18 10l-10 30h56l-10-30c-2-5-10-10-18-10z" fill="#2563EB"/>
+              <rect x="290" y="120" width="50" height="60" rx="6" fill="#fff" stroke="#2563EB" stroke-width="2"/>
+              <rect x="300" y="132" width="30" height="3" rx="1.5" fill="#DBEAFE"/>
+              <rect x="300" y="140" width="20" height="3" rx="1.5" fill="#DBEAFE"/>
+              <rect x="300" y="148" width="25" height="3" rx="1.5" fill="#DBEAFE"/>
+              <path d="M310 160l4 4 8-8" stroke="#2563EB" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+        <div class="step-content reveal-right">
+          <div class="step-number">1</div>
+          <h3>Submit Requirements</h3>
+          <p>Upload your assignment details, project instructions, and any reference materials. Our secure portal ensures your information stays private.</p>
+          <div class="step-features">
+            <div class="step-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Easy file upload</div>
+            <div class="step-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> All formats supported</div>
+            <div class="step-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Instant confirmation</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step-row reverse">
+        <div class="step-content reveal-left">
+          <div class="step-number">2</div>
+          <h3>Expert Review</h3>
+          <p>Your requirements are analyzed by subject-matter specialists who evaluate complexity, scope, and create an action plan.</p>
+          <div class="step-features">
+            <div class="step-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Domain experts</div>
+            <div class="step-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Thorough assessment</div>
+            <div class="step-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Fair pricing</div>
+          </div>
+        </div>
+        <div class="step-visual reveal-right">
+          <div class="step-illustration">
+            <svg viewBox="0 0 400 320" fill="none">
+              <circle cx="200" cy="160" r="130" fill="#DBEAFE" opacity="0.4"/>
+              <circle cx="200" cy="140" r="28" fill="#ffd5c2"/>
+              <rect x="188" y="130" width="24" height="4" rx="2" fill="#1a1a2e"/>
+              <circle cx="192" cy="142" r="2.5" fill="#1a1a2e"/>
+              <circle cx="208" cy="142" r="2.5" fill="#1a1a2e"/>
+              <path d="M195 152c2 3 8 3 10 0" stroke="#1a1a2e" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M200 168c-8 0-16 5-18 10l-10 42h56l-10-42c-2-5-10-10-18-10z" fill="#1E40AF"/>
+              <polygon points="200,170 196,185 200,195 204,185" fill="#2563EB"/>
+              <circle cx="280" cy="170" r="24" stroke="#2563EB" stroke-width="4" fill="#DBEAFE" opacity="0.5"/>
+              <line x1="298" y1="188" x2="320" y2="210" stroke="#2563EB" stroke-width="4" stroke-linecap="round"/>
+              <path d="M272 170l6 6 12-12" stroke="#2563EB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="80" y="140" width="60" height="80" rx="6" fill="#fff" stroke="#2563EB" stroke-width="2"/>
+              <rect x="92" y="155" width="36" height="3" rx="1.5" fill="#DBEAFE"/>
+              <rect x="92" y="163" width="28" height="3" rx="1.5" fill="#DBEAFE"/>
+              <rect x="92" y="171" width="32" height="3" rx="1.5" fill="#DBEAFE"/>
+              <rect x="92" y="185" width="36" height="10" rx="3" fill="#2563EB" opacity="0.2"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step-row">
+        <div class="step-visual reveal-left">
+          <div class="step-illustration">
+            <svg viewBox="0 0 400 320" fill="none">
+              <circle cx="200" cy="160" r="130" fill="#DBEAFE" opacity="0.4"/>
+              <circle cx="200" cy="130" r="28" fill="#ffd5c2"/>
+              <path d="M174 120c0-16 12-28 26-28s26 12 26 28" fill="#1a1a2e"/>
+              <circle cx="192" cy="132" r="2.5" fill="#1a1a2e"/>
+              <circle cx="208" cy="132" r="2.5" fill="#1a1a2e"/>
+              <path d="M195 142c2 3 8 3 10 0" stroke="#1a1a2e" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M200 158c-8 0-16 5-18 10l-6 20h48l-6-20c-2-5-10-10-18-10z" fill="#2563EB"/>
+              <rect x="90" y="200" width="100" height="70" rx="6" fill="#1E40AF"/>
+              <rect x="96" y="206" width="88" height="52" rx="3" fill="#e0e7ff"/>
+              <rect x="104" y="214" width="30" height="3" rx="1.5" fill="#2563EB" opacity="0.5"/>
+              <rect x="108" y="222" width="40" height="3" rx="1.5" fill="#2563EB" opacity="0.3"/>
+              <rect x="108" y="230" width="25" height="3" rx="1.5" fill="#2563EB" opacity="0.3"/>
+              <rect x="104" y="238" width="35" height="3" rx="1.5" fill="#2563EB" opacity="0.4"/>
+              <rect x="108" y="246" width="20" height="3" rx="1.5" fill="#2563EB" opacity="0.3"/>
+              <rect x="210" y="200" width="100" height="70" rx="6" fill="#1E40AF"/>
+              <rect x="216" y="206" width="88" height="52" rx="3" fill="#e0e7ff"/>
+              <rect x="226" y="240" width="12" height="14" rx="2" fill="#2563EB" opacity="0.3"/>
+              <rect x="244" y="230" width="12" height="24" rx="2" fill="#2563EB" opacity="0.5"/>
+              <rect x="262" y="220" width="12" height="34" rx="2" fill="#2563EB" opacity="0.7"/>
+              <rect x="280" y="235" width="12" height="19" rx="2" fill="#2563EB" opacity="0.4"/>
+              <rect x="80" y="270" width="240" height="8" rx="4" fill="#2563EB" opacity="0.15"/>
+              <circle cx="340" cy="150" r="20" stroke="#2563EB" stroke-width="2" fill="#DBEAFE" opacity="0.5"/>
+              <circle cx="340" cy="150" r="8" stroke="#2563EB" stroke-width="2" fill="none"/>
+              <circle cx="60" cy="180" r="15" stroke="#2563EB" stroke-width="2" fill="#DBEAFE" opacity="0.5"/>
+              <circle cx="60" cy="180" r="6" stroke="#2563EB" stroke-width="2" fill="none"/>
+            </svg>
+          </div>
+        </div>
+        <div class="step-content reveal-right">
+          <div class="step-number">3</div>
+          <h3>Development & Research</h3>
+          <p>Our experts work on your assignment with precision and dedication, ensuring thorough research and quality output.</p>
+          <div class="step-features">
+            <div class="step-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Original research</div>
+            <div class="step-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Quality checks</div>
+            <div class="step-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Progress updates</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="step-row reverse">
+        <div class="step-content reveal-left">
+          <div class="step-number">4</div>
+          <h3>Delivery & Support</h3>
+          <p>Receive your completed work on time with comprehensive support for revisions and follow-up questions.</p>
+          <div class="step-features">
+            <div class="step-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> On-time delivery</div>
+            <div class="step-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Free revisions</div>
+            <div class="step-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Ongoing support</div>
+          </div>
+        </div>
+        <div class="step-visual reveal-right">
+          <div class="step-illustration">
+            <svg viewBox="0 0 400 320" fill="none">
+              <circle cx="200" cy="160" r="130" fill="#DBEAFE" opacity="0.4"/>
+              <circle cx="200" cy="140" r="28" fill="#ffd5c2"/>
+              <path d="M174 130c0-16 12-28 26-28s26 12 26 28" fill="#3b2314"/>
+              <circle cx="192" cy="142" r="2.5" fill="#1a1a2e"/>
+              <circle cx="208" cy="142" r="2.5" fill="#1a1a2e"/>
+              <path d="M195 152c2 3 8 3 10 0" stroke="#1a1a2e" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M170 135a30 30 0 0 1 60 0" stroke="#2563EB" stroke-width="3" fill="none"/>
+              <rect x="165" y="130" width="10" height="16" rx="5" fill="#2563EB"/>
+              <rect x="225" y="130" width="10" height="16" rx="5" fill="#2563EB"/>
+              <path d="M225 146l6 10h10" stroke="#2563EB" stroke-width="2" fill="none"/>
+              <path d="M200 168c-8 0-16 5-18 10l-8 34h52l-8-34c-2-5-10-10-18-10z" fill="#2563EB"/>
+              <rect x="280" y="170" width="60" height="50" rx="6" fill="#fff" stroke="#2563EB" stroke-width="2"/>
+              <line x1="280" y1="190" x2="340" y2="190" stroke="#2563EB" stroke-width="2"/>
+              <path d="M300 180l8 8 12-16" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <polygon points="100,130 103,140 113,140 105,146 108,156 100,150 92,156 95,146 87,140 97,140" fill="#f59e0b"/>
+              <polygon points="80,160 82,167 89,167 83,172 85,179 80,175 75,179 77,172 71,167 78,167" fill="#f59e0b" opacity="0.6"/>
+              <rect x="60" y="200" width="80" height="30" rx="10" fill="#DBEAFE"/>
+              <text x="100" y="219" font-family="Inter, sans-serif" font-size="10" fill="#2563EB" text-anchor="middle">Thank you! ⭐</text>
+              <polygon points="95,230 100,240 105,230" fill="#DBEAFE"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==============================
+     SECTION 4 — SERVICES
+     ============================== -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="services-header reveal">
+      <div class="section-label">Our Services</div>
+      <h2 class="section-title">Comprehensive Academic Support</h2>
+      <p class="section-desc">From essays to code, we cover every aspect of your academic journey with precision and expertise.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+        <h3>Assignment Assistance</h3>
+        <p>Expert help with essays, reports, case studies, and academic papers across all subjects and formats.</p>
+        <div class="service-arrow">Learn more <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="14" y1="4" x2="10" y2="20"/></svg></div>
+        <h3>Programming Projects</h3>
+        <p>Full-stack development, algorithms, data structures, and coding assignments in Python, Java, C++, and more.</p>
+        <div class="service-arrow">Learn more <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        <h3>Research Papers</h3>
+        <p>Comprehensive research support including literature reviews, methodology design, and scholarly writing.</p>
+        <div class="service-arrow">Learn more <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><line x1="12" y1="6" x2="12" y2="13"/><polyline points="9 10 12 13 15 10"/></svg></div>
+        <h3>Dissertation Support</h3>
+        <p>End-to-end dissertation guidance from proposal to defense preparation, with expert mentorship.</p>
+        <div class="service-arrow">Learn more <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><polyline points="7 8 10 11 7 14"/><line x1="13" y1="14" x2="17" y2="14"/></svg></div>
+        <h3>Presentation Design</h3>
+        <p>Professional PowerPoint and pitch deck creation with modern design, data visualization, and clear storytelling.</p>
+        <div class="service-arrow">Learn more <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg></div>
+        <h3>Data Analysis</h3>
+        <p>Statistical analysis, SPSS, R, Excel modeling, and data visualization for research and business projects.</p>
+        <div class="service-arrow">Learn more <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==============================
+     SECTION 5 — SUBJECTS
+     ============================== -->
+<section class="subjects" id="subjects">
+  <div class="container">
+    <div class="subjects-header reveal">
+      <div class="section-label">Subjects We Cover</div>
+      <h2 class="section-title">Global Knowledge Network</h2>
+      <p class="section-desc">Expert coverage across diverse academic disciplines, serving students from every field of study worldwide.</p>
+    </div>
+
+    <!-- GLOBE THEME ORBIT -->
+    <div class="subjects-orbit-stage reveal">
+      <!-- Concentric Orbital Rings -->
+      <div class="orbit-ring orbit-ring-inner"></div>
+      <div class="orbit-ring orbit-ring-mid"></div>
+      <div class="orbit-ring orbit-ring-outer"></div>
+
+      <!-- Center Globe -->
+      <div class="globe-core">
+        <svg class="globe-icon-svg" viewBox="0 0 100 100" fill="none">
+          <circle cx="50" cy="50" r="45" stroke="#1e293b" stroke-width="2.2" stroke-opacity="0.9" fill="rgba(37, 99, 235, 0.06)"/>
+          <ellipse cx="50" cy="50" rx="45" ry="20" stroke="#334155" stroke-width="1.8" stroke-opacity="0.85"/>
+          <ellipse cx="50" cy="50" rx="20" ry="45" stroke="#334155" stroke-width="1.8" stroke-opacity="0.85"/>
+          <line x1="5" y1="50" x2="95" y2="50" stroke="#1e293b" stroke-width="1.8" stroke-dasharray="4 4" stroke-opacity="0.85"/>
+          <line x1="50" y1="5" x2="50" y2="95" stroke="#1e293b" stroke-width="1.8" stroke-dasharray="4 4" stroke-opacity="0.85"/>
+          <circle cx="50" cy="50" r="8" fill="#1e293b"/>
+        </svg>
+        <div class="globe-badge-txt">Global Hub</div>
+        <div class="globe-sub-txt">50+ Subjects</div>
+      </div>
+
+      <!-- Subject Orbit Nodes -->
+      <div class="subject-node sn-cs"><span class="node-dot"></span>Computer Science</div>
+      <div class="subject-node sn-it"><span class="node-dot"></span>Information Technology</div>
+      <div class="subject-node sn-eng"><span class="node-dot"></span>Engineering</div>
+      <div class="subject-node sn-math"><span class="node-dot"></span>Mathematics</div>
+      <div class="subject-node sn-bus"><span class="node-dot"></span>Business Management</div>
+      <div class="subject-node sn-fin"><span class="node-dot"></span>Finance &amp; Accounts</div>
+      <div class="subject-node sn-mkt"><span class="node-dot"></span>Marketing</div>
+      <div class="subject-node sn-stat"><span class="node-dot"></span>Statistics</div>
+      <div class="subject-node sn-hlth"><span class="node-dot"></span>Healthcare</div>
+      <div class="subject-node sn-econ"><span class="node-dot"></span>Economics</div>
+      <div class="subject-node sn-ds"><span class="node-dot"></span>Data Science</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==============================
+     SECTION 6 — WHY CHOOSE US
+     ============================== -->
+<section class="why-us">
+  <div class="container">
+    <div class="why-header reveal">
+      <div class="section-label">Why Choose Tristara</div>
+      <h2 class="section-title">Built for Student Success</h2>
+      <p class="section-desc">Every aspect of our service is designed with your academic goals in mind.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>Expert Professionals</h3>
+        <p>Our team consists of PhD holders, industry veterans, and academic specialists with deep subject expertise.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <h3>On-Time Delivery</h3>
+        <p>We respect deadlines. Your completed work is delivered before the due date, every single time.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/><circle cx="12" cy="16" r="1"/></svg></div>
+        <h3>Confidential Service</h3>
+        <p>Your privacy is our priority. All communications and documents are handled with strict confidentiality.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+        <h3>Global Student Support</h3>
+        <p>We serve students from 30+ countries with localized support and understanding of varied academic systems.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><line x1="9" y1="10" x2="15" y2="10"/><line x1="12" y1="7" x2="12" y2="13"/></svg></div>
+        <h3>24/7 Assistance</h3>
+        <p>Round-the-clock support ensures you can reach us anytime, regardless of your timezone.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>Quality Assurance</h3>
+        <p>Every deliverable undergoes rigorous quality checks for accuracy, plagiarism-free content, and formatting.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==============================
+     SECTION 7 — ACHIEVEMENTS
+     ============================== -->
+<section class="achievements">
+  <div class="container">
+    <div class="achieve-header reveal">
+      <div class="section-label">Our Impact</div>
+      <h2 class="section-title">Achievements That Speak</h2>
+      <p class="section-desc">Numbers that reflect our commitment to academic excellence worldwide.</p>
+    </div>
+    <div class="achieve-grid">
+      <div class="achieve-card reveal">
+        <div class="achieve-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+        <div class="achieve-number" data-target="10000" data-suffix="+">0</div>
+        <div class="achieve-label">Assignments Delivered</div>
+      </div>
+      <div class="achieve-card reveal">
+        <div class="achieve-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <div class="achieve-number" data-target="5000" data-suffix="+">0</div>
+        <div class="achieve-label">Happy Students</div>
+      </div>
+      <div class="achieve-card reveal">
+        <div class="achieve-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+        <div class="achieve-number" data-target="50" data-suffix="+">0</div>
+        <div class="achieve-label">Subjects Covered</div>
+      </div>
+      <div class="achieve-card reveal">
+        <div class="achieve-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+        <div class="achieve-number" data-target="30" data-suffix="+">0</div>
+        <div class="achieve-label">Countries Worldwide</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==============================
+     SECTION 8 — TESTIMONIALS
+     ============================== -->
+<section class="testimonials">
+  <div class="container">
+    <div class="test-header reveal">
+      <div class="section-label">Testimonials</div>
+      <h2 class="section-title">Student Success Stories</h2>
+      <p class="section-desc">Hear from students worldwide who achieved academic excellence with our support.</p>
+    </div>
+  </div>
+  <div class="test-carousel">
+    <div class="test-track" id="testTrack">
+      <div class="test-card">
+        <div class="test-stars"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <p class="test-text">"Tristara helped me ace my Machine Learning project. The code was clean, well-documented, and delivered a day early. Absolutely professional service!"</p>
+        <div class="test-author"><div class="test-avatar">AK</div><div><div class="test-name">Arun K.</div><div class="test-meta"><span class="test-flag">🇮🇳</span> Computer Science · India</div></div></div>
+      </div>
+      <div class="test-card">
+        <div class="test-stars"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <p class="test-text">"My dissertation was a massive undertaking and Tristara's team guided me through every chapter. The quality of research was outstanding."</p>
+        <div class="test-author"><div class="test-avatar">SM</div><div><div class="test-name">Sarah M.</div><div class="test-meta"><span class="test-flag">🇬🇧</span> Business Management · UK</div></div></div>
+      </div>
+      <div class="test-card">
+        <div class="test-stars"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <p class="test-text">"Needed urgent help with a Statistics assignment. They delivered in 12 hours with perfect accuracy. Can't recommend enough!"</p>
+        <div class="test-author"><div class="test-avatar">JL</div><div><div class="test-name">James L.</div><div class="test-meta"><span class="test-flag">🇦🇺</span> Statistics · Australia</div></div></div>
+      </div>
+      <div class="test-card">
+        <div class="test-stars"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <p class="test-text">"The data analysis report exceeded my expectations. Visualizations were on point and the methodology section was flawless."</p>
+        <div class="test-author"><div class="test-avatar">FH</div><div><div class="test-name">Fatima H.</div><div class="test-meta"><span class="test-flag">🇦🇪</span> Data Science · UAE</div></div></div>
+      </div>
+      <div class="test-card">
+        <div class="test-stars"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <p class="test-text">"From marketing case studies to financial models — Tristara has been my go-to throughout my MBA. Their team truly understands academic standards."</p>
+        <div class="test-author"><div class="test-avatar">CP</div><div><div class="test-name">Carlos P.</div><div class="test-meta"><span class="test-flag">🇨🇦</span> MBA · Canada</div></div></div>
+      </div>
+      <div class="test-card">
+        <div class="test-stars"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <p class="test-text">"Excellent programming help! They built a full React dashboard for my capstone project. The code quality was production-level."</p>
+        <div class="test-author"><div class="test-avatar">MO</div><div><div class="test-name">Maria O.</div><div class="test-meta"><span class="test-flag">🇩🇪</span> IT Engineering · Germany</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==============================
+     SECTION 9 — CONTACT
+     ============================== -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-info reveal-left">
+      <div class="section-label">Get Started</div>
+      <h2>Need Assignment<br>Assistance?</h2>
+      <p>Tell us about your requirements and our team will get back to you within hours with a tailored solution.</p>
+      <div class="contact-illustration">
+        <svg viewBox="0 0 400 320" fill="none">
+          <circle cx="200" cy="160" r="130" fill="#DBEAFE" opacity="0.4"/>
+          <rect x="100" y="210" width="200" height="10" rx="5" fill="#2563EB" opacity="0.1"/>
+          <rect x="150" y="130" width="100" height="80" rx="8" fill="#1E40AF"/>
+          <rect x="158" y="138" width="84" height="58" rx="4" fill="#e0e7ff"/>
+          <rect x="168" y="148" width="50" height="14" rx="7" fill="#2563EB" opacity="0.3"/>
+          <rect x="182" y="168" width="50" height="14" rx="7" fill="#DBEAFE"/>
+          <rect x="190" y="210" width="20" height="20" fill="#1E40AF" opacity="0.3"/>
+          <rect x="270" y="150" width="60" height="40" rx="4" fill="#fff" stroke="#2563EB" stroke-width="2"/>
+          <path d="M270 154l30 20 30-20" stroke="#2563EB" stroke-width="2"/>
+          <circle cx="100" cy="140" r="24" fill="#fff" stroke="#2563EB" stroke-width="2"/>
+          <line x1="100" y1="140" x2="100" y2="126" stroke="#1E40AF" stroke-width="2" stroke-linecap="round"/>
+          <line x1="100" y1="140" x2="112" y2="140" stroke="#2563EB" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="100" cy="140" r="3" fill="#2563EB"/>
+          <path d="M290 240l6 6 12-12" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M290 260l6 6 12-12" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+        </svg>
+      </div>
+      <div class="contact-features">
+        <div class="contact-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Response within 2 hours</div>
+        <div class="contact-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Free consultation &amp; quote</div>
+        <div class="contact-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> No obligation to proceed</div>
+      </div>
+    </div>
+    <div class="contact-form reveal-right">
+      <form onsubmit="handleSubmit(event)">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter your name" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="you@email.com" required>
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <select required>
+              <option value="">Select subject</option>
+              <option>Computer Science</option>
+              <option>Business Management</option>
+              <option>Engineering</option>
+              <option>Mathematics</option>
+              <option>Data Science</option>
+              <option>Finance</option>
+              <option>Marketing</option>
+              <option>Healthcare</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Deadline</label>
+          <input type="date" required>
+        </div>
+        <div class="form-group">
+          <label>Assignment Details</label>
+          <textarea placeholder="Describe your assignment requirements, special instructions, and any reference materials..." required></textarea>
+        </div>
+        <button type="submit" class="form-submit">Submit Request →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==============================
+     SECTION 10 — FAQ
+     ============================== -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-header reveal">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-desc">Everything you need to know about our academic assistance services.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <div class="faq-question" onclick="toggleFaq(this)">How does the process work?<div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div>
+        <div class="faq-answer"><div class="faq-answer-inner">Simply submit your assignment requirements through our contact form. Our team reviews your request, provides a quote, and once confirmed, our subject-matter experts get to work. You receive the completed assignment before your deadline with full support for revisions.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-question" onclick="toggleFaq(this)">Which subjects do you cover?<div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div>
+        <div class="faq-answer"><div class="faq-answer-inner">We cover 50+ subjects including Computer Science, Engineering, Mathematics, Business Management, Finance, Marketing, Statistics, Healthcare, Economics, Data Science, Information Technology, and many more. If your subject isn't listed, reach out — we likely have an expert for it.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-question" onclick="toggleFaq(this)">Can you handle urgent deadlines?<div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes! We handle urgent requests with delivery times as short as 6-12 hours, depending on the complexity and scope of the assignment. Our dedicated team ensures quality isn't compromised regardless of the timeline.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-question" onclick="toggleFaq(this)">How do I submit requirements?<div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div>
+        <div class="faq-answer"><div class="faq-answer-inner">You can submit your requirements through the contact form on this page, or reach out via email. Include your assignment brief, any reference materials, formatting guidelines, and your deadline. Our team will respond within 2 hours.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-question" onclick="toggleFaq(this)">Is my information secure?<div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div>
+        <div class="faq-answer"><div class="faq-answer-inner">Absolutely. We maintain strict confidentiality. Your personal information, assignment details, and all communications are encrypted and never shared with third parties. We use secure channels and follow data protection best practices.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==============================
+     SECTION 11 — FOOTER
+     ============================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <img src="assets/images/tristara-official-logo.png" alt="Tristara IT Solutions" class="nav-logo-img">
+        </div>
+        <p>Craft Your Digital Future — Global academic assistance, dissertations, software development, research publications & technical report mentoring across 50+ subjects.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+          <a href="#" class="social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="#" class="social-link" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Assignment Assistance</a></li>
+          <li><a href="#">Programming Projects</a></li>
+          <li><a href="#">Research Papers</a></li>
+          <li><a href="#">Dissertation Support</a></li>
+          <li><a href="#">Presentation Design</a></li>
+          <li><a href="#">Data Analysis</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Subjects</h4>
+        <ul>
+          <li><a href="#">Computer Science</a></li>
+          <li><a href="#">Engineering</a></li>
+          <li><a href="#">Business Management</a></li>
+          <li><a href="#">Data Science</a></li>
+          <li><a href="#">Mathematics</a></li>
+          <li><a href="#">Healthcare</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Tristara IT Solutions. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="js/animations.js"></script>
+<script src="js/airplane-workflow.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

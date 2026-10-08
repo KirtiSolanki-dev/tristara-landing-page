@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — Tristara IT Solutions | Craft Your Digital Future</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/images/tristara-official-logo.png" alt="Tristara IT Solutions" class="nav-logo-img">
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="about.html" class="active">About Us</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="nav-btns-group">
+      <a href="https://wa.me/919313118267?text=Hi,%20I%20need%20academic%20assignment%20assistance%20from%20Tristara!" target="_blank" class="nav-btn whatsapp-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        WhatsApp
+      </a>
+      <a href="contact.html" class="nav-btn hire-btn">Hire Us →</a>
+    </div>
+
+    <button class="mobile-toggle" onclick="toggleMobile()" aria-label="Toggle Navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu-overlay" id="mobileOverlay" onclick="toggleMobile()"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="toggleMobile()" aria-label="Close Navigation">
+    <svg width="24" height="24" fill="none" stroke="#ffffff" stroke-width="2">
+      <line x1="18" y1="6" x2="6" y2="18"/>
+      <line x1="6" y1="6" x2="18" y2="18"/>
+    </svg>
+  </button>
+  <a href="index.html" onclick="toggleMobile()">Home</a>
+  <a href="services.html" onclick="toggleMobile()">Services</a>
+  <a href="how-it-works.html" onclick="toggleMobile()">How It Works</a>
+  <a href="about.html" class="active" onclick="toggleMobile()">About Us</a>
+  <a href="contact.html" onclick="toggleMobile()">Contact</a>
+  <div style="margin-top: 24px; display: flex; flex-direction: column; gap: 12px;">
+    <a href="https://wa.me/919313118267?text=Hi,%20I%20need%20academic%20assignment%20assistance%20from%20Tristara!" target="_blank" class="nav-btn whatsapp-btn" style="justify-content: center;">
+      WhatsApp Quote
+    </a>
+    <a href="contact.html" class="nav-btn hire-btn" style="justify-content: center;">Hire Us</a>
+  </div>
+</div>
+
+<!-- PAGE HEADER -->
+<section style="padding: 160px 0 70px; background: radial-gradient(circle at 50% 10%, rgba(0, 194, 255, 0.12) 0%, transparent 70%), var(--bg-dark); text-align: center; border-bottom: 1px solid var(--border-dark);">
+  <div class="container">
+    <div class="section-label">Empowering Minds Worldwide</div>
+    <h1 style="font-size: clamp(2.4rem, 4.5vw, 3.4rem); font-weight: 800; color: #ffffff; margin-bottom: 20px;">
+      About <span class="gradient-text">Tristara IT Solutions</span>
+    </h1>
+    <p class="section-desc" style="margin: 0 auto; max-width: 720px; font-size: 1.15rem; color: #94a3b8;">
+      Bridging the gap between cutting-edge enterprise technology and rigorous academic research excellence across 30+ countries.
+    </p>
+  </div>
+</section>
+
+<!-- CORPORATE IDENTITY SECTION -->
+<section style="padding: 60px 0 90px; background: var(--bg-dark);">
+  <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center;">
+    <div class="reveal-left">
+      <div class="section-label">Who We Are</div>
+      <h2 style="font-size: 2.2rem; font-weight: 700; color: #ffffff; margin-bottom: 20px; line-height: 1.3;">Craft Your Digital Future In Academia &amp; Industry</h2>
+      <p style="color: #94a3b8; font-size: 1.05rem; line-height: 1.8; margin-bottom: 18px;">
+        Headquartered in Surat, Gujarat, <strong>Tristara IT Solutions</strong> is an established enterprise software company engineering ERP, CRM, HRMS, and AI automation platforms.
+      </p>
+      <p style="color: #94a3b8; font-size: 1.05rem; line-height: 1.8; margin-bottom: 28px;">
+        Recognizing the immense pressure students and researchers face when tackling complex capstones, data models, and dissertations, we created our dedicated <strong>Academic Assistance Wing</strong>. We pair students directly with real developers, data analysts, and Ph.D. scholars who provide genuine guidance, debugging, and academic writing.
+      </p>
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 24px 0; border-top: 1px solid var(--border-dark);">
+        <div>
+          <div style="font-size: 2.1rem; font-weight: 800; color: var(--primary);">10,000+</div>
+          <div style="font-size: 0.85rem; color: #94a3b8; font-weight: 600;">Assignments Mentored</div>
+        </div>
+        <div>
+          <div style="font-size: 2.1rem; font-weight: 800; color: var(--primary);">5,000+</div>
+          <div style="font-size: 0.85rem; color: #94a3b8; font-weight: 600;">Global Students</div>
+        </div>
+        <div>
+          <div style="font-size: 2.1rem; font-weight: 800; color: var(--primary);">50+</div>
+          <div style="font-size: 0.85rem; color: #94a3b8; font-weight: 600;">Academic Subjects</div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal-right" style="text-align: center;">
+      <div style="background: var(--card-dark); border: 1px solid var(--border-dark); border-radius: 28px; padding: 50px 40px; box-shadow: 0 25px 60px rgba(0,0,0,0.4); color: #fff;">
+        <img src="assets/images/tristara-official-logo.png" alt="Tristara IT Solutions Logo" style="max-width: 250px; margin: 0 auto 28px;">
+        <div style="display: inline-block; padding: 6px 18px; background: rgba(0, 194, 255, 0.15); color: #00C2FF; border-radius: 100px; font-size: 0.82rem; font-weight: 700; margin-bottom: 20px; border: 1px solid rgba(0, 194, 255, 0.3);">
+          CRAFT YOUR DIGITAL FUTURE
+        </div>
+        <h3 style="font-size: 1.4rem; font-weight: 700; color: #fff; margin-bottom: 12px;">Enterprise Pedigree</h3>
+        <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.7;">
+          Operating under the official banner of <a href="https://tristaraitsolutions.com" target="_blank" style="color: #00C2FF; text-decoration: underline;">tristaraitsolutions.com</a>, serving global clients across India, the UK, Australia, the US, Canada, Germany, and the UAE.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CORE PILLARS OF EXCELLENCE -->
+<section style="padding: 90px 0; background: var(--bg-dark2); border-top: 1px solid var(--border-dark);">
+  <div class="container">
+    <div style="text-align: center; margin-bottom: 60px;" class="reveal">
+      <div class="section-label">Our Guiding Pillars</div>
+      <h2 class="section-title">The Foundation of Student Trust</h2>
+      <p class="section-desc" style="margin: 0 auto;">How we consistently deliver distinction grades and academic confidence.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-icon" style="background: rgba(0, 194, 255, 0.12); border: 1px solid rgba(0, 194, 255, 0.25);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <h3>Zero AI Hallucination Policy</h3>
+        <p>Unlike generic platforms using ChatGPT to spin text, our deliverables are researched and written by domain scholars, complete with authentic DOI citations.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon" style="background: rgba(123, 97, 255, 0.12); border: 1px solid rgba(123, 97, 255, 0.25);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--purple)" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="14" y1="4" x2="10" y2="20"/></svg>
+        </div>
+        <h3>Real Technical Depth</h3>
+        <p>Because we build real software, our coding assignments feature production-grade conventions, git commits, Docker environments, and test suites.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon" style="background: rgba(37, 211, 102, 0.12); border: 1px solid rgba(37, 211, 102, 0.25);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/><circle cx="12" cy="16" r="1"/></svg>
+        </div>
+        <h3>Absolute Confidentiality</h3>
+        <p>All student information, university briefs, and correspondence are guarded under corporate Non-Disclosure Agreements and encrypted channels.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <img src="assets/images/tristara-official-logo.png" alt="Tristara IT Solutions" class="nav-logo-img">
+        </div>
+        <p>Craft Your Digital Future — Global academic assistance, dissertations, software development, research publications & technical report mentoring across 50+ subjects.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+          <a href="#" class="social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" class="social-link" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Assignment Assistance</a></li>
+          <li><a href="services.html">Programming &amp; Code</a></li>
+          <li><a href="services.html">Dissertations &amp; Theses</a></li>
+          <li><a href="services.html">SPSS &amp; Data Analysis</a></li>
+          <li><a href="services.html">Research Paper Publication</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="https://tristaraitsolutions.com" target="_blank">Tristara Main Site</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>Phone: +91 93131 18267</li>
+          <li>Email: info@tristaraitsolutions.com</li>
+          <li>Global Support: 24/7 Hours</li>
+          <li>Surat, Gujarat, India</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Tristara IT Solutions. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="js/animations.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

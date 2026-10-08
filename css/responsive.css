@@ -1,0 +1,177 @@
+/* ===================================================
+   TRISTARA IT SOLUTIONS — responsive.css
+   Breakpoints, tablet & mobile media queries.
+   =================================================== */
+
+/* ===== TABLET & LAPTOP (<= 1024px) ===== */
+@media (max-width: 1024px) {
+  .hero .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 48px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-visual {
+    margin-top: 20px;
+  }
+
+  .hero-trust {
+    justify-content: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .step-row {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .step-row.reverse .step-visual {
+    order: 0;
+  }
+
+  .step-row.reverse .step-content {
+    order: 0;
+  }
+
+  .step-content p {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .step-content .step-features {
+    align-items: center;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-card:nth-child(even) {
+    margin-top: 0;
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .achieve-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact .container {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .airplane-path-container {
+    display: none;
+  }
+}
+
+/* ===== TABLETS & LARGE PHONES (<= 768px) ===== */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: block;
+  }
+
+  .trust-bar .container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .achieve-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .subjects-orbit {
+    min-height: auto;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    padding: 0 16px;
+  }
+
+  .orbit-ring {
+    display: none;
+  }
+
+  .subject-node {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form {
+    padding: 28px 20px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+  }
+}
+
+/* ===== MOBILE PHONES (<= 480px) ===== */
+@media (max-width: 480px) {
+  .achieve-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trust-bar .container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons a {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .test-card {
+    width: 300px;
+    padding: 24px;
+  }
+}

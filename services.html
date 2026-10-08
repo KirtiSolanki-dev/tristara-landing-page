@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Services & Solutions — Tristara IT Solutions</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans & Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/images/tristara-official-logo.png" alt="Tristara IT Solutions" class="nav-logo-img">
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="nav-btns-group">
+      <a href="https://wa.me/919313118267?text=Hi,%20I%20need%20academic%20assignment%20assistance%20from%20Tristara!" target="_blank" class="nav-btn whatsapp-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        WhatsApp
+      </a>
+      <a href="contact.html" class="nav-btn hire-btn">Hire Us →</a>
+    </div>
+
+    <button class="mobile-toggle" onclick="toggleMobile()" aria-label="Toggle Navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu-overlay" id="mobileOverlay" onclick="toggleMobile()"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="toggleMobile()" aria-label="Close Navigation">
+    <svg width="24" height="24" fill="none" stroke="#ffffff" stroke-width="2">
+      <line x1="18" y1="6" x2="6" y2="18"/>
+      <line x1="6" y1="6" x2="18" y2="18"/>
+    </svg>
+  </button>
+  <a href="index.html" onclick="toggleMobile()">Home</a>
+  <a href="services.html" class="active" onclick="toggleMobile()">Services</a>
+  <a href="how-it-works.html" onclick="toggleMobile()">How It Works</a>
+  <a href="about.html" onclick="toggleMobile()">About Us</a>
+  <a href="contact.html" onclick="toggleMobile()">Contact</a>
+  <div style="margin-top: 24px; display: flex; flex-direction: column; gap: 12px;">
+    <a href="https://wa.me/919313118267?text=Hi,%20I%20need%20academic%20assignment%20assistance%20from%20Tristara!" target="_blank" class="nav-btn whatsapp-btn" style="justify-content: center;">
+      WhatsApp Quote
+    </a>
+    <a href="contact.html" class="nav-btn hire-btn" style="justify-content: center;">Hire Us</a>
+  </div>
+</div>
+
+<!-- HERO HEADER -->
+<section style="padding: 160px 0 70px; background: radial-gradient(circle at 50% 10%, rgba(0, 194, 255, 0.12) 0%, transparent 70%), var(--bg-dark); text-align: center; border-bottom: 1px solid var(--border-dark);">
+  <div class="container">
+    <div class="hero-badge" style="margin-bottom: 16px;">
+      <span>●</span> 100% Original, Plagiarism-Free Academic Writing &amp; Tech Help
+    </div>
+    <h1 style="font-size: clamp(2.4rem, 4.5vw, 3.4rem); font-weight: 800; color: #ffffff; margin-bottom: 20px; line-height: 1.2;">
+      Specialized Academic &amp; <span class="gradient-text">Software Assistance</span>
+    </h1>
+    <p class="section-desc" style="margin: 0 auto; max-width: 720px; font-size: 1.15rem; color: #94a3b8;">
+      From urgent assignment deadlines and empirical dissertations to complex programming projects, cloud deployments, and statistical modeling. Grounded in research rigor with zero AI hallucinations.
+    </p>
+  </div>
+</section>
+
+<!-- SERVICES ACCORDION / DETAILED JOURNEY (DIGIINK FLOW UPGRADED TO MODERN SAAS) -->
+<section style="padding: 60px 0 100px; background: var(--bg-dark);">
+  <div class="container">
+
+    <!-- Service Row 1: Assignment Assistance -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; margin-bottom: 110px;" class="step-row">
+      <div class="reveal-left">
+        <div class="step-number" style="background: linear-gradient(135deg, #00C2FF, #2563EB);">01</div>
+        <h2 style="font-size: 2.1rem; font-weight: 700; color: #ffffff; margin-bottom: 16px;">Assignment &amp; Coursework Assistance</h2>
+        <p style="color: #94a3b8; font-size: 1.05rem; line-height: 1.8; margin-bottom: 24px;">
+          Comprehensive support for university essays, case study analyses, critical evaluations, term papers, and modular coursework. Every submission is tailored strictly to your course rubric, word-count metrics, and formatting style (APA 7th, Harvard, IEEE, MLA, Chicago).
+        </p>
+        <div style="background: var(--card-dark); border: 1px solid var(--border-dark); border-radius: 16px; padding: 20px; margin-bottom: 24px;">
+          <h4 style="font-size: 0.95rem; font-weight: 700; color: #ffffff; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+            <svg width="18" height="18" fill="none" stroke="var(--primary)" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            What You Receive:
+          </h4>
+          <ul style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 0.9rem; color: #cbd5e1;">
+            <li>✓ Complete Turnitin similarity report</li>
+            <li>✓ Free bibliography &amp; reference list</li>
+            <li>✓ Unlimited revisions within 14 days</li>
+            <li>✓ Direct chat with assigned subject mentor</li>
+          </ul>
+        </div>
+        <a href="contact.html?service=assignments" class="btn-primary">Book Assignment Helper →</a>
+      </div>
+      <div class="reveal-right" style="text-align: center;">
+        <div style="background: var(--card-dark); border: 1px solid var(--border-dark); border-radius: 28px; padding: 48px; box-shadow: 0 20px 60px rgba(0,0,0,0.4);">
+          <div style="width: 80px; height: 80px; background: rgba(0, 194, 255, 0.12); border: 1px solid rgba(0, 194, 255, 0.25); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px;">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <h3 style="font-size: 1.35rem; font-weight: 700; color: #ffffff; margin-bottom: 12px;">Human-Authored &amp; Verified</h3>
+          <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.7;">
+            We maintain strict anti-AI policies. Every paper is conceptualized and written by verified postgraduate mentors with verifiable credentials in your specific discipline.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service Row 2: Programming Projects & Computer Science -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; margin-bottom: 110px;" class="step-row reverse">
+      <div class="reveal-left" style="text-align: center;">
+        <div style="background: var(--card-dark); color: #fff; border: 1px solid var(--border-dark); border-radius: 28px; padding: 48px; box-shadow: 0 20px 60px rgba(0,0,0,0.4);">
+          <div style="font-family: monospace; text-align: left; background: #090d16; padding: 20px; border-radius: 14px; font-size: 0.85rem; color: #38bdf8; margin-bottom: 24px; line-height: 1.6; border: 1px solid rgba(255,255,255,0.08);">
+            <span style="color: #94a3b8;">// Tristara Engineering Stack</span><br>
+            <span style="color: #c084fc;">const</span> stack = [<span style="color: #34d399;">"Python"</span>, <span style="color: #34d399;">"Java"</span>, <span style="color: #34d399;">"C++"</span>, <span style="color: #34d399;">"React"</span>, <span style="color: #34d399;">"Node"</span>, <span style="color: #34d399;">"SQL"</span>];<br>
+            <span style="color: #c084fc;">export function</span> verifyCode() {<br>
+            &nbsp;&nbsp;<span style="color: #f59e0b;">return</span> { tested: <span style="color: #60a5fa;">true</span>, docs: <span style="color: #34d399;">"Complete"</span> };<br>
+            }
+          </div>
+          <h3 style="font-size: 1.35rem; font-weight: 700; color: #fff; margin-bottom: 8px;">Backed by Tristara IT Solutions</h3>
+          <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.6;">
+            Leverage enterprise developers actively building software, ERPs, and cloud applications for real industry clients worldwide.
+          </p>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <div class="step-number" style="background: linear-gradient(135deg, #2563EB, #1E40AF);">02</div>
+        <h2 style="font-size: 2.1rem; font-weight: 700; color: #ffffff; margin-bottom: 16px;">Programming Tasks &amp; Capstone Development</h2>
+        <p style="color: #94a3b8; font-size: 1.05rem; line-height: 1.8; margin-bottom: 24px;">
+          Full technical mentorship and project builds across Python (Django/Flask, Machine Learning, Data Science), Java (Spring Boot), C/C++, PHP/Laravel, JavaScript/React, Mobile Apps (Flutter, React Native), and Database Architecture.
+        </p>
+        <div style="background: var(--card-dark); border: 1px solid var(--border-dark); border-radius: 16px; padding: 20px; margin-bottom: 24px;">
+          <h4 style="font-size: 0.95rem; font-weight: 700; color: #ffffff; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+            <svg width="18" height="18" fill="none" stroke="var(--primary)" stroke-width="2" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            Includes:
+          </h4>
+          <ul style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 0.9rem; color: #cbd5e1;">
+            <li>✓ Clean, documented source code</li>
+            <li>✓ Step-by-step setup guide &amp; README</li>
+            <li>✓ Video walkthrough / Demo recording</li>
+            <li>✓ Viva / Presentation prep guidance</li>
+          </ul>
+        </div>
+        <a href="contact.html?service=programming" class="btn-primary">Request Project Support →</a>
+      </div>
+    </div>
+
+    <!-- Service Row 3: Thesis & Dissertation Support -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; margin-bottom: 110px;" class="step-row">
+      <div class="reveal-left">
+        <div class="step-number" style="background: linear-gradient(135deg, #00C2FF, #2563EB);">03</div>
+        <h2 style="font-size: 2.1rem; font-weight: 700; color: #ffffff; margin-bottom: 16px;">Thesis &amp; Dissertation Mentorship</h2>
+        <p style="color: #94a3b8; font-size: 1.05rem; line-height: 1.8; margin-bottom: 24px;">
+          Navigating an undergraduate, Master’s, or Ph.D. dissertation requires systematic structure. We support every stage: Proposal Defense, Literature Review Synthesis, Methodology Formulation, Quantitative/Qualitative Analysis, and Discussion of Results.
+        </p>
+        <div style="background: var(--card-dark); border: 1px solid var(--border-dark); border-radius: 16px; padding: 20px; margin-bottom: 24px;">
+          <h4 style="font-size: 0.95rem; font-weight: 700; color: #ffffff; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+            <svg width="18" height="18" fill="none" stroke="var(--primary)" stroke-width="2" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            Key Capabilities:
+          </h4>
+          <ul style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 0.9rem; color: #cbd5e1;">
+            <li>✓ Chapter-by-chapter milestone delivery</li>
+            <li>✓ Peer-reviewed citations (Scopus / IEEE / Web of Science)</li>
+            <li>✓ Comprehensive proofreading &amp; native English editing</li>
+            <li>✓ Formatted to university handbook specifications</li>
+          </ul>
+        </div>
+        <a href="contact.html?service=thesis" class="btn-primary">Consult Dissertation Specialist →</a>
+      </div>
+      <div class="reveal-right" style="text-align: center;">
+        <div style="background: var(--card-dark); border: 1px solid var(--border-dark); border-radius: 28px; padding: 48px; box-shadow: 0 20px 60px rgba(0,0,0,0.4);">
+          <div style="width: 80px; height: 80px; background: rgba(0, 194, 255, 0.12); border: 1px solid rgba(0, 194, 255, 0.25); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px;">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3 style="font-size: 1.35rem; font-weight: 700; color: #ffffff; margin-bottom: 12px;">10,000+ Theses Advised</h3>
+          <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.7;">
+            Assisting students at prestigious institutions in the United Kingdom, Australia, United States, Canada, Germany, and the UAE with distinction-level grade outcomes.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service Row 4: Data Analysis, SPSS & Statistics -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center;" class="step-row reverse">
+      <div class="reveal-left" style="text-align: center;">
+        <div style="background: var(--card-dark); border: 1px solid var(--border-dark); border-radius: 28px; padding: 48px; box-shadow: 0 20px 60px rgba(0,0,0,0.4);">
+          <div style="width: 80px; height: 80px; background: rgba(123, 97, 255, 0.12); border: 1px solid rgba(123, 97, 255, 0.25); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px;">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--purple)" stroke-width="2"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+          </div>
+          <h3 style="font-size: 1.35rem; font-weight: 700; color: #ffffff; margin-bottom: 12px;">Statistical Precision</h3>
+          <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.7;">
+            Hypothesis testing, ANOVA, linear &amp; logistic regressions, factor analysis, SEM modeling (SmartPLS / AMOS), and clean interactive visualizations.
+          </p>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <div class="step-number" style="background: linear-gradient(135deg, #2563EB, #1E40AF);">04</div>
+        <h2 style="font-size: 2.1rem; font-weight: 700; color: #ffffff; margin-bottom: 16px;">Statistical Analysis &amp; Empirical Research</h2>
+        <p style="color: #94a3b8; font-size: 1.05rem; line-height: 1.8; margin-bottom: 24px;">
+          Transform raw datasets into actionable academic findings. Our statisticians work seamlessly with SPSS, R Studio, Python Pandas, STATA, NVivo (qualitative coding), and Excel PowerQuery.
+        </p>
+        <div style="background: var(--card-dark); border: 1px solid var(--border-dark); border-radius: 16px; padding: 20px; margin-bottom: 24px;">
+          <h4 style="font-size: 0.95rem; font-weight: 700; color: #ffffff; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+            <svg width="18" height="18" fill="none" stroke="var(--primary)" stroke-width="2" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            Deliverables:
+          </h4>
+          <ul style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 0.9rem; color: #cbd5e1;">
+            <li>✓ Formatted statistical tables (APA style)</li>
+            <li>✓ Raw syntax files (.sps, .R, .py)</li>
+            <li>✓ Descriptive &amp; inferential commentary</li>
+            <li>✓ Executive summary of key findings</li>
+          </ul>
+        </div>
+        <a href="contact.html?service=data" class="btn-primary">Get Data Analyzed →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- COMPARISON TABLE: TRISTARA VS OTHER SITES (DIGIINK REFERENCE ENHANCEMENT) -->
+<section style="padding: 90px 0; background: #0f172a; color: #fff;">
+  <div class="container">
+    <div style="text-align: center; margin-bottom: 60px;" class="reveal">
+      <div class="section-label" style="color: #38bdf8;">Why We Outperform</div>
+      <h2 style="font-size: 2.2rem; font-weight: 700; color: #fff;">The Tristara Quality Benchmark</h2>
+      <p style="color: #94a3b8; font-size: 1.05rem; margin: 0 auto; max-width: 600px;">
+        See how our corporate-grade standards and certified IT background deliver a superior academic experience.
+      </p>
+    </div>
+
+    <div style="background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 24px; padding: 32px; overflow-x: auto;">
+      <table style="width: 100%; border-collapse: collapse; min-width: 600px; text-align: left;">
+        <thead>
+          <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+            <th style="padding: 16px 20px; font-size: 1.05rem; color: #e2e8f0;">Feature / Metric</th>
+            <th style="padding: 16px 20px; font-size: 1.05rem; color: #38bdf8; font-weight: 700;">Tristara IT Solutions</th>
+            <th style="padding: 16px 20px; font-size: 1.05rem; color: #94a3b8;">Generic Essay Sites</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.06);">
+            <td style="padding: 18px 20px; color: #cbd5e1; font-weight: 600;">Technical Coding &amp; Architecture</td>
+            <td style="padding: 18px 20px; color: #38bdf8; font-weight: 600;">Real Enterprise Developers (Git, Docker, CI/CD)</td>
+            <td style="padding: 18px 20px; color: #ef4444;">Basic theoretical code or copy-paste</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.06);">
+            <td style="padding: 18px 20px; color: #cbd5e1; font-weight: 600;">AI Policy &amp; Detection</td>
+            <td style="padding: 18px 20px; color: #38bdf8; font-weight: 600;">0% AI content guaranteed with Turnitin AI report</td>
+            <td style="padding: 18px 20px; color: #ef4444;">Heavy ChatGPT reliance &amp; generic filler</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.06);">
+            <td style="padding: 18px 20px; color: #cbd5e1; font-weight: 600;">Urgent Turnaround</td>
+            <td style="padding: 18px 20px; color: #38bdf8; font-weight: 600;">Express 6 – 12 hours delivery window</td>
+            <td style="padding: 18px 20px; color: #ef4444;">Frequent delays and missed deadlines</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.06);">
+            <td style="padding: 18px 20px; color: #cbd5e1; font-weight: 600;">Client Privacy &amp; NDA</td>
+            <td style="padding: 18px 20px; color: #38bdf8; font-weight: 600;">Strict corporate NDA, end-to-end encrypted storage</td>
+            <td style="padding: 18px 20px; color: #ef4444;">Files often resold or indexed publicly</td>
+          </tr>
+          <tr>
+            <td style="padding: 18px 20px; color: #cbd5e1; font-weight: 600;">Revisions &amp; Support</td>
+            <td style="padding: 18px 20px; color: #38bdf8; font-weight: 600;">Free unlimited iterations until approved</td>
+            <td style="padding: 18px 20px; color: #ef4444;">Charges extra for corrections</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- CALL TO ACTION -->
+<section style="padding: 90px 0; background: radial-gradient(circle at 50% 50%, rgba(0, 194, 255, 0.15) 0%, transparent 70%), var(--bg-dark2); border-top: 1px solid var(--border-dark); color: #fff; text-align: center;">
+  <div class="container">
+    <div class="section-label">Get Started Today</div>
+    <h2 style="font-size: clamp(2.2rem, 4vw, 2.8rem); font-weight: 800; color: #ffffff; margin-bottom: 16px;">Ready to Elevate Your Academic Scores?</h2>
+    <p style="font-size: 1.1rem; color: #94a3b8; max-width: 600px; margin: 0 auto 32px;">
+      Upload your task rubric or project prompt now. Get an immediate quote and connect with an expert today.
+    </p>
+    <a href="contact.html" class="btn-primary" style="font-weight: 700; padding: 15px 36px; font-size: 1.05rem;">Submit Your Assignment Requirements →</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <img src="assets/images/tristara-official-logo.png" alt="Tristara IT Solutions" class="nav-logo-img">
+        </div>
+        <p>Craft Your Digital Future — Global academic assistance, dissertations, software development, research publications & technical report mentoring across 50+ subjects.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+          <a href="#" class="social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" class="social-link" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Assignment Assistance</a></li>
+          <li><a href="services.html">Programming &amp; Code</a></li>
+          <li><a href="services.html">Dissertations &amp; Theses</a></li>
+          <li><a href="services.html">SPSS &amp; Data Analysis</a></li>
+          <li><a href="services.html">Research Paper Publication</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="https://tristaraitsolutions.com" target="_blank">Tristara Main Site</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>Phone: +91 93131 18267</li>
+          <li>Email: info@tristaraitsolutions.com</li>
+          <li>Global Support: 24/7 Hours</li>
+          <li>Surat, Gujarat, India</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Tristara IT Solutions. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="js/animations.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+/* ===================================================
+   TRISTARA IT SOLUTIONS — animations.css
+   Scroll reveal, keyframe motions, float animations,
+   and micro-interactions.
+   =================================================== */
+
+/* ===== REVEAL ANIMATIONS (FRAMER MOTION STYLE) ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Stagger delay utilities */
+.delay-100 { transition-delay: 0.1s; }
+.delay-200 { transition-delay: 0.2s; }
+.delay-300 { transition-delay: 0.3s; }
+.delay-400 { transition-delay: 0.4s; }
+
+/* ===== FLOATING HERO ELEMENTS ===== */
+.floating-el {
+  position: absolute;
+  z-index: 3;
+  animation: float 6s ease-in-out infinite;
+  will-change: transform;
+}
+
+.floating-el:nth-child(2) { animation-delay: -1s; }
+.floating-el:nth-child(3) { animation-delay: -2s; }
+.floating-el:nth-child(4) { animation-delay: -3s; }
+.floating-el:nth-child(5) { animation-delay: -4s; }
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-15px) rotate(2deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(-1deg);
+  }
+  75% {
+    transform: translateY(-20px) rotate(1deg);
+  }
+}
+
+/* Subtle Pulse */
+@keyframes pulseGlow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.6;
+  }
+}
+
+/* ===== TESTIMONIAL SCROLL ANIMATION ===== */
+@keyframes scroll-testimonials {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.test-track {
+  animation: scroll-testimonials 32s linear infinite;
+}
+
+.test-track:hover {
+  animation-play-state: paused;
+}
+
+/* ===== AIRPLANE SMOOTH GLIDE FILTER ===== */
+.paper-airplane {
+  filter: drop-shadow(0 4px 14px rgba(37, 99, 235, 0.35));
+  transition: opacity 0.3s ease;
+  will-change: transform, left, top;
+}
