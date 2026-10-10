@@ -28,6 +28,9 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
 }
 
 body {
@@ -35,6 +38,9 @@ body {
   color: #e2e8f0;
   background: var(--bg-dark);
   overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -1046,15 +1052,10 @@ ul {
     justify-content: center;
     padding: 20px 0;
   }
-  .globe-core {
-    width: 130px;
-    height: 130px;
-    margin-bottom: 24px;
+  .globe-center-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
     order: -1;
-  }
-  .globe-icon-svg {
-    width: 50px;
-    height: 50px;
   }
   .orbit-ring {
     display: none;

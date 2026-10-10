@@ -23,23 +23,45 @@
   var mobileToggle  = document.querySelector('.mobile-toggle');
   var mobileClose   = document.querySelector('.mobile-close');
 
-  function toggleMobile() {
+  function openMobile() {
     if (mobileMenu && mobileOverlay) {
-      mobileMenu.classList.toggle('open');
-      mobileOverlay.classList.toggle('open');
+      mobileMenu.classList.add('open');
+      mobileOverlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeMobile() {
+    if (mobileMenu && mobileOverlay) {
+      mobileMenu.classList.remove('open');
+      mobileOverlay.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  }
+
+  function toggleMobile() {
+    if (mobileMenu) {
+      if (mobileMenu.classList.contains('open')) {
+        closeMobile();
+      } else {
+        openMobile();
+      }
     }
   }
 
   // Expose globally for inline onclick handlers
   window.toggleMobile = toggleMobile;
+  window.closeMobile  = closeMobile;
 
-  if (mobileToggle)  mobileToggle.addEventListener('click', toggleMobile);
-  if (mobileClose)   mobileClose.addEventListener('click', toggleMobile);
-  if (mobileOverlay) mobileOverlay.addEventListener('click', toggleMobile);
+  if (mobileToggle)  mobileToggle.addEventListener('click', function(e) { e.preventDefault(); toggleMobile(); });
+  if (mobileClose)   mobileClose.addEventListener('click', function(e) { e.preventDefault(); closeMobile(); });
+  if (mobileOverlay) mobileOverlay.addEventListener('click', function(e) { e.preventDefault(); closeMobile(); });
 
   // Close menu when a navigation link inside is clicked
   document.querySelectorAll('.mobile-menu a').forEach(function (link) {
-    link.addEventListener('click', toggleMobile);
+    link.addEventListener('click', function () {
+      closeMobile();
+    });
   });
 
 
