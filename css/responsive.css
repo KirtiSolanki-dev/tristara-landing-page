@@ -179,22 +179,36 @@ h1, h2, h3, h4, h5, h6, p, a, span, li, th, td {
 
   .mobile-toggle {
     display: flex !important;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 10px;
-    padding: 8px;
-    cursor: pointer;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 5px !important;
+    width: 44px !important;
+    height: 44px !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.16) !important;
+    border-radius: 10px !important;
+    padding: 0 !important;
+    cursor: pointer !important;
+    z-index: 1005 !important;
+    user-select: none !important;
+    -webkit-tap-highlight-color: transparent !important;
+  }
+
+  .mobile-toggle:active {
+    background: rgba(255, 255, 255, 0.16) !important;
+    transform: scale(0.95);
   }
 
   .mobile-toggle span {
-    width: 22px;
-    height: 2px;
-    background: #ffffff;
-    margin: 4px 0;
+    display: block !important;
+    width: 22px !important;
+    height: 2px !important;
+    background: #ffffff !important;
+    margin: 0 !important;
+    border-radius: 2px !important;
+    pointer-events: none !important;
+    transition: all 0.25s ease !important;
   }
 
   /* --- HERO SECTION --- */
@@ -678,23 +692,47 @@ h1, h2, h3, h4, h5, h6, p, a, span, li, th, td {
 /* ===================================================
    SLIDE-OUT MOBILE MENU DRAWER STYLING
    =================================================== */
+.mobile-menu-overlay {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+  background: rgba(0, 0, 0, 0.75) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  z-index: 9999 !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  transition: opacity 0.3s ease, visibility 0.3s ease !important;
+}
+
+.mobile-menu-overlay.open {
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+}
+
 .mobile-menu {
-  position: fixed;
-  top: 0;
-  right: -100%;
-  width: 82%;
-  max-width: 340px;
-  height: 100vh;
-  background: #0e0e11;
-  z-index: 10000;
-  padding: 75px 24px 36px;
-  transition: right 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: -15px 0 50px rgba(0, 0, 0, 0.7);
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
-  display: flex;
-  flex-direction: column;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
+  position: fixed !important;
+  top: 0 !important;
+  right: -100% !important;
+  width: 82% !important;
+  max-width: 340px !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+  background: #0e0e11 !important;
+  z-index: 10000 !important;
+  padding: 75px 24px 36px !important;
+  transition: right 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  box-shadow: -15px 0 50px rgba(0, 0, 0, 0.7) !important;
+  border-left: 1px solid rgba(255, 255, 255, 0.1) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch !important;
 }
 
 .mobile-menu.open {

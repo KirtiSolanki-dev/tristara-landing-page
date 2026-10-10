@@ -23,25 +23,39 @@
   var mobileToggle  = document.querySelector('.mobile-toggle');
   var mobileClose   = document.querySelector('.mobile-close');
 
-  function openMobile() {
-    if (mobileMenu && mobileOverlay) {
-      mobileMenu.classList.add('open');
-      mobileOverlay.classList.add('open');
-      document.body.style.overflow = 'hidden';
-    }
+  function getMenuElements() {
+    if (!mobileMenu) mobileMenu = document.getElementById('mobileMenu');
+    if (!mobileOverlay) mobileOverlay = document.getElementById('mobileOverlay');
+    return { menu: mobileMenu, overlay: mobileOverlay };
   }
 
-  function closeMobile() {
-    if (mobileMenu && mobileOverlay) {
-      mobileMenu.classList.remove('open');
-      mobileOverlay.classList.remove('open');
-      document.body.style.overflow = '';
-    }
+  function openMobile(e) {
+    if (e && e.preventDefault) e.preventDefault();
+    var els = getMenuElements();
+    if (els.menu) els.menu.classList.add('open');
+    if (els.overlay) els.overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
   }
 
-  function toggleMobile() {
-    if (mobileMenu) {
-      if (mobileMenu.classList.contains('open')) {
+  function closeMobile(e) {
+    if (e && e.preventDefault) e.preventDefault();
+    var els = getMenuElements();
+    if (els.menu) els.menu.classList.remove('open');
+    if (els.overlay) els.overlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  var toggleLock = false;
+  function toggleMobile(e) {
+    if (e && e.preventDefault) e.preventDefault();
+    // Guard against double invocation in the same tap/click cycle
+    if (toggleLock) return;
+    toggleLock = true;
+    setTimeout(function () { toggleLock = false; }, 320);
+
+    var els = getMenuElements();
+    if (els.menu) {
+      if (els.menu.classList.contains('open')) {
         closeMobile();
       } else {
         openMobile();
@@ -49,15 +63,34 @@
     }
   }
 
-  // Expose globally for inline onclick handlers
+  // Expose globally for inline onclick handlers in HTML
   window.toggleMobile = toggleMobile;
+  window.openMobile   = openMobile;
   window.closeMobile  = closeMobile;
 
-  if (mobileToggle)  mobileToggle.addEventListener('click', function(e) { e.preventDefault(); toggleMobile(); });
-  if (mobileClose)   mobileClose.addEventListener('click', function(e) { e.preventDefault(); closeMobile(); });
-  if (mobileOverlay) mobileOverlay.addEventListener('click', function(e) { e.preventDefault(); closeMobile(); });
+  // Single unified event handlers (replaces inline collision)
+  if (mobileToggle) {
+    mobileToggle.onclick = function (e) {
+      if (e) e.preventDefault();
+      toggleMobile(e);
+    };
+  }
 
-  // Close menu when a navigation link inside is clicked
+  if (mobileClose) {
+    mobileClose.onclick = function (e) {
+      if (e) e.preventDefault();
+      closeMobile(e);
+    };
+  }
+
+  if (mobileOverlay) {
+    mobileOverlay.onclick = function (e) {
+      if (e) e.preventDefault();
+      closeMobile(e);
+    };
+  }
+
+  // Close menu when navigation link is clicked
   document.querySelectorAll('.mobile-menu a').forEach(function (link) {
     link.addEventListener('click', function () {
       closeMobile();
