@@ -598,6 +598,40 @@ ul {
   gap: 80px;
   align-items: center;
   margin-bottom: 100px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.step-row > * {
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.service-card {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.service-feature-box {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.service-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.service-checklist li {
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .step-row:last-child {

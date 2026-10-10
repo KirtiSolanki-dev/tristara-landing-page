@@ -122,17 +122,68 @@ h1, h2, h3, h4, h5, h6, p, a, span, li, th, td {
   .container[style*="grid-template-columns: 0.9fr 1.1fr"],
   .container[style*="grid-template-columns: 1fr 1.15fr"],
   .container[style*="grid-template-columns: 1fr 1fr"],
-  div.step-row[style*="grid-template-columns"] {
+  div.step-row[style*="grid-template-columns"],
+  .step-row,
+  .service-card {
     grid-template-columns: 1fr !important;
     gap: 36px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .step-row > *,
+  .service-card > * {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .step-row.reverse .reveal-right {
+    order: 1 !important;
+  }
+  .step-row.reverse .reveal-left {
+    order: 2 !important;
   }
 
   div.step-row,
+  .service-card,
   div[style*="padding: 56px"],
   div[style*="padding: 44px"],
   div[style*="padding: 40px"] {
-    padding: 32px 22px !important;
+    padding: 32px 24px !important;
     border-radius: 22px !important;
+    box-sizing: border-box !important;
+  }
+
+  .service-feature-box,
+  .step-row div[style*="border-radius: 16px"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 20px 18px !important;
+    overflow: hidden !important;
+  }
+
+  .service-checklist,
+  ul[style*="grid-template-columns: 1fr 1fr"],
+  ul[style*="grid-template-columns"],
+  div[style*="grid-template-columns: 1fr 1fr"] {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 0 !important;
+  }
+
+  .service-checklist li,
+  ul[style*="grid-template-columns: 1fr 1fr"] li {
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+    font-size: 0.9rem !important;
   }
 
   div[style*="grid-template-columns: repeat(3, 1fr)"] {
@@ -494,19 +545,60 @@ h1, h2, h3, h4, h5, h6, p, a, span, li, th, td {
 
   /* --- ALL SUBPAGE CARDS & CHECKLIST LISTS --- */
   .step-row,
+  .service-card,
   div[style*="padding: 56px"],
   div[style*="padding: 44px"],
   div[style*="padding: 40px"] {
     padding: 24px 16px !important;
     border-radius: 18px !important;
     gap: 22px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .service-feature-box,
+  .step-row div[style*="border-radius: 16px"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 18px 14px !important;
+    overflow: hidden !important;
+    margin-bottom: 20px !important;
   }
 
   /* Collapse 2-col checklist lists to 1 column so text doesn't fragment */
+  .service-checklist,
   ul[style*="grid-template-columns: 1fr 1fr"],
+  ul[style*="grid-template-columns"],
   div[style*="grid-template-columns: 1fr 1fr"] {
+    display: flex !important;
+    flex-direction: column !important;
     grid-template-columns: 1fr !important;
     gap: 10px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 0 !important;
+  }
+
+  .service-checklist li,
+  ul[style*="grid-template-columns: 1fr 1fr"] li,
+  ul[style*="grid-template-columns"] li {
+    font-size: 0.88rem !important;
+    line-height: 1.5 !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+    max-width: 100% !important;
+  }
+
+  .step-row .btn-primary,
+  .service-card .btn-primary {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    justify-content: center !important;
+    text-align: center !important;
   }
 
   /* 4-card grids and trust bar collapse */
@@ -638,11 +730,21 @@ h1, h2, h3, h4, h5, h6, p, a, span, li, th, td {
   }
 
   .step-row,
+  .service-card,
   div[style*="padding: 56px"],
   div[style*="padding: 44px"],
   div[style*="padding: 40px"] {
     padding: 18px 10px !important;
     border-radius: 16px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .service-feature-box,
+  .step-row div[style*="border-radius: 16px"] {
+    padding: 14px 10px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
   }
 
   .digital-earth-sphere {
