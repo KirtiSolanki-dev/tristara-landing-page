@@ -14,12 +14,12 @@
         if (entry.isIntersecting) {
           setTimeout(function () {
             entry.target.classList.add('visible');
-          }, idx * 80);
+          }, idx * 120);
           revealObserver.unobserve(entry.target);
         }
       });
     },
-    { threshold: 0.15, rootMargin: '0px 0px -50px 0px' }
+    { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
   );
 
   document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(function (el) {

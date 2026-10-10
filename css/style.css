@@ -837,42 +837,114 @@ ul {
   justify-content: center;
 }
 
-/* Central Elegant Light Tech Globe */
-.globe-core {
+/* Central Digital Earth Ecosystem */
+.globe-center-wrapper {
   position: relative;
   z-index: 10;
-  width: 154px;
-  height: 154px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 35% 35%, #ffffff 0%, #eff6ff 70%, #dbeafe 100%);
-  border: 2px solid #64748b;
-  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.12), inset 0 2px 6px rgba(255, 255, 255, 0.8);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+/* Spherical Earth Globe (Compact, sleek & fully digital) */
+.digital-earth-sphere {
+  position: relative;
+  width: 106px;
+  height: 106px;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(2, 132, 199, 0.35), 0 0 25px rgba(56, 189, 248, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.digital-earth-sphere:hover {
+  transform: scale(1.08);
+  box-shadow: 0 16px 40px rgba(2, 132, 199, 0.45), 0 0 35px rgba(56, 189, 248, 0.5);
+}
+
+.earth-glow-aura {
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.3) 0%, rgba(34, 197, 94, 0.15) 50%, transparent 72%);
+  pointer-events: none;
+  z-index: -1;
+  animation: pulseEarthAura 3s ease-in-out infinite;
+}
+
+@keyframes pulseEarthAura {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.95;
+  }
+}
+
+.digital-earth-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+}
+
+/* Continuous 360 Degree Earth Continents Rotation Animation */
+.rotating-continents-track {
+  animation: spinContinents 14s linear infinite;
+}
+
+@keyframes spinContinents {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100px);
+  }
+}
+
+/* Outside Floating Badge (Positioned Cleanly Outside the Earth Sphere) */
+.globe-outside-pill {
+  margin-top: 14px;
+  background: #ffffff;
+  border: 1.5px solid #dbeafe;
+  border-radius: 30px;
+  padding: 6px 18px;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.08);
   text-align: center;
+  white-space: nowrap;
+  transition: all 0.3s ease;
 }
 
-.globe-icon-svg {
-  width: 62px;
-  height: 62px;
-  margin-bottom: 4px;
+.globe-outside-pill:hover {
+  border-color: #38bdf8;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(2, 132, 199, 0.15);
 }
 
-.globe-core .globe-badge-txt {
+.outside-pill-title {
   font-family: 'Poppins', sans-serif;
-  font-size: 0.82rem;
-  font-weight: 700;
-  letter-spacing: 0.5px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.6px;
   text-transform: uppercase;
   color: #0f172a;
+  line-height: 1.2;
 }
 
-.globe-core .globe-sub-txt {
+.outside-pill-sub {
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 0.72rem;
   font-weight: 700;
-  color: #2563EB;
+  color: #0284c7;
+  margin-top: 2px;
 }
 
 /* Concentric Orbit Rings (Darkened for Clear Definition) */
@@ -1715,6 +1787,575 @@ ul {
   background: none;
   border: none;
   cursor: pointer;
+}
+
+
+/* =========================================================
+   DEDICATED HOW IT WORKS PAGE — INTERACTIVE TECH PIPELINE
+   Smaller compact cards, dynamic zig-zag path & alternating themes
+   ========================================================= */
+
+.hiw-pipeline-page {
+  padding: 80px 0 110px;
+  background: var(--bg-dark);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background Glowing Tech Circuit Grid */
+.hiw-pipeline-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 50% 15%, rgba(0, 194, 255, 0.08) 0%, transparent 60%),
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 100% 100%, 48px 48px, 48px 48px;
+  pointer-events: none;
+}
+
+/* Container for Zig-Zag Path and Milestones */
+.pipeline-spine-wrapper {
+  position: relative;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+/* Dynamic SVG Zig-Zag Path Container */
+.zigzag-path-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.zigzag-path-container svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+/* Base Zig-Zag Track */
+.zigzag-track-bg {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.09);
+  stroke-width: 3;
+  stroke-dasharray: 6 6;
+}
+
+/* Flowing Cyan/Purple Pulse Gradient along Zig-Zag */
+.zigzag-track-flow {
+  fill: none;
+  stroke: url(#zigzagGrad);
+  stroke-width: 3.5;
+  stroke-dasharray: 18 120;
+  animation: zigzagDashFlow 8s linear infinite;
+  filter: drop-shadow(0 0 8px rgba(0, 194, 255, 0.6));
+}
+
+@keyframes zigzagDashFlow {
+  from {
+    stroke-dashoffset: 600;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Individual Milestone Block (Tighter compact spacing) */
+.pipeline-milestone {
+  display: grid;
+  grid-template-columns: 1fr 76px 1fr;
+  align-items: center;
+  position: relative;
+  margin-bottom: 60px;
+  z-index: 3;
+}
+
+.pipeline-milestone:last-child {
+  margin-bottom: 30px;
+}
+
+/* Compact Milestone Cards */
+.pipeline-milestone .milestone-card {
+  border-radius: 18px;
+  padding: 24px 22px;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  max-width: 440px;
+  width: 100%;
+}
+
+.pipeline-milestone.step-left .milestone-card {
+  grid-column: 1;
+  justify-self: end;
+}
+
+.pipeline-milestone.step-right .milestone-card {
+  grid-column: 3;
+  justify-self: start;
+}
+
+/* --- THEME VARIATION 1: DARK GLASS THEME CARDS (Stage 01 & 03) --- */
+.milestone-card.theme-dark {
+  background: #14141d;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.milestone-card.theme-dark:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0, 194, 255, 0.45);
+  box-shadow: 0 15px 35px rgba(0, 194, 255, 0.12);
+}
+
+.milestone-card.theme-dark .milestone-step-label {
+  color: var(--primary);
+}
+
+.milestone-card.theme-dark h3 {
+  color: #ffffff;
+}
+
+.milestone-card.theme-dark p {
+  color: #94a3b8;
+}
+
+.milestone-card.theme-dark .milestone-perk-item {
+  color: #cbd5e1;
+}
+
+/* --- THEME VARIATION 2: CRISP LIGHT THEME CARDS (Stage 02 & 04) --- */
+.milestone-card.theme-light {
+  background: #ffffff;
+  border: 1.5px solid #e2e8f0;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.milestone-card.theme-light:hover {
+  transform: translateY(-4px);
+  border-color: #2563EB;
+  box-shadow: 0 18px 40px rgba(37, 99, 235, 0.12);
+}
+
+.milestone-card.theme-light .milestone-step-label {
+  color: #2563EB;
+}
+
+.milestone-card.theme-light h3 {
+  color: #0f172a;
+}
+
+.milestone-card.theme-light p {
+  color: #475569;
+}
+
+.milestone-card.theme-light .milestone-perk-item {
+  color: #334155;
+}
+
+.milestone-card.theme-light .milestone-perk-item svg {
+  color: #2563EB;
+}
+
+/* Milestone Node Core (Center Compact Circle) */
+.milestone-node {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.node-pulse-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #14141a;
+  border: 2px solid var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #ffffff;
+  box-shadow: 0 0 18px rgba(0, 194, 255, 0.35);
+  position: relative;
+  z-index: 4;
+  transition: all 0.3s ease;
+}
+
+.node-pulse-circle::after {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  border-radius: 50%;
+  border: 1px dashed rgba(0, 194, 255, 0.4);
+  animation: nodeRotate 12s linear infinite;
+}
+
+@keyframes nodeRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.pipeline-milestone:hover .node-pulse-circle {
+  transform: scale(1.08);
+  background: var(--grad);
+  border-color: #ffffff;
+  box-shadow: 0 0 25px rgba(0, 194, 255, 0.6);
+}
+
+/* Node Phase Badge */
+.node-phase-tag {
+  margin-top: 6px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--primary);
+  background: rgba(0, 194, 255, 0.1);
+  padding: 2px 8px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 194, 255, 0.2);
+  white-space: nowrap;
+}
+
+/* Opposite visual/metric container */
+.milestone-preview {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  max-width: 440px;
+  width: 100%;
+}
+
+.pipeline-milestone.step-left .milestone-preview {
+  grid-column: 3;
+  justify-content: flex-start;
+}
+
+.pipeline-milestone.step-right .milestone-preview {
+  grid-column: 1;
+  justify-content: flex-end;
+}
+
+/* Terminal Console Box (Phase 1) — Compact */
+.tech-terminal-box {
+  background: #090c14;
+  border: 1px solid rgba(0, 194, 255, 0.25);
+  border-radius: 16px;
+  width: 100%;
+  max-width: 380px;
+  padding: 16px 18px;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.82rem;
+  color: #38bdf8;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.terminal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+}
+
+.terminal-dots {
+  display: flex;
+  gap: 5px;
+}
+
+.terminal-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.terminal-dot.red { background: #ef4444; }
+.terminal-dot.yellow { background: #eab308; }
+.terminal-dot.green { background: #22c55e; }
+
+.terminal-title {
+  font-size: 0.7rem;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.terminal-row {
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+.terminal-row.success { color: #4ade80; }
+.terminal-row.highlight { color: #facc15; }
+
+/* Mentor Avatar Pairing (Phase 2) — Light Theme Complement */
+.mentor-pairing-card {
+  background: #f8faff;
+  border: 1.5px solid #dbeafe;
+  border-radius: 16px;
+  padding: 18px 20px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.08);
+}
+
+.mentor-profile-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.mentor-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #2563EB, #7B61FF);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.mentor-info h5 {
+  font-size: 0.95rem;
+  color: #0f172a;
+  margin-bottom: 2px;
+}
+
+.mentor-info p {
+  font-size: 0.78rem;
+  color: #64748b;
+}
+
+.mentor-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.mentor-pill {
+  font-size: 0.72rem;
+  padding: 4px 10px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #2563EB;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+/* Multi-Layer QA Live Status (Phase 3) — Dark Glass Compact */
+.qa-status-card {
+  background: #14141d;
+  border: 1px solid rgba(0, 194, 255, 0.25);
+  border-radius: 16px;
+  padding: 18px 20px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.qa-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.qa-item:last-child {
+  margin-bottom: 0;
+}
+
+.qa-name {
+  font-size: 0.82rem;
+  color: #e2e8f0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.qa-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 20px;
+}
+
+.qa-badge.green {
+  background: rgba(34, 197, 94, 0.15);
+  color: #4ade80;
+  border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.qa-badge.blue {
+  background: rgba(0, 194, 255, 0.15);
+  color: #38bdf8;
+  border: 1px solid rgba(0, 194, 255, 0.3);
+}
+
+/* Delivery & Guarantee Certificate (Phase 4) — Light Complement */
+.delivery-cert-card {
+  background: #ffffff;
+  border: 1.5px solid #dbeafe;
+  border-radius: 16px;
+  padding: 20px;
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.08);
+}
+
+.cert-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #2563EB, #7B61FF);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px;
+  color: #ffffff;
+}
+
+.delivery-cert-card h5 {
+  font-size: 1.05rem;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.delivery-cert-card p {
+  font-size: 0.82rem;
+  color: #64748b;
+  line-height: 1.55;
+  margin-bottom: 12px;
+}
+
+.cert-stamp {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  color: #15803d;
+  background: #dcfce7;
+  border: 1px solid #bbf7d0;
+  padding: 5px 14px;
+  border-radius: 50px;
+}
+
+/* Milestone Card Typography — Compact Pacing */
+.milestone-card .milestone-step-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.milestone-card h3 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.milestone-card p {
+  font-size: 0.9rem;
+  line-height: 1.65;
+  margin-bottom: 16px;
+}
+
+.milestone-perks {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.milestone-perk-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+}
+
+.milestone-perk-item svg {
+  width: 16px;
+  height: 16px;
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+/* Milestone Action CTA Bar */
+.pipeline-cta-bar {
+  text-align: center;
+  margin-top: 40px;
+  position: relative;
+  z-index: 5;
+}
+
+/* Responsive queries for pipeline */
+@media (max-width: 900px) {
+  .zigzag-path-container {
+    display: none;
+  }
+
+  .pipeline-milestone {
+    grid-template-columns: 46px 1fr;
+    gap: 18px;
+    margin-bottom: 45px;
+  }
+
+  .milestone-node {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .pipeline-milestone.step-left .milestone-card,
+  .pipeline-milestone.step-right .milestone-card {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: stretch;
+    max-width: 100%;
+  }
+
+  .pipeline-milestone.step-left .milestone-preview,
+  .pipeline-milestone.step-right .milestone-preview {
+    grid-column: 2;
+    grid-row: 2;
+    padding: 0;
+    margin-top: 14px;
+    max-width: 100%;
+  }
+
+  .tech-terminal-box,
+  .mentor-pairing-card,
+  .qa-status-card,
+  .delivery-cert-card {
+    max-width: 100%;
+  }
 }
 
 
