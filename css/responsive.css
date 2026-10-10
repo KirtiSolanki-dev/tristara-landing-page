@@ -264,8 +264,35 @@ h1, h2, h3, h4, h5, h6, p, a, span, li, th, td {
 
   /* --- HERO SECTION --- */
   .hero {
-    padding-top: calc(72px + 28px) !important;
-    padding-bottom: 60px !important;
+    padding-top: calc(72px + 20px) !important;
+    padding-bottom: 50px !important;
+  }
+
+  /* Display Student Image first on mobile, followed by hero content */
+  .hero .container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
+  }
+
+  .hero-visual {
+    order: 1 !important;
+    width: 100% !important;
+    max-width: 310px !important;
+    margin: 0 auto 4px !important;
+  }
+
+  .hero-illustration {
+    max-width: 280px !important;
+    margin: 0 auto !important;
+  }
+
+  .hero-content {
+    order: 2 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: center !important;
   }
 
   .hero h1 {
@@ -455,9 +482,17 @@ h1, h2, h3, h4, h5, h6, p, a, span, li, th, td {
 
   /* --- HERO TYPOGRAPHY & BUTTONS --- */
   .hero {
-    padding-top: calc(68px + 22px) !important;
-    padding-bottom: 50px !important;
+    padding-top: calc(68px + 16px) !important;
+    padding-bottom: 45px !important;
     min-height: auto !important;
+  }
+
+  .hero-visual {
+    max-width: 275px !important;
+  }
+
+  .hero-illustration {
+    max-width: 255px !important;
   }
 
   .hero h1 {
@@ -715,6 +750,14 @@ h1, h2, h3, h4, h5, h6, p, a, span, li, th, td {
   .hero h1 {
     font-size: 1.68rem !important;
     line-height: 1.22 !important;
+  }
+
+  .hero-visual {
+    max-width: 235px !important;
+  }
+
+  .hero-illustration {
+    max-width: 215px !important;
   }
 
   .hero p {
