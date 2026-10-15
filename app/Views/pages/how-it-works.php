@@ -1,71 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>How It Works — Tristara IT Solutions | Academic Workflow</title>
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/animations.css">
-  <link rel="stylesheet" href="css/responsive.css">
-</head>
-<body>
-
-<!-- NAVBAR -->
-<nav class="navbar" id="navbar">
-  <div class="container">
-    <a href="index.html" class="nav-logo">
-      <img src="assets/images/tristara-official-logo.png" alt="Tristara IT Solutions" class="nav-logo-img">
-    </a>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="services.html">Services</a>
-      <a href="how-it-works.html" class="active">How It Works</a>
-      <a href="contact.html">Contact</a>
-    </div>
-
-    <div class="nav-btns-group">
-      <a href="https://wa.me/919313118267?text=Hi,%20I%20need%20academic%20assignment%20assistance%20from%20Tristara!" target="_blank" class="nav-btn whatsapp-btn">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-        WhatsApp
-      </a>
-      <a href="contact.html" class="nav-btn hire-btn">Hire Us →</a>
-    </div>
-
-    <button class="mobile-toggle" onclick="toggleMobile()" aria-label="Toggle Navigation">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</nav>
-
-<!-- Mobile Menu -->
-<div class="mobile-menu-overlay" id="mobileOverlay" onclick="toggleMobile()"></div>
-<div class="mobile-menu" id="mobileMenu">
-  <button class="mobile-close" onclick="toggleMobile()" aria-label="Close Navigation">
-    <svg width="24" height="24" fill="none" stroke="#ffffff" stroke-width="2">
-      <line x1="18" y1="6" x2="6" y2="18"/>
-      <line x1="6" y1="6" x2="18" y2="18"/>
-    </svg>
-  </button>
-  <a href="index.html" onclick="toggleMobile()">Home</a>
-  <a href="about.html" onclick="toggleMobile()">About Us</a>
-  <a href="services.html" onclick="toggleMobile()">Services</a>
-  <a href="how-it-works.html" class="active" onclick="toggleMobile()">How It Works</a>
-  <a href="contact.html" onclick="toggleMobile()">Contact</a>
-  <div style="margin-top: 24px; display: flex; flex-direction: column; gap: 12px;">
-    <a href="https://wa.me/919313118267?text=Hi,%20I%20need%20academic%20assignment%20assistance%20from%20Tristara!" target="_blank" class="nav-btn whatsapp-btn" style="justify-content: center;">
-      WhatsApp Quote
-    </a>
-    <a href="contact.html" class="nav-btn hire-btn" style="justify-content: center;">Hire Us</a>
-  </div>
-</div>
+<?php
+$pageTitle = 'How It Works — Tristara IT Solutions | Academic Workflow';
+$currentPage = 'how-it-works';
+require_once __DIR__ . '/../layouts/header.php';
+?>
 
 <!-- PAGE HEADER (DARK THEME) -->
 <section style="padding: 160px 0 70px; background: radial-gradient(circle at 50% 10%, rgba(0, 194, 255, 0.15) 0%, transparent 70%), var(--bg-dark); text-align: center; border-bottom: 1px solid var(--border-dark);">
@@ -130,7 +67,7 @@
           <li>✓ Transparent quotation in under 2 hours</li>
         </ul>
       </div>
-      <a href="contact.html" class="btn-primary" style="padding: 13px 30px;">Upload Assignment Brief →</a>
+      <a href="index.php?url=contact" class="btn-primary" style="padding: 13px 30px;">Upload Assignment Brief →</a>
     </div>
 
     <!-- Right Side Creative SVG Figure: Student Uploading Brief to Cloud Portal -->
@@ -277,7 +214,7 @@
           <li>✓ Verified academic bibliography (Scopus/IEEE)</li>
         </ul>
       </div>
-      <a href="services.html" class="btn-secondary" style="border-color: rgba(255,255,255,0.2); color: #fff; padding: 13px 30px;">Meet Our Academic Specialists →</a>
+      <a href="index.php?url=services" class="btn-secondary" style="border-color: rgba(255,255,255,0.2); color: #fff; padding: 13px 30px;">Meet Our Academic Specialists →</a>
     </div>
 
   </div>
@@ -311,7 +248,7 @@
           <li>✓ Rigorous APA, Harvard, or IEEE citation audit</li>
         </ul>
       </div>
-      <a href="contact.html" class="btn-primary" style="padding: 13px 30px;">Request Quality Audit Details →</a>
+      <a href="index.php?url=contact" class="btn-primary" style="padding: 13px 30px;">Request Quality Audit Details →</a>
     </div>
 
     <!-- Right Side Creative SVG Figure: Dual-Screen QA Testing Workstation -->
@@ -452,7 +389,7 @@
           <li>✓ Full intellectual copyright transferred to you</li>
         </ul>
       </div>
-      <a href="contact.html" class="btn-primary" style="padding: 13px 30px;">Start Your Submission Now →</a>
+      <a href="index.php?url=contact" class="btn-primary" style="padding: 13px 30px;">Start Your Submission Now →</a>
     </div>
 
   </div>
@@ -471,7 +408,7 @@
       Send your task prompt, lecture notes, or project brief today. Receive a transparent price quote and structured milestone roadmap in under 2 hours.
     </p>
     <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-      <a href="contact.html" class="btn-primary" style="padding: 15px 36px; font-size: 1.05rem; font-weight: 700;">Submit Your Assignment Brief →</a>
+      <a href="index.php?url=contact" class="btn-primary" style="padding: 15px 36px; font-size: 1.05rem; font-weight: 700;">Submit Your Assignment Brief →</a>
       <a href="https://wa.me/919313118267?text=Hi,%20I%20would%20like%20to%20get%20a%20quote%20for%20my%20assignment." target="_blank" class="nav-btn whatsapp-btn" style="padding: 14px 28px; font-size: 1rem;">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
         Direct WhatsApp Chat
@@ -506,64 +443,7 @@
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <div class="nav-logo">
-          <img src="assets/images/tristara-official-logo.png" alt="Tristara IT Solutions" class="nav-logo-img">
-        </div>
-        <p>Craft Your Digital Future — Global academic assistance, dissertations, software development, research publications & technical report mentoring across 50+ subjects.</p>
-        <div class="social-links">
-          <a href="#" class="social-link" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
-          <a href="#" class="social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
-          <a href="#" class="social-link" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
-        </div>
-      </div>
-      <div class="footer-col">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="services.html">Assignment Assistance</a></li>
-          <li><a href="services.html">Programming &amp; Code</a></li>
-          <li><a href="services.html">Dissertations &amp; Theses</a></li>
-          <li><a href="services.html">SPSS &amp; Data Analysis</a></li>
-          <li><a href="services.html">Research Paper Publication</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="how-it-works.html">How It Works</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="https://tristaraitsolutions.com" target="_blank">Tristara Main Site</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <ul>
-          <li>Phone: +91 93131 18267</li>
-          <li>Email: info@tristaraitsolutions.com</li>
-          <li>Global Support: 24/7 Hours</li>
-          <li>Surat, Gujarat, India</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 Tristara IT Solutions. All rights reserved.</p>
-      <div class="footer-legal">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-      </div>
-    </div>
-  </div>
-</footer>
+<?php
+require_once __DIR__ . '/../layouts/footer.php';
+?>
 
-<!-- JavaScript -->
-<script src="js/animations.js"></script>
-<script src="js/zigzag-tracker.js"></script>
-<script src="js/main.js"></script>
-</body>
-</html>
