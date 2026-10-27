@@ -65,12 +65,12 @@ h1, h2, h3, h4, h5, h6, p, a, span, li, th, td {
     text-align: center;
   }
 
-  .step-row.reverse .step-visual {
-    order: 0;
+  .step-row .step-content {
+    order: 1 !important;
   }
 
-  .step-row.reverse .step-content {
-    order: 0;
+  .step-row .step-visual {
+    order: 2 !important;
   }
 
   .step-content p {
@@ -141,10 +141,10 @@ h1, h2, h3, h4, h5, h6, p, a, span, li, th, td {
     box-sizing: border-box !important;
   }
 
-  .step-row.reverse .reveal-right {
+  .step-row .step-content {
     order: 1 !important;
   }
-  .step-row.reverse .reveal-left {
+  .step-row .step-visual {
     order: 2 !important;
   }
 
@@ -955,31 +955,92 @@ h1, h2, h3, h4, h5, h6, p, a, span, li, th, td {
 
 @media (max-width: 768px) {
   .hero-visual {
-    margin: 15px auto 4px !important;
+    margin: 10px auto 4px !important;
+    max-width: 320px !important;
   }
 
   .doraemon-hero-wrapper {
-    margin-top: 15px !important;
+    margin-top: 10px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
   }
 
-  .doraemon-speech-bubble {
-    position: absolute !important;
-    top: -50px !important;
-    right: 50% !important;
-    transform: translateX(50%) !important;
-    width: 92% !important;
-    max-width: 350px !important;
-    font-size: 0.78rem !important;
-    padding: 10px 16px !important;
-    border-radius: 18px !important;
+  .doraemon-thought-wrapper {
+    width: 100% !important;
+    margin-bottom: 2px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .doraemon-speech-bubble,
+  .doraemon-speech-bubble.thought-bubble {
+    position: relative !important;
+    top: 0 !important;
+    right: auto !important;
+    transform: none !important;
+    width: 95% !important;
+    max-width: 340px !important;
+    font-size: 0.77rem !important;
+    padding: 10px 14px !important;
+    border-radius: 20px !important;
     box-sizing: border-box !important;
     z-index: 20 !important;
     text-align: center !important;
+    margin: 0 auto !important;
   }
 
-  .doraemon-speech-bubble::before,
-  .doraemon-speech-bubble::after {
-    left: 50% !important;
-    transform: translateX(-50%) !important;
+  .thought-tail {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-top: 4px !important;
+    gap: 3px !important;
+  }
+}
+
+/* ===== HOW IT WORKS — MOBILE SEQUENCE FIX (TEXT ALWAYS FIRST, IMAGE SECOND) ===== */
+@media (max-width: 900px) {
+  .how-it-works .step-row,
+  .step-row {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 28px !important;
+    margin-bottom: 60px !important;
+    text-align: center !important;
+  }
+
+  /* Force Step Content (Step badge, Title, Details) FIRST */
+  .how-it-works .step-row .step-content,
+  .step-row .step-content,
+  .step-row.reverse .step-content,
+  .step-row.reverse .reveal-left,
+  .step-row.reverse .reveal-right {
+    order: 1 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Force Step Illustration (Mascot cartoon) SECOND */
+  .how-it-works .step-row .step-visual,
+  .step-row .step-visual,
+  .step-row.reverse .step-visual {
+    order: 2 !important;
+    width: 100% !important;
+    max-width: 310px !important;
+    margin: 0 auto !important;
+  }
+
+  .step-content .step-features {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .step-feature {
+    justify-content: center !important;
+    text-align: center !important;
   }
 }

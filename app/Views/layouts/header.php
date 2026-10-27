@@ -11,9 +11,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/style.css?v=transparent_nav_1793047400">
+  <link rel="stylesheet" href="css/style.css?v=thought_brain_seq_1793049500">
   <link rel="stylesheet" href="css/animations.css">
-  <link rel="stylesheet" href="css/responsive.css?v=transparent_nav_1793047400">
+  <link rel="stylesheet" href="css/responsive.css?v=thought_brain_seq_1793049500">
 </head>
 <body>
 

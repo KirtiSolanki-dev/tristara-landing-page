@@ -96,13 +96,21 @@ require_once __DIR__ . '/../layouts/header.php';
         </svg>
       </div>
 
-      <!-- Main Doraemon Mascot Illustration with Speech Bubble -->
+      <!-- Main Doraemon Mascot Illustration with Thought Bubble (Brainwave effect) -->
       <div class="hero-illustration doraemon-hero-wrapper">
-        <div class="doraemon-speech-bubble">
-          <strong>Hi, I'm Doraemon! 🔔</strong><br>
-          "Why stress over tough assignments when our 22nd-century gadget pocket delivers A+ solutions on time?"
+        <div class="doraemon-thought-wrapper">
+          <div class="doraemon-speech-bubble thought-bubble">
+            <span class="thought-badge">💡 22nd-Century Brainwave</span><br>
+            <strong>Hi, I'm Doraemon! 🔔</strong><br>
+            <span class="thought-text">"Why stress over tough assignments when our 22nd-century gadget pocket delivers A+ solutions on time?"</span>
+          </div>
+          <div class="thought-tail" aria-hidden="true">
+            <span class="thought-dot dot-1"></span>
+            <span class="thought-dot dot-2"></span>
+            <span class="thought-dot dot-3"></span>
+          </div>
         </div>
-        <div style="position: relative; max-width: 440px; margin-top: 20px; text-align: center;">
+        <div style="position: relative; max-width: 440px; margin-top: 6px; text-align: center;">
           <!-- Ambient Radial Aura Glow behind transparent Doraemon -->
           <div style="position: absolute; top: 10%; left: 10%; right: 10%; bottom: 10%; background: radial-gradient(circle, rgba(0, 194, 255, 0.22) 0%, rgba(0, 159, 227, 0.08) 45%, transparent 70%); pointer-events: none; z-index: 1;"></div>
           
