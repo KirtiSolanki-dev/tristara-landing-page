@@ -132,6 +132,16 @@
       color: #38bdf8;
       text-align: center;
     }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 16px;
+      }
+      .login-card {
+        padding: 30px 20px;
+        border-radius: 20px;
+      }
+    }
   </style>
 </head>
 <body>

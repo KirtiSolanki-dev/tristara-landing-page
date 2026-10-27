@@ -516,7 +516,28 @@
     .strip-navy { background: #1e293b; }
     .strip-green { background: #22c55e; }
 
-    /* Mobile Responsive */
+    /* Mobile Responsive & Overlay */
+    .admin-sidebar-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.65);
+      backdrop-filter: blur(3px);
+      -webkit-backdrop-filter: blur(3px);
+      z-index: 998;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+    .admin-sidebar-overlay.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .table-panel {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
     @media (max-width: 1024px) {
       .stats-split-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -529,20 +550,85 @@
     @media (max-width: 768px) {
       .admin-sidebar {
         transform: translateX(-100%);
+        z-index: 1000;
       }
       .admin-sidebar.open {
         transform: translateX(0);
       }
       .admin-main {
-        margin-left: 0;
+        margin-left: 0 !important;
+        width: 100%;
+      }
+      .admin-topbar {
+        padding: 0 14px;
+        height: 56px;
+      }
+      .topbar-left {
+        gap: 10px;
+      }
+      .topbar-search-form {
+        display: none;
+      }
+      .topbar-right {
+        gap: 8px;
+      }
+      .topbar-notifications {
+        gap: 4px;
+      }
+      .notif-pill {
+        padding: 4px 8px;
+        font-size: 0.72rem;
+      }
+      .notif-pill span:first-child {
+        display: none;
+      }
+      .topbar-user {
+        padding-left: 8px;
+        gap: 6px;
+      }
+      .topbar-user-info {
+        display: none;
+      }
+      .topbar-logout-link {
+        font-size: 0.75rem;
+        padding: 3px 6px;
+        margin-left: 2px;
+      }
+      .admin-content {
+        padding: 16px 12px;
       }
       .stats-split-grid {
         grid-template-columns: 1fr;
+        gap: 12px;
+      }
+      .admin-table {
+        min-width: 520px;
+      }
+      .bottom-social-strip {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .bottom-social-strip {
+        grid-template-columns: 1fr;
+      }
+      .stat-split-card {
+        min-height: 74px;
+      }
+      .stat-split-left {
+        padding: 10px 14px;
+      }
+      .stat-split-right {
+        width: 72px;
+        font-size: 1.75rem;
       }
     }
   </style>
 </head>
 <body>
+  <!-- Mobile Sidebar Backdrop Overlay -->
+  <div class="admin-sidebar-overlay" id="adminSidebarOverlay" onclick="toggleSidebar()"></div>
 
   <!-- ========================================================
        SIDEBAR NAVIGATION (Matches Photo Left Sidebar)

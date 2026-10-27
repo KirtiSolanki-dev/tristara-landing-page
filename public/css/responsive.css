@@ -264,7 +264,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li, th, td {
 
   /* --- HERO SECTION --- */
   .hero {
-    padding-top: calc(72px + 20px) !important;
+    padding-top: calc(72px + 70px) !important;
     padding-bottom: 50px !important;
   }
 
@@ -482,7 +482,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, li, th, td {
 
   /* --- HERO TYPOGRAPHY & BUTTONS --- */
   .hero {
-    padding-top: calc(68px + 16px) !important;
+    padding-top: calc(68px + 70px) !important;
     padding-bottom: 45px !important;
     min-height: auto !important;
   }
@@ -954,16 +954,27 @@ h1, h2, h3, h4, h5, h6, p, a, span, li, th, td {
 }
 
 @media (max-width: 768px) {
+  .hero-visual {
+    margin: 15px auto 4px !important;
+  }
+
+  .doraemon-hero-wrapper {
+    margin-top: 15px !important;
+  }
+
   .doraemon-speech-bubble {
-    top: -55px !important;
+    position: absolute !important;
+    top: -50px !important;
     right: 50% !important;
     transform: translateX(50%) !important;
     width: 92% !important;
-    max-width: 360px !important;
+    max-width: 350px !important;
     font-size: 0.78rem !important;
     padding: 10px 16px !important;
     border-radius: 18px !important;
     box-sizing: border-box !important;
+    z-index: 20 !important;
+    text-align: center !important;
   }
 
   .doraemon-speech-bubble::before,
