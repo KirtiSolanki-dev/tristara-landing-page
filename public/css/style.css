@@ -1,18 +1,28 @@
-/* ===== THEME VARIABLES (MATCHING TRISTARAITSOLUTIONS.COM) ===== */
+/* ===== THEME VARIABLES (DORAEMON 22ND-CENTURY ACADEMIC THEME) ===== */
 :root {
-  --primary: #00C2FF;
-  --primary-glow: rgba(0, 194, 255, 0.35);
-  --blue: #00C2FF;
-  --purple: #7B61FF;
-  --grad: linear-gradient(135deg, #00C2FF, #7B61FF);
-  --bg-dark: #0e0e11;
-  --bg-dark2: #14141a;
-  --card-dark: #1a1a24;
-  --border-dark: rgba(255, 255, 255, 0.08);
-  --border-hover: rgba(0, 194, 255, 0.35);
+  --primary: #009fe3;
+  --primary-glow: rgba(0, 159, 227, 0.45);
+  --blue: #009fe3;
+  --purple: #0284c7;
+  --dora-blue: #009fe3;
+  --dora-blue-light: #48cae4;
+  --dora-blue-dark: #0076b3;
+  --dora-red: #ff3344;
+  --dora-yellow: #ffcc00;
+  --dora-yellow-glow: rgba(255, 204, 0, 0.5);
+  --dora-bell: #ffd200;
+  --dora-door: #ff6584;
+  --grad: linear-gradient(135deg, #009fe3 0%, #0077c2 50%, #0284c7 100%);
+  --grad-gadget: linear-gradient(135deg, #ffcc00 0%, #ff9500 100%);
+  --grad-door: linear-gradient(135deg, #ff6584 0%, #e0245e 100%);
+  --bg-dark: #071224;
+  --bg-dark2: #0c1c38;
+  --card-dark: #11254a;
+  --border-dark: rgba(0, 159, 227, 0.18);
+  --border-hover: rgba(0, 159, 227, 0.55);
   --text-white: #ffffff;
-  --text-gray: #94a3b8;
-  --text-dark: #e2e8f0;
+  --text-gray: #a5c7eb;
+  --text-dark: #e8f3fc;
   --nav-height: 84px;
 }
 
@@ -293,14 +303,15 @@ ul {
 
 /* ===== HERO ===== */
 .hero {
-  min-height: 100vh;
+  min-height: auto;
   display: flex;
   align-items: center;
-  padding-top: calc(var(--nav-height) + 40px);
+  padding-top: calc(var(--nav-height) + 20px);
+  padding-bottom: 36px;
   position: relative;
   overflow: hidden;
-  background: radial-gradient(circle at 80% 20%, rgba(0, 194, 255, 0.08) 0%, transparent 60%),
-              radial-gradient(circle at 20% 80%, rgba(123, 97, 255, 0.06) 0%, transparent 60%),
+  background: radial-gradient(circle at 80% 20%, rgba(0, 159, 227, 0.12) 0%, transparent 60%),
+              radial-gradient(circle at 20% 80%, rgba(2, 132, 199, 0.08) 0%, transparent 60%),
               var(--bg-dark);
 }
 
@@ -366,11 +377,11 @@ ul {
 }
 
 .hero h1 {
-  font-size: clamp(2.5rem, 5vw, 3.8rem);
+  font-size: clamp(1.85rem, 3.4vw, 2.5rem);
   font-weight: 800;
-  line-height: 1.15;
+  line-height: 1.22;
   color: #ffffff;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
 .hero h1 .gradient-text, .gradient-text {
@@ -381,10 +392,11 @@ ul {
 }
 
 .hero p {
-  font-size: 1.15rem;
-  color: #94a3b8;
-  line-height: 1.75;
-  margin-bottom: 36px;
+  font-size: 1.02rem;
+  color: #a5c7eb;
+  line-height: 1.6;
+  margin-bottom: 22px;
+  max-width: 520px;
 }
 
 .hero-buttons {
@@ -449,7 +461,7 @@ ul {
 
 .hero-illustration {
   width: 100%;
-  max-width: 520px;
+  max-width: 410px;
   position: relative;
   z-index: 2;
 }
@@ -479,11 +491,11 @@ ul {
   75% { transform: translateY(-20px) rotate(1deg); }
 }
 
-.float-book   { top: 5%; right: 5%; }
-.float-paper  { top: 20%; left: -5%; }
-.float-laptop { bottom: 15%; right: 0%; }
-.float-bulb   { top: -5%; left: 30%; }
-.float-code   { bottom: 5%; left: 5%; }
+.float-book   { top: 42%; right: -6%; }
+.float-paper  { top: 18%; left: -6%; }
+.float-laptop { bottom: 12%; right: -4%; }
+.float-bulb   { top: -6%; left: 12%; }
+.float-code   { bottom: 6%; left: -4%; }
 
 
 /* ===== TRUST BAR ===== */
@@ -650,6 +662,8 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 6;
 }
 
 .step-illustration {
@@ -2394,3 +2408,505 @@ ul {
 }
 
 
+
+
+/* ===== DORAEMON THEME COMPONENT STYLES ===== */
+.doraemon-hero-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.doraemon-speech-bubble {
+  position: absolute;
+  top: -65px;
+  right: 10px;
+  width: 380px;
+  max-width: min(380px, calc(100vw - 32px));
+  box-sizing: border-box;
+  background: #ffffff;
+  color: #071224;
+  padding: 11px 18px;
+  border-radius: 18px 18px 18px 4px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.45;
+  box-shadow: 0 12px 30px rgba(0, 159, 227, 0.35);
+  border: 2px solid #009fe3;
+  z-index: 15;
+}
+
+.doraemon-speech-bubble::before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 75px;
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 10px solid #009fe3;
+}
+
+.doraemon-speech-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 77px;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 8px solid #ffffff;
+}
+
+.doraemon-bell-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 204, 0, 0.15);
+  border: 1.5px solid var(--dora-yellow);
+  color: var(--dora-yellow);
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  box-shadow: 0 0 16px rgba(255, 204, 0, 0.25);
+  margin-bottom: 20px;
+}
+
+.bell-icon-glow {
+  width: 16px;
+  height: 16px;
+  fill: var(--dora-yellow);
+  filter: drop-shadow(0 0 4px var(--dora-yellow));
+}
+
+.gadget-card-tag {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  background: rgba(0, 159, 227, 0.18);
+  color: var(--primary);
+  border: 1px solid rgba(0, 159, 227, 0.35);
+}
+
+.gadget-card-tag.door {
+  background: rgba(255, 101, 132, 0.18);
+  color: #ff6584;
+  border-color: rgba(255, 101, 132, 0.35);
+}
+
+.gadget-card-tag.bread {
+  background: rgba(255, 204, 0, 0.18);
+  color: #ffcc00;
+  border-color: rgba(255, 204, 0, 0.35);
+}
+
+.gadget-card-tag.time {
+  background: rgba(56, 189, 248, 0.18);
+  color: #38bdf8;
+  border-color: rgba(56, 189, 248, 0.35);
+}
+
+.paper-airplane {
+  filter: drop-shadow(0 6px 18px rgba(0, 159, 227, 0.5));
+}
+
+/* ===== FUNKY & ENGAGING GADGET VAULT ===== */
+.gadget-vault-section {
+  padding: 90px 0;
+  background: radial-gradient(circle at 50% 50%, rgba(0, 159, 227, 0.08) 0%, transparent 70%), var(--bg-dark2);
+  border-top: 1px solid var(--border-dark);
+  border-bottom: 1px solid var(--border-dark);
+  position: relative;
+  overflow: hidden;
+}
+
+.funky-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(0, 159, 227, 0.25);
+  transform: rotate(-1.5deg);
+  transition: transform 0.3s ease;
+}
+
+.funky-badge:hover {
+  transform: rotate(1deg) scale(1.05);
+}
+
+.funky-badge.yellow {
+  background: #ffd200;
+  color: #11254a;
+  border: 2px solid #b45309;
+}
+
+.funky-badge.pink {
+  background: #ff6584;
+  color: #ffffff;
+  border: 2px solid #9f1239;
+}
+
+.funky-badge.cyan {
+  background: #009fe3;
+  color: #ffffff;
+  border: 2px solid #005a8c;
+}
+
+/* Gadget Selector Grid */
+.gadget-tabs-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 36px 0 40px;
+}
+
+.gadget-tab-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(0, 159, 227, 0.25);
+  border-radius: 40px;
+  color: #e2e8f0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.gadget-tab-btn .tab-emoji {
+  font-size: 1.3rem;
+  transition: transform 0.3s ease;
+}
+
+.gadget-tab-btn:hover {
+  background: rgba(0, 159, 227, 0.15);
+  border-color: var(--dora-blue);
+  color: #ffffff;
+  transform: translateY(-3px) scale(1.03);
+}
+
+.gadget-tab-btn.active {
+  background: linear-gradient(135deg, #009fe3, #0284c7);
+  border-color: #ffd200;
+  color: #ffffff;
+  box-shadow: 0 8px 25px rgba(0, 159, 227, 0.45);
+  transform: translateY(-4px) scale(1.05);
+}
+
+.gadget-tab-btn.active .tab-emoji {
+  transform: scale(1.25) rotate(-8deg);
+}
+
+/* Gadget Showcase Card */
+.gadget-showcase-box {
+  background: var(--card-dark);
+  border: 2.5px solid rgba(0, 159, 227, 0.35);
+  border-radius: 28px;
+  padding: 44px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 159, 227, 0.15);
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.gadget-showcase-content {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.gadget-showcase-left h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 12px 0 16px;
+}
+
+.gadget-showcase-left p {
+  font-size: 1.05rem;
+  color: #a5c7eb;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.gadget-sound-tag {
+  display: inline-block;
+  padding: 4px 12px;
+  background: #ffcc00;
+  color: #11254a;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transform: rotate(-3deg);
+  margin-bottom: 12px;
+  box-shadow: 0 3px 10px rgba(255, 204, 0, 0.3);
+}
+
+.gadget-showcase-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.gadget-visual-frame {
+  width: 240px;
+  height: 240px;
+  border-radius: 24px;
+  background: rgba(0, 159, 227, 0.1);
+  border: 2px dashed rgba(0, 159, 227, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* NOBITA VS DORAEMON COMPARISON CARD */
+.comparison-section {
+  padding: 100px 0;
+  background: var(--bg-dark);
+  position: relative;
+}
+
+.comp-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  max-width: 1040px;
+  margin: 40px auto 0;
+}
+
+.comp-card {
+  border-radius: 24px;
+  padding: 36px 32px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.comp-card:hover {
+  transform: translateY(-4px);
+}
+
+.comp-card.nobita {
+  background: rgba(239, 68, 68, 0.08);
+  border: 2px dashed rgba(239, 68, 68, 0.35);
+}
+
+.comp-card.doraemon {
+  background: rgba(0, 159, 227, 0.12);
+  border: 2.5px solid #009fe3;
+  box-shadow: 0 15px 40px rgba(0, 159, 227, 0.2);
+}
+
+.comp-card-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.comp-card.nobita .comp-card-badge {
+  background: rgba(239, 68, 68, 0.2);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.4);
+}
+
+.comp-card.doraemon .comp-card-badge {
+  background: #ffd200;
+  color: #11254a;
+  border: 1px solid #b45309;
+}
+
+.comp-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+.comp-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  margin-bottom: 14px;
+  color: #e2e8f0;
+}
+
+.comp-list li .comp-icon {
+  font-size: 1.15rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+@media (max-width: 768px) {
+  .gadget-showcase-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .comp-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== HIGH CONTRAST GREEN TICK FEATURE STYLING (ALL GADGETS) ===== */
+.gadget-showcase-box .step-feature {
+  color: #ffffff !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.gadget-showcase-box .step-feature svg {
+  width: 20px !important;
+  height: 20px !important;
+  stroke: #22c55e !important;
+  color: #22c55e !important;
+  flex-shrink: 0 !important;
+  filter: drop-shadow(0 0 6px rgba(34, 197, 94, 0.6)) !important;
+}
+
+.gadget-showcase-box .step-features {
+  margin: 20px 0 !important;
+  gap: 14px !important;
+}
+
+/* ===== SERVICE CARD BADGE ROW & SPACING FIX ===== */
+.service-card-badge-row {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.service-card-badge-row .gadget-card-tag {
+  margin-bottom: 0;
+  padding: 6px 14px;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  border-radius: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.service-card .service-icon {
+  margin-bottom: 20px;
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.08) rotate(3deg);
+}
+
+/* ===== FUNKY CARD ANIMATIONS & SHIMMER FOR ABOUT PAGE ===== */
+.why-card {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.why-card::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(0, 159, 227, 0.12) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.why-card:hover {
+  transform: translateY(-8px) scale(1.02) !important;
+  border-color: var(--primary) !important;
+  box-shadow: 0 16px 40px rgba(0, 159, 227, 0.22) !important;
+}
+
+.why-card:hover::after {
+  opacity: 1;
+}
+
+.audit-stage-card {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.audit-stage-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 18px 45px rgba(37, 99, 235, 0.15) !important;
+  border-color: var(--primary) !important;
+}
+
+.country-stat-box {
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.country-stat-box:hover {
+  transform: translateY(-6px) scale(1.05);
+  border-color: var(--primary) !important;
+  box-shadow: 0 12px 30px rgba(0, 159, 227, 0.18);
+}
+
+
+/* Faculty & Commitment cards animation */
+.faculty-card {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  position: relative;
+  overflow: hidden;
+}
+.faculty-card:hover {
+  transform: translateY(-8px) scale(1.02) !important;
+  border-color: var(--primary) !important;
+  box-shadow: 0 20px 45px rgba(0, 159, 227, 0.22) !important;
+}
+
+.commitment-card {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  position: relative;
+}
+.commitment-card:hover {
+  transform: translateY(-8px) scale(1.02) !important;
+  border-color: var(--primary) !important;
+  box-shadow: 0 18px 40px rgba(37, 99, 235, 0.12) !important;
+}

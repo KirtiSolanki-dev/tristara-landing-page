@@ -1,3 +1,15 @@
 <?php
-// Placeholder for core\Model.php - Code will be added step-by-step
+namespace Core;
 
+use PDO;
+
+/**
+ * Tristara IT Solutions - Base Model
+ */
+abstract class Model {
+    protected PDO $db;
+
+    public function __construct() {
+        $this->db = Database::getConnection();
+    }
+}

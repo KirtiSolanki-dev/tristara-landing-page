@@ -111,3 +111,49 @@
   transition: opacity 0.3s ease;
   will-change: transform, left, top;
 }
+
+/* ===== FUNKY DORAEMON CARTOON ANIMATIONS ===== */
+@keyframes copter-spin {
+  0% { transform: scaleX(1); opacity: 0.9; }
+  25% { transform: scaleX(0.15); opacity: 0.5; }
+  50% { transform: scaleX(-1); opacity: 0.9; }
+  75% { transform: scaleX(-0.15); opacity: 0.5; }
+  100% { transform: scaleX(1); opacity: 0.9; }
+}
+
+.take-copter-anim {
+  transform-origin: 230px 24px;
+  animation: copter-spin 0.35s linear infinite;
+}
+
+@keyframes bell-jingle {
+  0%, 100% { transform: rotate(0deg); }
+  10% { transform: rotate(-14deg); }
+  20% { transform: rotate(14deg); }
+  30% { transform: rotate(-8deg); }
+  40% { transform: rotate(8deg); }
+  50% { transform: rotate(0deg); }
+}
+
+.dora-bell-swing {
+  transform-origin: 230px 265px;
+  animation: bell-jingle 4s ease-in-out infinite;
+}
+
+@keyframes comic-bounce {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1.5deg); }
+}
+
+.comic-bounce {
+  animation: comic-bounce 3s ease-in-out infinite;
+}
+
+@keyframes pop-sparkle {
+  0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.9; }
+  50% { transform: scale(1.25) rotate(15deg); opacity: 1; filter: drop-shadow(0 0 8px #ffd200); }
+}
+
+.sparkle-pop {
+  animation: pop-sparkle 2.5s ease-in-out infinite;
+}

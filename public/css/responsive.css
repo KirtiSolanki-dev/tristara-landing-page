@@ -952,3 +952,23 @@ h1, h2, h3, h4, h5, h6, p, a, span, li, th, td {
 .mobile-close:hover {
   background: rgba(255, 255, 255, 0.16);
 }
+
+@media (max-width: 768px) {
+  .doraemon-speech-bubble {
+    top: -55px !important;
+    right: 50% !important;
+    transform: translateX(50%) !important;
+    width: 92% !important;
+    max-width: 360px !important;
+    font-size: 0.78rem !important;
+    padding: 10px 16px !important;
+    border-radius: 18px !important;
+    box-sizing: border-box !important;
+  }
+
+  .doraemon-speech-bubble::before,
+  .doraemon-speech-bubble::after {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+}

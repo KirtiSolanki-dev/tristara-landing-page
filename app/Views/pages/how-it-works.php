@@ -7,8 +7,8 @@ require_once __DIR__ . '/../layouts/header.php';
 <!-- PAGE HEADER (DARK THEME) -->
 <section style="padding: 160px 0 70px; background: radial-gradient(circle at 50% 10%, rgba(0, 194, 255, 0.15) 0%, transparent 70%), var(--bg-dark); text-align: center; border-bottom: 1px solid var(--border-dark);">
   <div class="container">
-    <div class="hero-badge" style="margin-bottom: 18px;">
-      <span>●</span> Transparent 4-Stage Execution Architecture
+    <div class="hero-badge doraemon-bell-badge" style="margin-bottom: 18px;">
+      <span class="bell-icon">🔔</span> 4-STAGE 4D POCKET EXECUTION PIPELINE
     </div>
     <h1 style="font-size: clamp(2.4rem, 4.5vw, 3.4rem); font-weight: 800; color: #ffffff; margin-bottom: 20px; line-height: 1.2;">
       How Tristara Works: <span class="gradient-text">Your Path to Excellence</span>
@@ -48,12 +48,12 @@ require_once __DIR__ . '/../layouts/header.php';
   <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
     <div class="reveal-left">
       <div class="step-number" style="background: linear-gradient(135deg, #2563EB, #1E40AF); color: #fff; width: 48px; height: 48px; display: inline-flex; align-items: center; justify-content: center; border-radius: 14px; font-weight: 800; font-size: 1.2rem; margin-bottom: 20px;">01</div>
-      <div class="section-label" style="color: #2563EB; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">STAGE 1 &middot; TASK INTAKE &amp; PARSING</div>
+      <div class="section-label" style="color: #2563EB; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">STAGE 1 &middot; DORAEMON'S 4D TASK INTAKE &amp; PARSING</div>
       <h2 style="font-size: clamp(2rem, 3.5vw, 2.5rem); font-weight: 800; color: #0f172a; margin-bottom: 18px; line-height: 1.25;">
         Submit Your Requirements &amp; Rubric
       </h2>
       <p style="color: #475569; font-size: 1.05rem; line-height: 1.8; margin-bottom: 24px;">
-        Upload your task description, rubric, lecture slides, dataset, or coding brief. Our academic coordinators immediately deconstruct learning objectives, word-count thresholds, and marking schemes.
+        Upload your assignment brief, rubric, lecture slides, dataset, or coding specifications. Just like Doraemon's 4D Pocket accepts any challenge, our academic coordinators instantly deconstruct learning objectives, word-count constraints, and grading criteria.
       </p>
       <div class="service-feature-box" style="background: #f8faff; border: 1.5px solid #dbeafe; border-radius: 18px; padding: 22px; margin-bottom: 28px;">
         <h4 style="font-size: 0.95rem; font-weight: 700; color: #0f172a; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
@@ -70,52 +70,18 @@ require_once __DIR__ . '/../layouts/header.php';
       <a href="index.php?url=contact" class="btn-primary" style="padding: 13px 30px;">Upload Assignment Brief →</a>
     </div>
 
-    <!-- Right Side Creative SVG Figure: Student Uploading Brief to Cloud Portal -->
-    <div class="reveal-right" style="text-align: center;">
-      <div style="background: #f8faff; border: 1.5px solid #dbeafe; border-radius: 30px; padding: 40px 30px; box-shadow: 0 15px 45px rgba(37, 99, 235, 0.08);">
-        <svg viewBox="0 0 420 320" fill="none" style="width: 100%; max-width: 380px; height: auto;">
-          <circle cx="210" cy="160" r="130" fill="#DBEAFE" opacity="0.45"/>
-          
-          <!-- Student at Desk -->
-          <rect x="90" y="270" width="240" height="10" rx="5" fill="#2563EB" opacity="0.15"/>
-          <rect x="110" y="280" width="8" height="35" rx="4" fill="#2563EB" opacity="0.1"/>
-          <rect x="302" y="280" width="8" height="35" rx="4" fill="#2563EB" opacity="0.1"/>
-          
-          <!-- Laptop -->
-          <rect x="155" y="225" width="110" height="70" rx="6" fill="#1E40AF"/>
-          <rect x="162" y="232" width="96" height="52" rx="4" fill="#DBEAFE"/>
-          <!-- Upload Cloud on Screen -->
-          <path d="M210 248l-10 12h6v12h8v-12h6l-10-12z" fill="#2563EB"/>
-          <path d="M145 295h130a4 4 0 0 1-4 6H149a4 4 0 0 1-4-6z" fill="#1E40AF" opacity="0.8"/>
-          
-          <!-- Student Figure -->
-          <circle cx="210" cy="170" r="26" fill="#ffd5c2"/>
-          <path d="M185 160c0-16 11-26 25-26s25 10 25 26" fill="#1a1a2e"/>
-          <circle cx="202" cy="170" r="2.5" fill="#1a1a2e"/>
-          <circle cx="218" cy="170" r="2.5" fill="#1a1a2e"/>
-          <path d="M205 180c3 3 8 3 10 0" stroke="#1a1a2e" stroke-width="1.5" stroke-linecap="round"/>
-          <path d="M210 196c-8 0-16 5-18 10l-10 26h56l-10-26c-2-5-10-10-18-10z" fill="#2563EB"/>
-          
-          <!-- Floating Uploading Documents with Checkmarks -->
-          <g transform="translate(290, 80)">
-            <rect x="0" y="0" width="80" height="95" rx="10" fill="#ffffff" stroke="#2563EB" stroke-width="2"/>
-            <rect x="12" y="18" width="55" height="5" rx="2.5" fill="#2563EB" opacity="0.6"/>
-            <rect x="12" y="30" width="45" height="4" rx="2" fill="#94a3b8"/>
-            <rect x="12" y="40" width="50" height="4" rx="2" fill="#94a3b8"/>
-            <rect x="12" y="50" width="35" height="4" rx="2" fill="#94a3b8"/>
-            <circle cx="40" cy="74" r="12" fill="#22c55e" opacity="0.15"/>
-            <path d="M35 74l3 3 7-7" stroke="#22c55e" stroke-width="2" stroke-linecap="round"/>
-          </g>
-          
-          <!-- Floating Status Badge (Properly spaced with zero text/dot collision) -->
-          <g transform="translate(34, 95)">
-            <rect x="0" y="0" width="134" height="36" rx="18" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
-            <circle cx="18" cy="18" r="5" fill="#22c55e"/>
-            <text x="32" y="22" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" font-weight="800" fill="#ffffff" letter-spacing="0.3px">RUBRIC PARSED</text>
-          </g>
-        </svg>
-        <div style="font-weight: 700; color: #0f172a; font-size: 1.1rem; margin-top: 14px;">Instant Rubric Verification</div>
-        <p style="color: #64748b; font-size: 0.88rem; margin: 4px 0 0;">Automatic word-count, reference style, and grading criteria validation.</p>
+    <!-- Right Side Creative SVG Figure: Nobita Submitting Assignment Rubric into Doraemon's 4D Pocket Intake -->
+        <div class="reveal-right" style="text-align: center;">
+      <div style="background: #ffffff; border: 1.5px solid #dbeafe; border-radius: 30px; padding: 22px 22px 26px; box-shadow: 0 15px 45px rgba(37, 99, 235, 0.1);">
+        <div style="position: relative; border-radius: 20px; margin-bottom: 16px; background: radial-gradient(circle at 50% 50%, rgba(0, 194, 255, 0.09) 0%, transparent 75%); padding: 10px 0;">
+          <img src="assets/images/how_it_works_stage1.png?v=official_clean_1793043546" alt="Stage 01: Task Brief Handover" style="width: 100%; max-height: 380px; height: auto; display: block; margin: 0 auto; object-fit: contain; filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.25)); border-radius: 18px;">
+          <div style="position: absolute; bottom: 14px; left: 14px; background: rgba(15, 23, 42, 0.88); backdrop-filter: blur(8px); border: 1px solid rgba(34, 197, 94, 0.45); border-radius: 20px; padding: 6px 14px; display: inline-flex; align-items: center; gap: 8px;">
+            <span style="width: 8px; height: 8px; border-radius: 50%; background: #22c55e;"></span>
+            <span style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.8rem; font-weight: 700; color: #ffffff;">Rubric &amp; Brief Ingestion</span>
+          </div>
+        </div>
+        <div style="font-weight: 700; color: #0f172a; font-size: 1.15rem;">Instant Rubric Verification</div>
+        <div style="color: #64748b; font-size: 0.9rem; margin-top: 4px;">Automatic word-count, reference style, and grading criteria validation.</div>
       </div>
     </div>
   </div>
@@ -127,80 +93,30 @@ require_once __DIR__ . '/../layouts/header.php';
 <section style="padding: 100px 0; background: var(--bg-dark2); border-bottom: 1px solid var(--border-dark); position: relative;">
   <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
     
-    <!-- Left Side Creative SVG Figure: Ph.D. Mentor Drafting Architecture Blueprint -->
-    <div class="reveal-left" style="text-align: center;">
-      <div style="background: rgba(26, 26, 36, 0.7); border: 1.5px solid rgba(0, 194, 255, 0.25); border-radius: 30px; padding: 40px 30px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);">
-        <svg viewBox="0 0 420 340" fill="none" style="width: 100%; max-width: 380px; height: auto;">
-          <!-- Glowing Radial Backdrop -->
-          <circle cx="210" cy="150" r="130" fill="#7B61FF" opacity="0.12"/>
-          
-          <!-- Blueprint Drafting Desk / Tablet -->
-          <rect x="70" y="30" width="280" height="175" rx="16" fill="#14141a" stroke="#38bdf8" stroke-width="2"/>
-          <rect x="85" y="45" width="250" height="145" rx="10" fill="#0f172a"/>
-          
-          <!-- Blueprint Grid Lines -->
-          <line x1="85" y1="80" x2="335" y2="80" stroke="#1e293b" stroke-width="1.5" stroke-dasharray="4 4"/>
-          <line x1="85" y1="120" x2="335" y2="120" stroke="#1e293b" stroke-width="1.5" stroke-dasharray="4 4"/>
-          <line x1="85" y1="160" x2="335" y2="160" stroke="#1e293b" stroke-width="1.5" stroke-dasharray="4 4"/>
-          <line x1="150" y1="45" x2="150" y2="190" stroke="#1e293b" stroke-width="1.5" stroke-dasharray="4 4"/>
-          <line x1="230" y1="45" x2="230" y2="190" stroke="#1e293b" stroke-width="1.5" stroke-dasharray="4 4"/>
-          
-          <!-- Flowchart / Outline Nodes on Blueprint -->
-          <rect x="100" y="60" width="45" height="24" rx="6" fill="#2563EB" opacity="0.8"/>
-          <text x="122" y="76" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#ffffff" text-anchor="middle">CH. 1</text>
-          
-          <path d="M145 72h25" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
-          
-          <rect x="170" y="60" width="55" height="24" rx="6" fill="#7B61FF" opacity="0.8"/>
-          <text x="197" y="76" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#ffffff" text-anchor="middle">LIT. REV</text>
-          
-          <path d="M225 72h25" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
-          
-          <rect x="250" y="60" width="52" height="24" rx="6" fill="#22c55e" opacity="0.8"/>
-          <text x="276" y="76" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#ffffff" text-anchor="middle">MODEL</text>
-          
-          <!-- Downward connecting branch -->
-          <path d="M197 84v22h33" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
-          <rect x="230" y="95" width="85" height="24" rx="6" fill="#0284c7"/>
-          <text x="272" y="111" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" font-weight="700" fill="#ffffff" text-anchor="middle">EMPIRICAL QA</text>
-          
-          <!-- Magnifying Glass Inspecting Methodology -->
-          <g transform="translate(120, 100)">
-            <circle cx="28" cy="28" r="24" fill="rgba(0, 194, 255, 0.15)" stroke="#00C2FF" stroke-width="2.5"/>
-            <line x1="45" y1="45" x2="68" y2="68" stroke="#00C2FF" stroke-width="4" stroke-linecap="round"/>
-            <path d="M18 28l6 6 12-12" stroke="#22c55e" stroke-width="2" stroke-linecap="round"/>
-          </g>
-          
-          <!-- Floating Status Badge 1: Ph.D. Lead Paired (Centered & Roomy) -->
-          <g transform="translate(100, 225)">
-            <rect x="0" y="0" width="220" height="42" rx="21" fill="#0f172a" stroke="#7B61FF" stroke-width="1.5" filter="drop-shadow(0 4px 12px rgba(0,0,0,0.4))"/>
-            <circle cx="22" cy="21" r="13" fill="#7B61FF"/>
-            <text x="22" y="25" font-family="'Poppins', sans-serif" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">DR</text>
-            <text x="118" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">Ph.D. Lead Paired</text>
-            <text x="118" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Imperial / Oxbridge Faculty</text>
-          </g>
-          
-          <!-- Floating Status Badge 2: Outline Approved (Centered Below) -->
-          <g transform="translate(130, 280)">
-            <rect x="0" y="0" width="160" height="36" rx="18" fill="#14532d" stroke="#22c55e" stroke-width="1.5"/>
-            <circle cx="20" cy="18" r="5" fill="#22c55e"/>
-            <text x="88" y="22" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">OUTLINE READY</text>
-          </g>
-        </svg>
-        <div style="font-weight: 700; color: #ffffff; font-size: 1.1rem; margin-top: 14px;">Collaborative Outline Architecture</div>
-        <p style="color: #94a3b8; font-size: 0.88rem; margin: 4px 0 0;">Review chapter headings, research questions, and tech stack prior to full draft execution.</p>
+    <!-- Left Side Creative SVG Figure: 100% Canonical Doraemon with Blueprint & Memory Bread -->
+        <div class="reveal-left" style="text-align: center;">
+      <div style="background: rgba(26, 26, 36, 0.7); border: 1.5px solid rgba(0, 194, 255, 0.25); border-radius: 30px; padding: 22px 22px 26px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);">
+        <div style="position: relative; border-radius: 20px; margin-bottom: 16px; background: radial-gradient(circle at 50% 50%, rgba(0, 194, 255, 0.09) 0%, transparent 75%); padding: 10px 0;">
+          <img src="assets/images/how_it_works_stage2.png?v=official_clean_1793043546" alt="Stage 02: Memory Bread Architecture" style="width: 100%; max-height: 380px; height: auto; display: block; margin: 0 auto; object-fit: contain; filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.25)); border-radius: 18px;">
+          <div style="position: absolute; bottom: 14px; left: 14px; background: rgba(15, 23, 42, 0.88); backdrop-filter: blur(8px); border: 1px solid rgba(0, 194, 255, 0.45); border-radius: 20px; padding: 6px 14px; display: inline-flex; align-items: center; gap: 8px;">
+            <span style="width: 8px; height: 8px; border-radius: 50%; background: #00C2FF;"></span>
+            <span style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.8rem; font-weight: 700; color: #ffffff;">Memory Bread Blueprint Active</span>
+          </div>
+        </div>
+        <div style="font-weight: 700; color: #ffffff; font-size: 1.15rem;">Collaborative Outline Architecture</div>
+        <div style="color: #94a3b8; font-size: 0.9rem; margin-top: 4px;">Review chapter headings, research questions, and tech stack prior to full draft execution.</div>
       </div>
     </div>
 
     <!-- Right Side Content -->
     <div class="reveal-right">
       <div class="step-number" style="background: linear-gradient(135deg, #7B61FF, #00C2FF); color: #fff; width: 48px; height: 48px; display: inline-flex; align-items: center; justify-content: center; border-radius: 14px; font-weight: 800; font-size: 1.2rem; margin-bottom: 20px;">02</div>
-      <div class="section-label" style="color: #00C2FF; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">STAGE 2 &middot; SCHOLAR MATCHING &amp; BLUEPRINT</div>
+      <div class="section-label" style="color: #00C2FF; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">STAGE 2 &middot; MEMORY BREAD BLUEPRINT ARCHITECTURE</div>
       <h2 style="font-size: clamp(2rem, 3.5vw, 2.5rem); font-weight: 800; color: #ffffff; margin-bottom: 18px; line-height: 1.25;">
         Faculty Pairing &amp; Research Blueprint
       </h2>
       <p style="color: #94a3b8; font-size: 1.05rem; line-height: 1.8; margin-bottom: 24px;">
-        We never pass assignments to automated bots or unqualified generalists. Your task is assigned directly to an active enterprise engineer or subject-specific scholar who produces an initial methodology blueprint for your review.
+        We never pass assignments to automated bots or unqualified generalists. Your task is paired with an accredited Ph.D. scholar or senior enterprise engineer who authors a structured research outline—inspired by Doraemon's Memory Bread—mapping every chapter, methodology, and empirical model.
       </p>
       <div class="service-feature-box" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 18px; padding: 22px; margin-bottom: 28px;">
         <h4 style="font-size: 0.95rem; font-weight: 700; color: #ffffff; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
@@ -229,12 +145,12 @@ require_once __DIR__ . '/../layouts/header.php';
     <!-- Left Side Content -->
     <div class="reveal-left">
       <div class="step-number" style="background: linear-gradient(135deg, #2563EB, #1E40AF); color: #fff; width: 48px; height: 48px; display: inline-flex; align-items: center; justify-content: center; border-radius: 14px; font-weight: 800; font-size: 1.2rem; margin-bottom: 20px;">03</div>
-      <div class="section-label" style="color: #2563EB; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">STAGE 3 &middot; DEVELOPMENT &amp; RIGOROUS QA</div>
+      <div class="section-label" style="color: #2563EB; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">STAGE 3 &middot; COMPUTER PENCIL PRECISION &amp; QUALITY AUDIT</div>
       <h2 style="font-size: clamp(2rem, 3.5vw, 2.5rem); font-weight: 800; color: #0f172a; margin-bottom: 18px; line-height: 1.25;">
         Original Writing &amp; 3-Tier Quality Audit
       </h2>
       <p style="color: #475569; font-size: 1.05rem; line-height: 1.8; margin-bottom: 24px;">
-        The core deliverable is authored from scratch. We enforce an uncompromising Zero-AI Hallucination policy: all factual claims are backed by peer-reviewed DOI literature, and all technical source code passes automated compilation and unit testing.
+        The core deliverable is authored from scratch with scholarly precision. Enforcing our Computer Pencil standard, we guarantee an uncompromising Zero-AI Hallucination policy: Turnitin originality under 5%, full unit-test execution, and peer-reviewed literature citations.
       </p>
       <div class="service-feature-box" style="background: #f8faff; border: 1.5px solid #dbeafe; border-radius: 18px; padding: 22px; margin-bottom: 28px;">
         <h4 style="font-size: 0.95rem; font-weight: 700; color: #0f172a; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
@@ -251,57 +167,18 @@ require_once __DIR__ . '/../layouts/header.php';
       <a href="index.php?url=contact" class="btn-primary" style="padding: 13px 30px;">Request Quality Audit Details →</a>
     </div>
 
-    <!-- Right Side Creative SVG Figure: Dual-Screen QA Testing Workstation -->
-    <div class="reveal-right" style="text-align: center;">
-      <div style="background: #f8faff; border: 1.5px solid #dbeafe; border-radius: 30px; padding: 40px 30px; box-shadow: 0 15px 45px rgba(37, 99, 235, 0.08);">
-        <svg viewBox="0 0 420 320" fill="none" style="width: 100%; max-width: 380px; height: auto;">
-          <!-- Soft Background Halo -->
-          <circle cx="210" cy="160" r="130" fill="#DBEAFE" opacity="0.45"/>
-          
-          <!-- QA Workstation Desk -->
-          <rect x="70" y="270" width="280" height="10" rx="5" fill="#2563EB" opacity="0.15"/>
-          
-          <!-- Dual Screen Setup: Screen 1 (Code & Tests) -->
-          <rect x="50" y="100" width="150" height="110" rx="10" fill="#0f172a" stroke="#334155" stroke-width="2"/>
-          <rect x="58" y="108" width="134" height="78" rx="6" fill="#1e293b"/>
-          <rect x="110" y="210" width="30" height="25" fill="#334155"/>
-          <rect x="95" y="235" width="60" height="6" rx="3" fill="#64748b"/>
-          
-          <!-- Terminal Code Lines -->
-          <rect x="66" y="118" width="45" height="5" rx="2.5" fill="#38bdf8"/>
-          <rect x="66" y="128" width="85" height="4" rx="2" fill="#94a3b8"/>
-          <rect x="66" y="137" width="70" height="4" rx="2" fill="#94a3b8"/>
-          <rect x="66" y="146" width="95" height="4" rx="2" fill="#94a3b8"/>
-          <rect x="66" y="156" width="55" height="4" rx="2" fill="#22c55e"/>
-          
-          <!-- Screen 2 (Turnitin Plagiarism Scanner) -->
-          <rect x="220" y="90" width="150" height="120" rx="10" fill="#ffffff" stroke="#2563EB" stroke-width="2"/>
-          <rect x="228" y="98" width="134" height="88" rx="6" fill="#f8faff"/>
-          <rect x="280" y="210" width="30" height="25" fill="#2563EB" opacity="0.2"/>
-          <rect x="265" y="235" width="60" height="6" rx="3" fill="#2563EB" opacity="0.3"/>
-          
-          <!-- Document in Screen 2 -->
-          <rect x="240" y="110" width="70" height="6" rx="3" fill="#2563EB"/>
-          <rect x="240" y="122" width="110" height="4" rx="2" fill="#cbd5e1"/>
-          <rect x="240" y="130" width="100" height="4" rx="2" fill="#cbd5e1"/>
-          <rect x="240" y="138" width="85" height="4" rx="2" fill="#cbd5e1"/>
-          
-          <!-- Plagiarism 0% Shield Stamp in Screen 2 (Properly centered & sized with no text overflow) -->
-          <g transform="translate(242, 148)">
-            <rect x="0" y="0" width="106" height="30" rx="15" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
-            <circle cx="15" cy="15" r="5" fill="#22c55e"/>
-            <text x="60" y="19" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="800" fill="#15803d" text-anchor="middle">0% PLAGIARISM</text>
-          </g>
-          
-          <!-- Floating Live Test Badge -->
-          <g transform="translate(62, 235)">
-            <rect x="0" y="0" width="134" height="36" rx="18" fill="#0f172a" stroke="#22c55e" stroke-width="1.5"/>
-            <path d="M16 18l4 4 8-8" stroke="#22c55e" stroke-width="2" stroke-linecap="round"/>
-            <text x="77" y="22" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">32/32 TESTS PASS</text>
-          </g>
-        </svg>
-        <div style="font-weight: 700; color: #0f172a; font-size: 1.1rem; margin-top: 14px;">Enterprise Quality Gateways</div>
-        <p style="color: #64748b; font-size: 0.88rem; margin: 4px 0 0;">Zero AI hallucinations, authentic academic literature, and 100% bug-free source code.</p>
+    <!-- Right Side Creative SVG Figure: Computer Pencil Writing Code & Doraemon QA Victory -->
+        <div class="reveal-right" style="text-align: center;">
+      <div style="background: #ffffff; border: 1.5px solid #dbeafe; border-radius: 30px; padding: 22px 22px 26px; box-shadow: 0 15px 45px rgba(37, 99, 235, 0.1);">
+        <div style="position: relative; border-radius: 20px; margin-bottom: 16px; background: radial-gradient(circle at 50% 50%, rgba(0, 194, 255, 0.09) 0%, transparent 75%); padding: 10px 0;">
+          <img src="assets/images/how_it_works_stage3.png?v=official_clean_1793043546" alt="Stage 03: Quality Assurance &amp; Computer Pencil" style="width: 100%; max-height: 380px; height: auto; display: block; margin: 0 auto; object-fit: contain; filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.25)); border-radius: 18px;">
+          <div style="position: absolute; bottom: 14px; left: 14px; background: rgba(15, 23, 42, 0.88); backdrop-filter: blur(8px); border: 1px solid rgba(34, 197, 94, 0.45); border-radius: 20px; padding: 6px 14px; display: inline-flex; align-items: center; gap: 8px;">
+            <span style="width: 8px; height: 8px; border-radius: 50%; background: #22c55e;"></span>
+            <span style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.8rem; font-weight: 700; color: #ffffff;">32/32 Tests Passed · Turnitin 0%</span>
+          </div>
+        </div>
+        <div style="font-weight: 700; color: #0f172a; font-size: 1.15rem;">Enterprise Quality Gateways</div>
+        <div style="color: #64748b; font-size: 0.9rem; margin-top: 4px;">Compiler diagnostics, Turnitin originality, and grading rubrics verified.</div>
       </div>
     </div>
 
@@ -314,68 +191,30 @@ require_once __DIR__ . '/../layouts/header.php';
 <section style="padding: 100px 0; background: var(--bg-dark); border-bottom: 1px solid var(--border-dark); position: relative;">
   <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
     
-    <!-- Left Side Creative SVG Figure: Graduation Cap, Submission Package & 14-Day Free Revisions -->
-    <div class="reveal-left" style="text-align: center;">
-      <div style="background: rgba(26, 26, 36, 0.7); border: 1.5px solid rgba(0, 194, 255, 0.25); border-radius: 30px; padding: 40px 30px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);">
-        <svg viewBox="0 0 420 335" fill="none" style="width: 100%; max-width: 380px; height: auto;">
-          <!-- Glowing Radial Backdrop -->
-          <circle cx="210" cy="140" r="130" fill="#00C2FF" opacity="0.1"/>
-          
-          <!-- Submission Certificate / Degree Folder -->
-          <rect x="80" y="30" width="260" height="175" rx="18" fill="#14141a" stroke="#00C2FF" stroke-width="2"/>
-          <rect x="95" y="45" width="230" height="145" rx="10" fill="#0f172a"/>
-          
-          <!-- Golden Border Ribbon inside Certificate -->
-          <rect x="105" y="55" width="210" height="125" rx="6" fill="none" stroke="#facc15" stroke-width="1" stroke-dasharray="6 4" opacity="0.6"/>
-          
-          <!-- Graduation Cap Icon -->
-          <polygon points="210,75 160,92 210,108 260,92" fill="#38bdf8"/>
-          <polygon points="210,80 172,92 210,104 248,92" fill="#0284c7"/>
-          <circle cx="210" cy="68" r="4" fill="#facc15"/>
-          <path d="M260 92 C 265 102, 268 110, 265 118" stroke="#facc15" stroke-width="2" stroke-linecap="round"/>
-          <circle cx="265" cy="120" r="3" fill="#facc15"/>
-          
-          <!-- Header and Text Lines -->
-          <text x="210" y="132" font-family="'Poppins', sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">SUBMISSION-READY PACKAGE</text>
-          <text x="210" y="146" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" fill="#94a3b8" text-anchor="middle">Full Source Code &middot; Turnitin PDF &middot; Viva Defense Guide</text>
-          
-          <!-- Official Distinction Stamp -->
-          <g transform="translate(160, 155)">
-            <rect x="0" y="0" width="100" height="24" rx="12" fill="#166534" stroke="#4ade80" stroke-width="1"/>
-            <text x="50" y="16" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#4ade80" text-anchor="middle">100% VERIFIED</text>
-          </g>
-          
-          <!-- Floating Status Badge 1: 14-Day Free Revisions (Centered & Roomy) -->
-          <g transform="translate(100, 225)">
-            <rect x="0" y="0" width="220" height="42" rx="21" fill="#0f172a" stroke="#facc15" stroke-width="1.5" filter="drop-shadow(0 4px 12px rgba(0,0,0,0.4))"/>
-            <circle cx="22" cy="21" r="13" fill="rgba(250, 204, 21, 0.2)"/>
-            <text x="22" y="25" font-family="'Poppins', sans-serif" font-size="11" font-weight="800" fill="#facc15" text-anchor="middle">14</text>
-            <text x="118" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">14-Day Free Revisions</text>
-            <text x="118" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Unlimited Tutor Feedback Alignment</text>
-          </g>
-          
-          <!-- Floating Status Badge 2: On-Time Delivery Guaranteed (Centered Below) -->
-          <g transform="translate(125, 278)">
-            <rect x="0" y="0" width="170" height="38" rx="19" fill="#0f172a" stroke="#22c55e" stroke-width="1.5"/>
-            <circle cx="20" cy="19" r="11" fill="rgba(34, 197, 94, 0.2)"/>
-            <path d="M15 19l3 3 7-7" stroke="#22c55e" stroke-width="2" stroke-linecap="round"/>
-            <text x="96" y="23" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">Delivered Early Guarantee</text>
-          </g>
-        </svg>
-        <div style="font-weight: 700; color: #ffffff; font-size: 1.1rem; margin-top: 14px;">Submission-Ready Delivery</div>
-        <p style="color: #94a3b8; font-size: 0.88rem; margin: 4px 0 0;">Receive completed work days ahead of your university deadline with complete revision backing.</p>
+    <!-- Left Side Creative SVG Figure: Nobita in Graduation Cap Stepping Through Doraemon's Anywhere Door -->
+        <div class="reveal-left" style="text-align: center;">
+      <div style="background: rgba(26, 26, 36, 0.7); border: 1.5px solid rgba(0, 194, 255, 0.25); border-radius: 30px; padding: 22px 22px 26px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);">
+        <div style="position: relative; border-radius: 20px; margin-bottom: 16px; background: radial-gradient(circle at 50% 50%, rgba(0, 194, 255, 0.09) 0%, transparent 75%); padding: 10px 0;">
+          <img src="assets/images/how_it_works_stage4.png?v=official_clean_1793043546" alt="Stage 04: Anywhere Door A+ Delivery" style="width: 100%; max-height: 380px; height: auto; display: block; margin: 0 auto; object-fit: contain; filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.25)); border-radius: 18px;">
+          <div style="position: absolute; bottom: 14px; left: 14px; background: rgba(15, 23, 42, 0.88); backdrop-filter: blur(8px); border: 1px solid rgba(250, 204, 21, 0.45); border-radius: 20px; padding: 6px 14px; display: inline-flex; align-items: center; gap: 8px;">
+            <span style="font-family: 'Poppins', sans-serif; font-size: 0.75rem; font-weight: 800; color: #facc15;">14</span>
+            <span style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.8rem; font-weight: 700; color: #ffffff;">14-Day Free Revisions &amp; A+ Delivery</span>
+          </div>
+        </div>
+        <div style="font-weight: 700; color: #ffffff; font-size: 1.15rem;">Submission-Ready Delivery</div>
+        <div style="color: #94a3b8; font-size: 0.9rem; margin-top: 4px;">Direct portal download, WhatsApp delivery, and 14-day free revision window.</div>
       </div>
     </div>
 
     <!-- Right Side Content -->
     <div class="reveal-right">
       <div class="step-number" style="background: linear-gradient(135deg, #00C2FF, #7B61FF); color: #fff; width: 48px; height: 48px; display: inline-flex; align-items: center; justify-content: center; border-radius: 14px; font-weight: 800; font-size: 1.2rem; margin-bottom: 20px;">04</div>
-      <div class="section-label" style="color: #00C2FF; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">STAGE 4 &middot; FULFILLMENT &amp; TUTOR ALIGNMENT</div>
+      <div class="section-label" style="color: #00C2FF; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">STAGE 4 &middot; ANYWHERE DOOR EXPRESS HANDOVER &amp; SUPPORT</div>
       <h2 style="font-size: clamp(2rem, 3.5vw, 2.5rem); font-weight: 800; color: #ffffff; margin-bottom: 18px; line-height: 1.25;">
         Early Handover &amp; 14-Day Free Revisions
       </h2>
       <p style="color: #94a3b8; font-size: 1.05rem; line-height: 1.8; margin-bottom: 24px;">
-        Receive your complete submission bundle hours or days before your official university portal closes. Review every section at your own pace, supported by our complimentary 14-day modification guarantee.
+        Receive your complete submission bundle hours or days before your official university portal closes. Through our Anywhere Door express delivery model, review every deliverable at your own pace with 14 days of complimentary tutor revisions and 24/7 viva support.
       </p>
       <div class="service-feature-box" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 18px; padding: 22px; margin-bottom: 28px;">
         <h4 style="font-size: 0.95rem; font-weight: 700; color: #ffffff; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">

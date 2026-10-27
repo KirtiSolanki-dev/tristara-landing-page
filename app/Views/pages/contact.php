@@ -7,7 +7,9 @@ require_once __DIR__ . '/../layouts/header.php';
 <!-- PAGE HEADER -->
 <section style="padding: 160px 0 70px; background: radial-gradient(circle at 50% 10%, rgba(0, 194, 255, 0.12) 0%, transparent 70%), var(--bg-dark); text-align: center; border-bottom: 1px solid var(--border-dark);">
   <div class="container">
-    <div class="section-label">Connect With An Academic Specialist</div>
+    <div class="hero-badge doraemon-bell-badge" style="margin-bottom: 16px;">
+      <span class="bell-icon">🔔</span> DORAEMON'S 4D POCKET COMMUNICATION DESK
+    </div>
     <h1 style="font-size: clamp(2.4rem, 4.5vw, 3.4rem); font-weight: 800; color: #ffffff; margin-bottom: 20px;">
       Get In Touch &amp; <span class="gradient-text">Submit Your Task</span>
     </h1>
@@ -23,84 +25,47 @@ require_once __DIR__ . '/../layouts/header.php';
     
     <!-- LEFT COLUMN: Contact Details & Creative 24/7 Global Support Figure -->
     <div class="contact-info reveal-left">
-      <div class="section-label">Direct Communication</div>
+      <div class="section-label">22nd-Century Academic Hotline</div>
       <h2 style="font-size: 2.2rem; font-weight: 800; color: #ffffff; line-height: 1.25; margin-bottom: 16px;">
-        Need Urgent Assignment<br>Or Capstone Help?
+        Doraemon 24/7 Global<br>Academic Dispatch Desk
       </h2>
       <p style="color: #94a3b8; font-size: 1.05rem; line-height: 1.7; margin-bottom: 28px;">
-        Whether you have a 6-hour urgent essay submission or a semester-long thesis, our global academic desk operates round the clock across all timezones.
+        Whether you have an emergency 6-hour assignment deadline or an extensive final-year capstone, our 4D dispatch desk operates round the clock across all global timezones.
       </p>
 
       <!-- Creative 24/7 Global Support Desk Illustration -->
       <div style="background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(0, 194, 255, 0.2); border-radius: 24px; padding: 28px 24px; margin-bottom: 32px; box-shadow: 0 15px 40px rgba(0,0,0,0.35);">
-        <svg viewBox="0 0 380 200" fill="none" style="width: 100%; max-width: 340px; height: auto; margin-bottom: 16px; display: block; margin-left: auto; margin-right: auto;">
-          <!-- Background halo -->
-          <circle cx="190" cy="100" r="85" fill="#00C2FF" opacity="0.08" />
+        <!-- Live Academic Dispatch Console with Authentic Anime Studio Illustration -->
+        <div style="position: relative; border-radius: 22px; margin-bottom: 16px; background: radial-gradient(circle at 50% 50%, rgba(0, 194, 255, 0.15) 0%, transparent 75%); padding: 15px 0;">
+          <img src="assets/images/contact_dispatch_desk.png?v=clean_dispatch_1793045323" alt="Doraemon 24/7 Global Academic Dispatcher" style="width: 100%; max-height: 320px; height: auto; display: block; margin: 0 auto; object-fit: contain; filter: drop-shadow(0 15px 35px rgba(0, 194, 255, 0.28)); border-radius: 18px;">
           
-          <!-- Desk -->
-          <rect x="60" y="145" width="260" height="8" rx="4" fill="#334155" />
-          <rect x="80" y="153" width="6" height="35" rx="3" fill="#1e293b" />
-          <rect x="294" y="153" width="6" height="35" rx="3" fill="#1e293b" />
-          
-          <!-- Support Officer Figure -->
-          <path d="M190 120 c-14 0 -26 8 -30 20 l-6 20 h72 l-6 -20 c-4 -12 -16 -20 -30 -20 z" fill="#2563EB" />
-          <!-- White Shirt & Tie -->
-          <polygon points="190,120 182,136 198,136" fill="#ffffff" />
-          <polygon points="190,132 186,146 190,154 194,146" fill="#7B61FF" />
+          <!-- Top Left: UK London -->
+          <div style="position: absolute; top: 12px; left: 12px; background: rgba(15, 23, 42, 0.88); backdrop-filter: blur(8px); border: 1px solid #38bdf8; border-radius: 20px; padding: 5px 12px; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.4);">
+            <span style="width: 7px; height: 7px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 8px #22c55e;"></span>
+            <span style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.76rem; font-weight: 700; color: #ffffff;">UK · London</span>
+          </div>
 
-          <!-- Face -->
-          <circle cx="190" cy="95" r="22" fill="#ffd5c2" />
-          <!-- Eyes & Friendly Smile -->
-          <circle cx="183" cy="94" r="2" fill="#1e293b" />
-          <circle cx="197" cy="94" r="2" fill="#1e293b" />
-          <path d="M186 104 c2 2 6 2 8 0" stroke="#1e293b" stroke-width="1.8" stroke-linecap="round" />
+          <!-- Top Right: US New York -->
+          <div style="position: absolute; top: 12px; right: 12px; background: rgba(15, 23, 42, 0.88); backdrop-filter: blur(8px); border: 1px solid #7B61FF; border-radius: 20px; padding: 5px 12px; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.4);">
+            <span style="width: 7px; height: 7px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 8px #22c55e;"></span>
+            <span style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.76rem; font-weight: 700; color: #ffffff;">US · New York</span>
+          </div>
 
-          <!-- Hair -->
-          <path d="M172 90 c0 -14 8 -22 18 -22 s18 8 18 22" fill="#1e293b" />
+          <!-- Bottom Left: IN Surat HQ -->
+          <div style="position: absolute; bottom: 12px; left: 12px; background: rgba(15, 23, 42, 0.88); backdrop-filter: blur(8px); border: 1px solid #f59e0b; border-radius: 20px; padding: 5px 12px; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.4);">
+            <span style="width: 7px; height: 7px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 8px #22c55e;"></span>
+            <span style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.76rem; font-weight: 700; color: #ffffff;">IN · Surat HQ</span>
+          </div>
 
-          <!-- Professional Headset band & earpiece -->
-          <path d="M168 95 c0 -16 10 -24 22 -24 s22 8 22 24" stroke="#38bdf8" stroke-width="2.5" fill="none" />
-          <rect x="165" y="88" width="6" height="14" rx="3" fill="#38bdf8" />
-          <rect x="209" y="88" width="6" height="14" rx="3" fill="#38bdf8" />
-          <path d="M211 98 c0 10 -6 14 -14 14" stroke="#38bdf8" stroke-width="2" fill="none" stroke-linecap="round" />
-          <circle cx="196" cy="112" r="3" fill="#22c55e" />
-          
-          <!-- Laptop on desk -->
-          <rect x="155" y="125" width="70" height="20" rx="4" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" />
-          <polygon points="150,145 230,145 235,148 145,148" fill="#1e293b" />
-          <rect x="180" y="132" width="20" height="3" rx="1.5" fill="#38bdf8" opacity="0.8" />
-          
-          <!-- Floating Live Badges: UK London (Top Left) -->
-          <g transform="translate(18, 25)">
-            <rect x="0" y="0" width="102" height="32" rx="16" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
-            <circle cx="16" cy="16" r="4.5" fill="#22c55e" />
-            <text x="28" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="9.5" fill="#ffffff">UK · London</text>
-          </g>
-
-          <!-- Floating Live Badges: US New York (Top Right) -->
-          <g transform="translate(258, 25)">
-            <rect x="0" y="0" width="104" height="32" rx="16" fill="#0f172a" stroke="#7B61FF" stroke-width="1.5"/>
-            <circle cx="16" cy="16" r="4.5" fill="#22c55e" />
-            <text x="28" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="9.5" fill="#ffffff">US · New York</text>
-          </g>
-
-          <!-- Floating Live Badges: AU Sydney (Bottom Right) -->
-          <g transform="translate(258, 115)">
-            <rect x="0" y="0" width="104" height="32" rx="16" fill="#0f172a" stroke="#22c55e" stroke-width="1.5"/>
-            <circle cx="16" cy="16" r="4.5" fill="#22c55e" />
-            <text x="28" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="9.5" fill="#ffffff">AU · Sydney</text>
-          </g>
-
-          <!-- Floating Live Badges: IN Surat HQ (Bottom Left) -->
-          <g transform="translate(18, 115)">
-            <rect x="0" y="0" width="102" height="32" rx="16" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5"/>
-            <circle cx="16" cy="16" r="4.5" fill="#22c55e" />
-            <text x="28" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="9.5" fill="#ffffff">IN · Surat HQ</text>
-          </g>
-        </svg>
+          <!-- Bottom Right: AU Sydney -->
+          <div style="position: absolute; bottom: 12px; right: 12px; background: rgba(15, 23, 42, 0.88); backdrop-filter: blur(8px); border: 1px solid #22c55e; border-radius: 20px; padding: 5px 12px; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.4);">
+            <span style="width: 7px; height: 7px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 8px #22c55e;"></span>
+            <span style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.76rem; font-weight: 700; color: #ffffff;">AU · Sydney</span>
+          </div>
+        </div>
 
         <div style="display: flex; justify-content: center; gap: 20px; font-size: 0.85rem; color: #94a3b8; font-weight: 600; text-align: center; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 14px;">
-          <span style="display: inline-flex; align-items: center; gap: 6px;"><span style="width: 8px; height: 8px; border-radius: 50%; background: #22c55e;"></span> Live Agents Online</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px;"><span style="width: 8px; height: 8px; border-radius: 50%; background: #22c55e;"></span> Doraemon 4D Desk Online</span>
           <span style="display: inline-flex; align-items: center; gap: 6px;">⚡ Avg. Response: &lt; 15 mins</span>
         </div>
       </div>
@@ -144,23 +109,26 @@ require_once __DIR__ . '/../layouts/header.php';
 
     <!-- RIGHT COLUMN: Contact Form -->
     <div class="contact-form reveal-right" style="background: var(--card-dark); border: 1px solid var(--border-dark); border-radius: 28px; padding: 44px; box-shadow: 0 20px 50px rgba(0,0,0,0.4);">
+      <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(0, 194, 255, 0.1); border: 1px solid rgba(0, 194, 255, 0.25); padding: 5px 14px; border-radius: 20px; font-size: 0.78rem; font-weight: 700; color: #38bdf8; margin-bottom: 14px;">
+        <span style="font-size: 0.9rem;">🔔</span> 4D POCKET TASK INGESTION
+      </div>
       <h3 style="font-size: 1.45rem; font-weight: 700; color: #ffffff; margin-bottom: 8px;">Submit Task Requirements</h3>
       <p style="color: #94a3b8; font-size: 0.95rem; margin-bottom: 28px;">Fill out the details below to receive a customized quote and expert assignment plan.</p>
       
       <form onsubmit="handleSubmit(event)">
         <div class="form-group">
           <label>Full Name *</label>
-          <input type="text" placeholder="e.g. Alex Morgan" required>
+          <input type="text" name="full_name" placeholder="e.g. Alex Morgan" required>
         </div>
         <div class="form-row">
           <div class="form-group">
             <label>Email Address *</label>
-            <input type="email" placeholder="alex@university.ac.uk" required>
+            <input type="email" name="email" placeholder="alex@university.ac.uk" required>
           </div>
           <div class="form-group">
             <label>WhatsApp / Phone Number *</label>
             <div style="display: flex; gap: 8px;">
-              <select style="width: 100px; flex-shrink: 0;" required>
+              <select name="phone_code" style="width: 100px; flex-shrink: 0;" required>
                 <option value="+91">+91 (IN)</option>
                 <option value="+44">+44 (UK)</option>
                 <option value="+1">+1 (US/CA)</option>
@@ -168,14 +136,14 @@ require_once __DIR__ . '/../layouts/header.php';
                 <option value="+971">+971 (UAE)</option>
                 <option value="+49">+49 (DE)</option>
               </select>
-              <input type="tel" placeholder="Mobile number" required style="flex: 1;">
+              <input type="tel" name="phone" placeholder="Mobile number" required style="flex: 1;">
             </div>
           </div>
         </div>
         <div class="form-row">
           <div class="form-group">
             <label>Discipline / Subject *</label>
-            <select required>
+            <select name="subject" required>
               <option value="">Select subject</option>
               <option>Computer Science &amp; IT</option>
               <option>Data Science &amp; Machine Learning</option>
@@ -191,7 +159,7 @@ require_once __DIR__ . '/../layouts/header.php';
           </div>
           <div class="form-group">
             <label>Service Category *</label>
-            <select required>
+            <select name="service_category" required>
               <option value="">Select service</option>
               <option>Assignment / Coursework</option>
               <option>Programming Task / Software Build</option>
@@ -205,16 +173,16 @@ require_once __DIR__ . '/../layouts/header.php';
         <div class="form-row">
           <div class="form-group">
             <label>Submission Deadline *</label>
-            <input type="date" required>
+            <input type="date" name="deadline" required>
           </div>
           <div class="form-group">
             <label>Estimated Word Count / Scope</label>
-            <input type="text" placeholder="e.g. 3,500 words or 5 coding modules" required>
+            <input type="text" name="word_count" placeholder="e.g. 3,500 words or 5 coding modules">
           </div>
         </div>
         <div class="form-group">
           <label>Assignment Brief &amp; Special Instructions *</label>
-          <textarea placeholder="Paste your task prompt, specific references, grading rubrics, software stack, or formatting expectations..." required></textarea>
+          <textarea name="instructions" placeholder="Paste your task prompt, specific references, grading rubrics, software stack, or formatting expectations..." required></textarea>
         </div>
         <button type="submit" class="form-submit">Submit Assignment Request →</button>
       </form>

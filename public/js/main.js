@@ -134,20 +134,72 @@
   });
 
 
-  /* ---------- FORM SUBMIT ---------- */
+  /* ---------- REAL BACKEND FORM SUBMISSION VIA AJAX ---------- */
   window.handleSubmit = function (e) {
     e.preventDefault();
-    var btn = e.target.querySelector('.form-submit');
-    if (!btn) return;
+    var form = e.target;
+    var btn = form.querySelector('.form-submit');
+    if (!btn || btn.disabled) return;
 
     var originalText = btn.textContent;
-    btn.textContent = '✓ Request Submitted!';
-    btn.style.background = '#059669';
+    btn.disabled = true;
+    btn.textContent = '⏳ Submitting to 4D Pocket...';
+    btn.style.opacity = '0.8';
 
-    setTimeout(function () {
-      btn.textContent = originalText;
-      btn.style.background = '';
-      e.target.reset();
-    }, 3000);
+    // Remove any previous feedback message
+    var prevMsg = form.querySelector('.form-feedback-alert');
+    if (prevMsg) prevMsg.remove();
+
+    var formData = new FormData(form);
+
+    fetch('index.php?url=contact/submit', {
+      method: 'POST',
+      body: formData
+    })
+    .then(function (res) {
+      return res.json().then(function (data) {
+        return { status: res.status, ok: res.ok, data: data };
+      });
+    })
+    .then(function (resObj) {
+      if (resObj.ok && resObj.data.success) {
+        btn.textContent = '✓ Inquiry Sent Successfully!';
+        btn.style.background = '#16a34a';
+        btn.style.opacity = '1';
+
+        var successAlert = document.createElement('div');
+        successAlert.className = 'form-feedback-alert';
+        successAlert.style.cssText = 'margin-top: 16px; padding: 14px 18px; border-radius: 12px; background: rgba(34, 197, 94, 0.15); border: 1.5px solid #22c55e; color: #ffffff; font-size: 0.95rem; line-height: 1.6; text-align: center;';
+        successAlert.innerHTML = '🎉 <strong>Inquiry Registered (# ' + (resObj.data.inquiry_id || '') + ')</strong><br>' + resObj.data.message;
+        form.appendChild(successAlert);
+
+        form.reset();
+
+        setTimeout(function () {
+          btn.textContent = originalText;
+          btn.style.background = '';
+          btn.disabled = false;
+        }, 5000);
+      } else {
+        throw new Error(resObj.data.message || 'Submission failed. Please check your details.');
+      }
+    })
+    .catch(function (err) {
+      btn.textContent = '⚠ Submission Failed';
+      btn.style.background = '#dc2626';
+      btn.style.opacity = '1';
+
+      var errAlert = document.createElement('div');
+      errAlert.className = 'form-feedback-alert';
+      errAlert.style.cssText = 'margin-top: 16px; padding: 14px 18px; border-radius: 12px; background: rgba(239, 68, 68, 0.15); border: 1.5px solid #ef4444; color: #fca5a5; font-size: 0.95rem; text-align: center;';
+      errAlert.innerHTML = '⚠ ' + err.message;
+      form.appendChild(errAlert);
+
+      setTimeout(function () {
+        btn.textContent = originalText;
+        btn.style.background = '';
+        btn.disabled = false;
+      }, 4000);
+    });
   };
 })();
