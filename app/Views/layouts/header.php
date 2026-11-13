@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title><?php echo $pageTitle ?? 'Tristara IT Solutions — Academic Excellence & Assignment Assistance'; ?></title>
 
   <!-- Google Fonts: Inter, Plus Jakarta Sans, Poppins -->
@@ -11,9 +11,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/style.css?v=thought_brain_seq_1793049500">
+  <link rel="stylesheet" href="css/style.css?v=hero_text_closer_v77">
   <link rel="stylesheet" href="css/animations.css">
-  <link rel="stylesheet" href="css/responsive.css?v=thought_brain_seq_1793049500">
+  <link rel="stylesheet" href="css/responsive.css?v=hero_text_closer_v77">
 </head>
 <body>
 

@@ -4,18 +4,17 @@ $currentPage = 'about';
 require_once __DIR__ . '/../layouts/header.php';
 ?>
 
-<!-- PAGE HEADER -->
-<section style="padding: 140px 0 60px; background: radial-gradient(circle at 50% 10%, rgba(0, 159, 227, 0.15) 0%, transparent 70%), var(--bg-dark); text-align: center; border-bottom: 1px solid var(--border-dark);">
-  <div class="container">
-    <div class="hero-badge doraemon-bell-badge" style="margin-bottom: 16px;">
-      <svg class="bell-icon-glow" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="#ffd200"/><rect x="4" y="10" width="16" height="3" fill="#b45309" rx="1.5"/><circle cx="12" cy="15" r="2.5" fill="#422006"/><line x1="12" y1="17.5" x2="12" y2="21" stroke="#422006" stroke-width="2"/></svg>
-      Doraemon's 22nd-Century Academic Mission
+<!-- PAGE HEADER (DARK THEME) -->
+<section style="padding: 140px 0 70px; background: radial-gradient(circle at 50% 15%, rgba(0, 194, 255, 0.18) 0%, transparent 65%), radial-gradient(circle at 85% 60%, rgba(123, 97, 255, 0.12) 0%, transparent 55%), #071528; text-align: center; border-bottom: 1px solid rgba(0, 194, 255, 0.18); position: relative; overflow: hidden;">
+  <div class="container" style="position: relative; z-index: 2;">
+    <div class="hero-badge funky-badge yellow" style="margin-bottom: 18px; display: inline-flex; align-items: center; gap: 8px; background: rgba(245, 158, 11, 0.15); border: 1.5px solid rgba(245, 158, 11, 0.45); color: #facc15; font-weight: 800; padding: 7px 20px; border-radius: 999px; box-shadow: 0 0 25px rgba(245, 158, 11, 0.22); text-transform: uppercase; font-size: 0.82rem; letter-spacing: 0.8px;">
+      <span>✨</span> Panda &amp; Lyra's Smart Academic Mission
     </div>
-    <h1 style="font-size: clamp(2.2rem, 4.2vw, 3.2rem); font-weight: 800; color: #ffffff; margin-bottom: 16px;">
-      About <span class="gradient-text">Tristara IT Solutions</span>
+    <h1 style="font-size: clamp(2.4rem, 4.5vw, 3.5rem); font-weight: 800; color: #ffffff; margin-bottom: 18px; line-height: 1.25; letter-spacing: -0.5px;">
+      About <span class="gradient-text" style="background: linear-gradient(135deg, #00C2FF 0%, #38bdf8 50%, #818cf8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Tristara IT Solutions</span>
     </h1>
-    <p class="section-desc" style="margin: 0 auto; max-width: 720px; font-size: 1.1rem; color: #a5c7eb;">
-      Where 22nd-century academic gadgets meet enterprise software engineering. Empowering students across 30+ countries to ace their university coursework without homework panic!
+    <p class="section-desc" style="margin: 0 auto; max-width: 740px; font-size: 1.15rem; color: #cbd5e1; line-height: 1.8; font-weight: 400;">
+      Where smart academic companion gadgets meet enterprise software engineering. Empowering students across 30+ countries to ace their university coursework without homework panic!
     </p>
   </div>
 </section>
@@ -24,15 +23,15 @@ require_once __DIR__ . '/../layouts/header.php';
 <section style="padding: 100px 0 110px; background: #ffffff; border-bottom: 1px solid #e2e8f0;">
   <div class="container" style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 80px; align-items: center;">
     <div class="reveal-left">
-      <div class="section-label" style="color: #2563EB;">The Secret Inside Doraemon's 4D Pocket</div>
+      <div class="section-label" style="color: #2563EB;">The Secret Inside Panda &amp; Lyra's Academic Arsenal</div>
       <h2 style="font-size: clamp(2rem, 3.8vw, 2.7rem); font-weight: 800; color: #0f172a; margin-bottom: 22px; line-height: 1.25;">
         Rescuing Students from Homework Panic Since Day 1
       </h2>
-      <p style="color: #475569; font-size: 1.05rem; line-height: 1.8; margin-bottom: 20px;">
-        Headquartered in Surat, Gujarat, <strong style="color: #0f172a;">Tristara IT Solutions</strong> is an established technology enterprise building cloud platforms, AI models, and mission-critical software architectures.
+      <p style="color: #475569; font-size: 1.05rem; line-height: 1.8; margin-bottom: 18px;">
+        Brought to you by <strong style="color: #0f172a;">Tristara IT Solutions</strong>, this platform is an all-in-one smart academic assistance portal designed to eliminate university homework panic and coursework stress.
       </p>
       <p style="color: #475569; font-size: 1.05rem; line-height: 1.8; margin-bottom: 32px;">
-        Just like Doraemon was sent to help Nobita overcome difficult school challenges, Tristara's dedicated <strong style="color: #0f172a;">Academic Assistance Wing</strong> connects university students worldwide directly with top software engineers, data scientists, and Ph.D. scholars to turn tough projects into guaranteed A+ grades.
+        Whether you are tackling urgent 6-hour deadlines, complex software programming, dissertation literature reviews, or statistical data modeling, our website pairs you directly with top Ph.D. researchers and software engineers. Guided by Panda &amp; Lyra's academic gadgets, we ensure 100% human research, Turnitin similarity reports, and guaranteed A+ distinction grades across 50+ university disciplines.
       </p>
       
       <!-- Interactive 3-Metric Counter Grid -->
@@ -53,29 +52,27 @@ require_once __DIR__ . '/../layouts/header.php';
 
       <div style="display: flex; gap: 16px; flex-wrap: wrap;">
         <a href="index.php?url=services" class="btn-primary" style="padding: 13px 30px;">Explore Our Services →</a>
-        <a href="https://tristaraitsolutions.com" target="_blank" class="btn-secondary" style="color: #0f172a; border-color: #cbd5e1; background: #f8faff;">Visit Main Enterprise Site</a>
+        <a href="index.php?url=contact" class="btn-secondary" style="color: #0f172a; border-color: #cbd5e1; background: #f8faff; padding: 13px 26px;">Get Instant Homework Help</a>
       </div>
     </div>
 
-    <!-- Right Side Creative Figure: Enterprise Tech Hub & Research Illustration -->
-    <div class="reveal-right" style="position: relative;">
-      <div style="background: #f8faff; border: 1.5px solid #dbeafe; border-radius: 32px; padding: 36px 32px; box-shadow: 0 20px 50px rgba(37, 99, 235, 0.08); text-align: center;">
-        
-        <!-- High-Resolution Academic Research Lab Illustration -->
-        <div style="position: relative; overflow: hidden; border-radius: 24px; border: 1.5px solid rgba(0, 194, 255, 0.3); box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); margin-bottom: 20px;">
-          <img src="assets/images/about_research_lab.png?v=clean_research_1793045388" alt="22nd-Century Academic Research & QA Lab" style="width: 100%; max-height: 340px; height: auto; display: block; margin: 0 auto; object-fit: contain; filter: drop-shadow(0 15px 30px rgba(0, 159, 227, 0.25)); border-radius: 18px;">
-          <div style="position: absolute; bottom: 12px; left: 12px; background: rgba(15, 23, 42, 0.88); backdrop-filter: blur(8px); border: 1px solid rgba(0, 194, 255, 0.4); border-radius: 18px; padding: 6px 14px; display: inline-flex; align-items: center; gap: 8px;">
-            <span style="width: 8px; height: 8px; border-radius: 50%; background: #22c55e;"></span>
-            <span style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.8rem; font-weight: 700; color: #ffffff;">Blueprint Architecture · Scopus & IEEE Standards</span>
-          </div>
-        </div>
+            <!-- Right Side Creative Figure: Free-Floating Panda Academic Companion -->
+    <div class="reveal-right" style="position: relative; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+      <div style="position: relative; width: 100%; max-width: 480px; margin: 0 auto;">
+        <img src="assets/images/about_panda_mission.png?v=clean_free_panda_v37"
+             srcset="assets/images/about_panda_mission.png?v=clean_free_panda_v37 1x, assets/images/about_panda_mission@2x.png?v=clean_free_panda_v37 2x"
+             alt="Panda Academic Companion · Tristara Academic Wing"
+             style="width: 100%; max-height: 440px; height: auto; display: block; margin: 0 auto; object-fit: contain; filter: drop-shadow(0 20px 45px rgba(0, 194, 255, 0.22)); border: none; background: transparent;">
+      </div>
 
-        <div style="display: inline-block; padding: 6px 18px; background: rgba(37, 99, 235, 0.1); color: #2563EB; border-radius: 100px; font-size: 0.8rem; font-weight: 700; margin-bottom: 12px; border: 1px solid rgba(37, 99, 235, 0.25);">
-          22ND-CENTURY ACADEMIC RESEARCH LAB
+      <div style="margin-top: 24px; text-align: center;">
+        <div style="display: inline-flex; align-items: center; gap: 8px; padding: 6px 18px; background: rgba(37, 99, 235, 0.08); color: #2563EB; border: 1px solid rgba(37, 99, 235, 0.2); border-radius: 100px; font-size: 0.8rem; font-weight: 700; margin-bottom: 10px; letter-spacing: 0.5px;">
+          <span style="width: 8px; height: 8px; border-radius: 50%; background: #22c55e;"></span>
+          SMART ACADEMIC RESEARCH LAB
         </div>
-        <h4 style="font-size: 1.25rem; font-weight: 700; color: #0f172a; margin-bottom: 8px;">Surat HQ · Global Operations</h4>
-        <p style="color: #64748b; font-size: 0.92rem; line-height: 1.65; max-width: 320px; margin: 0 auto;">
-          Supporting academic excellence across the UK, Australia, US, Canada, Germany, and UAE with 24/7 dedicated support desks.
+        <h4 style="font-size: 1.3rem; font-weight: 800; color: #0f172a; margin-bottom: 6px;">Surat HQ &middot; Global Operations</h4>
+        <p style="color: #64748b; font-size: 0.95rem; line-height: 1.65; max-width: 360px; margin: 0 auto;">
+          Supporting academic excellence across the UK, Australia, US, Canada, Germany, and UAE with 24/7 dedicated support.
         </p>
       </div>
     </div>
@@ -83,11 +80,11 @@ require_once __DIR__ . '/../layouts/header.php';
 </section>
 
 <!-- CORE PILLARS OF EXCELLENCE (DARK THEME WITH CREATIVE ICONS) -->
-<section style="padding: 100px 0; background: var(--bg-dark2); border-top: 1px solid var(--border-dark);">
+<section style="padding: 100px 0; background: #071528; border-top: 1px solid rgba(0, 194, 255, 0.15); border-bottom: 1px solid rgba(0, 194, 255, 0.15);">
   <div class="container">
     <div style="text-align: center; margin-bottom: 70px;" class="reveal">
       <div class="section-label">Our Guiding Pillars</div>
-      <h2 class="section-title">The Foundation of Student Trust</h2>
+      <h2 class="section-title" style="color: #ffffff !important;">The Foundation of Student Trust</h2>
       <p class="section-desc" style="margin: 0 auto;">Four cornerstones engineered to give students complete peace of mind, from initial brief to final degree submission.</p>
     </div>
     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;">
@@ -102,14 +99,14 @@ require_once __DIR__ . '/../layouts/header.php';
         <div class="why-icon" style="background: rgba(123, 97, 255, 0.12); border: 1px solid rgba(123, 97, 255, 0.25);">
           <svg viewBox="0 0 24 24" fill="none" stroke="var(--purple)" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="14" y1="4" x2="10" y2="20"/></svg>
         </div>
-        <h3>Computer Pencil · Zero-Bug Production Code</h3>
+        <h3>Star-Byte Code Wand · Zero-Bug Production Code</h3>
         <p>Because we build real software, our coding assignments feature production-grade conventions, git commits, Docker environments, and executable test suites.</p>
       </div>
       <div class="why-card reveal">
         <div class="why-icon" style="background: rgba(37, 211, 102, 0.12); border: 1px solid rgba(37, 211, 102, 0.25);">
           <svg viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/><circle cx="12" cy="16" r="1"/></svg>
         </div>
-        <h3>Invisibility Cloak · Strict NDA Privacy</h3>
+        <h3>Originality Shield · Strict NDA Privacy</h3>
         <p>All student information, university briefs, and correspondence are guarded under corporate Non-Disclosure Agreements and encrypted channels.</p>
       </div>
     </div>
@@ -121,7 +118,7 @@ require_once __DIR__ . '/../layouts/header.php';
   <div class="container">
     <div style="text-align: center; margin-bottom: 60px;" class="reveal">
       <div class="section-label" style="color: #2563EB;">Rigorous Quality Assurance</div>
-      <h2 style="font-size: clamp(2rem, 3.8vw, 2.7rem); font-weight: 800; color: #0f172a; margin-bottom: 14px;">Doraemon's 4-Stage Academic Audit Workflow</h2>
+      <h2 style="font-size: clamp(2rem, 3.8vw, 2.7rem); font-weight: 800; color: #0b2479; margin-bottom: 14px;">Panda &amp; Lyra's 4-Stage Academic Audit Workflow</h2>
       <p style="color: #475569; font-size: 1.05rem; max-width: 680px; margin: 0 auto; line-height: 1.7;">
         Before any file reaches your dashboard, it passes through four strict internal checkpoints to ensure complete grading rubric conformity and mathematical/technical accuracy.
       </p>
@@ -133,7 +130,7 @@ require_once __DIR__ . '/../layouts/header.php';
         <div style="width: 52px; height: 52px; border-radius: 16px; background: rgba(37, 99, 235, 0.1); border: 1.5px solid rgba(37, 99, 235, 0.25); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px;">
           <span style="font-family: 'Poppins', sans-serif; font-size: 1.3rem; font-weight: 800; color: #2563EB;">01</span>
         </div>
-        <h4 style="font-size: 1.1rem; font-weight: 700; color: #0f172a; margin-bottom: 10px;">Detective Rubric Scan</h4>
+        <h4 style="font-size: 1.1rem; font-weight: 700; color: #0b2479; margin-bottom: 10px;">Detective Rubric Scan</h4>
         <p style="color: #64748b; font-size: 0.9rem; line-height: 1.6;">
           Our academic director breaks down learning outcomes, weighting criteria, word limits, and citation guidelines.
         </p>
@@ -144,7 +141,7 @@ require_once __DIR__ . '/../layouts/header.php';
         <div style="width: 52px; height: 52px; border-radius: 16px; background: rgba(123, 97, 255, 0.1); border: 1.5px solid rgba(123, 97, 255, 0.25); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px;">
           <span style="font-family: 'Poppins', sans-serif; font-size: 1.3rem; font-weight: 800; color: #7B61FF;">02</span>
         </div>
-        <h4 style="font-size: 1.1rem; font-weight: 700; color: #0f172a; margin-bottom: 10px;">Memory Bread Synthesis</h4>
+        <h4 style="font-size: 1.1rem; font-weight: 700; color: #0b2479; margin-bottom: 10px;">Infinite Backpack Synthesis</h4>
         <p style="color: #64748b; font-size: 0.9rem; line-height: 1.6;">
           Subject specialist drafts solutions or executes code, integrating recent peer-reviewed studies (2020–2026).
         </p>
@@ -155,7 +152,7 @@ require_once __DIR__ . '/../layouts/header.php';
         <div style="width: 52px; height: 52px; border-radius: 16px; background: rgba(0, 194, 255, 0.1); border: 1.5px solid rgba(0, 194, 255, 0.25); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px;">
           <span style="font-family: 'Poppins', sans-serif; font-size: 1.3rem; font-weight: 800; color: #00C2FF;">03</span>
         </div>
-        <h4 style="font-size: 1.1rem; font-weight: 700; color: #0f172a; margin-bottom: 10px;">Turnitin 0% Plagiarism Audit</h4>
+        <h4 style="font-size: 1.1rem; font-weight: 700; color: #0b2479; margin-bottom: 10px;">Turnitin 0% Plagiarism Audit</h4>
         <p style="color: #64748b; font-size: 0.9rem; line-height: 1.6;">
           Scanned through official enterprise Turnitin and AI detection engines to certify 0% AI content and &lt; 5% similarity.
         </p>
@@ -166,7 +163,7 @@ require_once __DIR__ . '/../layouts/header.php';
         <div style="width: 52px; height: 52px; border-radius: 16px; background: rgba(34, 197, 94, 0.1); border: 1.5px solid rgba(34, 197, 94, 0.25); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px;">
           <span style="font-family: 'Poppins', sans-serif; font-size: 1.3rem; font-weight: 800; color: #16a34a;">04</span>
         </div>
-        <h4 style="font-size: 1.1rem; font-weight: 700; color: #0f172a; margin-bottom: 10px;">Anywhere Door Final Dispatch</h4>
+        <h4 style="font-size: 1.1rem; font-weight: 700; color: #0b2479; margin-bottom: 10px;">Zen Time-Warp Final Dispatch</h4>
         <p style="color: #64748b; font-size: 0.9rem; line-height: 1.6;">
           Senior reviewer inspects referencing style, code readability, execution instructions, and viva talking points.
         </p>
@@ -176,23 +173,23 @@ require_once __DIR__ . '/../layouts/header.php';
 </section>
 
 <!-- SECTION 4: OUR INTERDISCIPLINARY MENTOR NETWORK (DARK THEME) -->
-<section style="padding: 100px 0; background: var(--bg-dark);">
+<section style="padding: 100px 0; background: #071528; border-top: 1px solid rgba(0, 194, 255, 0.15); border-bottom: 1px solid rgba(0, 194, 255, 0.15);">
   <div class="container">
     <div style="text-align: center; margin-bottom: 70px;" class="reveal">
       <div class="section-label">Qualified Academic Faculty</div>
-      <h2 class="section-title">Led By Industry Specialists &amp; Ph.D. Researchers</h2>
+      <h2 class="section-title" style="color: #ffffff !important;">Led By Industry Specialists &amp; Ph.D. Researchers</h2>
       <p class="section-desc" style="margin: 0 auto;">Our multidisciplinary network pairs you with experienced practitioners who understand university grading criteria inside and out.</p>
     </div>
 
     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
       <!-- Faculty Card 1 -->
-      <div style="background: var(--card-dark); border: 1px solid var(--border-dark); border-radius: 24px; padding: 36px 28px; text-align: center;" class="faculty-card reveal">
+      <div style="background: linear-gradient(145deg, rgba(13, 27, 49, 0.9) 0%, rgba(7, 21, 40, 0.98) 100%); border: 1px solid rgba(0, 194, 255, 0.18); border-radius: 24px; padding: 36px 28px; text-align: center; box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4); backdrop-filter: blur(14px);" class="faculty-card reveal">
         <div style="width: 72px; height: 72px; border-radius: 22px; background: rgba(0, 194, 255, 0.12); border: 1.5px solid rgba(0, 194, 255, 0.25); display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
           <svg width="36" height="36" fill="none" stroke="var(--primary)" stroke-width="2" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
         </div>
-        <div style="display: inline-block; padding: 4px 12px; background: rgba(0, 194, 255, 0.1); color: var(--primary); border-radius: 100px; font-size: 0.78rem; font-weight: 700; margin-bottom: 12px;">SOFTWARE &amp; DATA TEAM</div>
-        <h3 style="font-size: 1.25rem; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Computer Pencil Masters (Software Engineers)</h3>
-        <p style="color: #94a3b8; font-size: 0.92rem; line-height: 1.65; margin-bottom: 18px;">
+        <div style="display: inline-block; padding: 5px 14px; background: rgba(0, 194, 255, 0.12); color: #38bdf8; border: 1px solid rgba(0, 194, 255, 0.3); border-radius: 100px; font-size: 0.78rem; font-weight: 700; margin-bottom: 14px; letter-spacing: 0.5px;">SOFTWARE &amp; DATA TEAM</div>
+        <h3 style="font-size: 1.25rem; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Star-Byte Code Masters (Software Engineers)</h3>
+        <p style="color: #cbd5e1; font-size: 0.94rem; line-height: 1.7; margin-bottom: 20px;">
           Lead engineers from Tristara's enterprise division specializing in Machine Learning, Cloud DevOps, Full-Stack frameworks, and secure database schemas.
         </p>
         <div style="font-size: 0.85rem; color: #38bdf8; font-weight: 600; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 14px;">
@@ -201,13 +198,13 @@ require_once __DIR__ . '/../layouts/header.php';
       </div>
 
       <!-- Faculty Card 2 -->
-      <div style="background: var(--card-dark); border: 1px solid var(--border-dark); border-radius: 24px; padding: 36px 28px; text-align: center;" class="faculty-card reveal">
+      <div style="background: linear-gradient(145deg, rgba(13, 27, 49, 0.9) 0%, rgba(7, 21, 40, 0.98) 100%); border: 1px solid rgba(0, 194, 255, 0.18); border-radius: 24px; padding: 36px 28px; text-align: center; box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4); backdrop-filter: blur(14px);" class="faculty-card reveal">
         <div style="width: 72px; height: 72px; border-radius: 22px; background: rgba(123, 97, 255, 0.12); border: 1.5px solid rgba(123, 97, 255, 0.25); display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
           <svg width="36" height="36" fill="none" stroke="var(--purple)" stroke-width="2" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
         </div>
-        <div style="display: inline-block; padding: 4px 12px; background: rgba(123, 97, 255, 0.1); color: var(--purple); border-radius: 100px; font-size: 0.78rem; font-weight: 700; margin-bottom: 12px;">DOCTORAL RESEARCH WING</div>
-        <h3 style="font-size: 1.25rem; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Memory Bread Scholars (Ph.D. Researchers)</h3>
-        <p style="color: #94a3b8; font-size: 0.92rem; line-height: 1.65; margin-bottom: 18px;">
+        <div style="display: inline-block; padding: 5px 14px; background: rgba(168, 85, 247, 0.12); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.3); border-radius: 100px; font-size: 0.78rem; font-weight: 700; margin-bottom: 14px; letter-spacing: 0.5px;">DOCTORAL RESEARCH WING</div>
+        <h3 style="font-size: 1.25rem; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Infinite Backpack Scholars (Ph.D. Researchers)</h3>
+        <p style="color: #cbd5e1; font-size: 0.94rem; line-height: 1.7; margin-bottom: 20px;">
           Published scholars holding Master's and Ph.D. degrees from recognized international universities, specializing in thesis literature synthesis and methodology.
         </p>
         <div style="font-size: 0.85rem; color: #a78bfa; font-weight: 600; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 14px;">
@@ -216,13 +213,13 @@ require_once __DIR__ . '/../layouts/header.php';
       </div>
 
       <!-- Faculty Card 3 -->
-      <div style="background: var(--card-dark); border: 1px solid var(--border-dark); border-radius: 24px; padding: 36px 28px; text-align: center;" class="faculty-card reveal">
+      <div style="background: linear-gradient(145deg, rgba(13, 27, 49, 0.9) 0%, rgba(7, 21, 40, 0.98) 100%); border: 1px solid rgba(0, 194, 255, 0.18); border-radius: 24px; padding: 36px 28px; text-align: center; box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4); backdrop-filter: blur(14px);" class="faculty-card reveal">
         <div style="width: 72px; height: 72px; border-radius: 22px; background: rgba(34, 197, 94, 0.12); border: 1.5px solid rgba(34, 197, 94, 0.25); display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
           <svg width="36" height="36" fill="none" stroke="#22c55e" stroke-width="2" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
         </div>
-        <div style="display: inline-block; padding: 4px 12px; background: rgba(34, 197, 94, 0.1); color: #22c55e; border-radius: 100px; font-size: 0.78rem; font-weight: 700; margin-bottom: 12px;">QUANTITATIVE ANALYTICS</div>
-        <h3 style="font-size: 1.25rem; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Time Machine Forecasters (Data Scientists)</h3>
-        <p style="color: #94a3b8; font-size: 0.92rem; line-height: 1.65; margin-bottom: 18px;">
+        <div style="display: inline-block; padding: 5px 14px; background: rgba(34, 197, 94, 0.12); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.3); border-radius: 100px; font-size: 0.78rem; font-weight: 700; margin-bottom: 14px; letter-spacing: 0.5px;">QUANTITATIVE ANALYTICS</div>
+        <h3 style="font-size: 1.25rem; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Zen Time-Warp Forecasters (Data Scientists)</h3>
+        <p style="color: #cbd5e1; font-size: 0.94rem; line-height: 1.7; margin-bottom: 20px;">
           Empirical researchers and certified biostatisticians proficient in hypothesis validation, SEM path modeling, regression tests, and thematic coding.
         </p>
         <div style="font-size: 0.85rem; color: #4ade80; font-weight: 600; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 14px;">
@@ -234,9 +231,9 @@ require_once __DIR__ . '/../layouts/header.php';
 </section>
 
 <!-- SECTION 5: GLOBAL INSTITUTIONAL REACH & CURRICULUM COMPLIANCE (LIGHT THEME) -->
-<section style="padding: 100px 0 110px; background: #ffffff; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0;">
-  <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center;">
-    <div class="reveal-left">
+<section class="about-standards-section" id="about-standards">
+  <div class="container about-standards-container">
+    <div class="about-standards-left reveal-left">
       <div class="section-label" style="color: #2563EB;">Global Footprint</div>
       <h2 style="font-size: clamp(2rem, 3.8vw, 2.7rem); font-weight: 800; color: #0f172a; margin-bottom: 20px; line-height: 1.25;">
         Aligned With World-Class Academic Standards
@@ -275,7 +272,7 @@ require_once __DIR__ . '/../layouts/header.php';
     </div>
 
     <!-- Right Side Creative Figure: World Regional Campus Badges -->
-    <div class="reveal-right">
+    <div class="about-standards-right reveal-right">
       <div style="background: #f8faff; border: 1.5px solid #dbeafe; border-radius: 28px; padding: 40px; box-shadow: 0 15px 40px rgba(37, 99, 235, 0.07);">
         <h4 style="font-size: 1.25rem; font-weight: 700; color: #0f172a; margin-bottom: 24px; text-align: center;">International Academic Recognition</h4>
         
@@ -315,89 +312,89 @@ require_once __DIR__ . '/../layouts/header.php';
   </div>
 </section>
 
-<!-- SECTION 6: STUDENT COMMITMENT & TRANSPARENT GUARANTEE (LIGHT THEME) -->
-<section style="padding: 100px 0; background: #ffffff;">
+<!-- SECTION 6: STUDENT COMMITMENT & TRANSPARENT GUARANTEE (DARK THEME) -->
+<section style="padding: 100px 0; background: #071528; border-top: 1px solid rgba(0, 194, 255, 0.15); border-bottom: 1px solid rgba(0, 194, 255, 0.15);">
   <div class="container">
     <div style="text-align: center; margin-bottom: 60px;" class="reveal">
-      <div class="section-label" style="color: #2563EB;">Our Commitment</div>
-      <h2 style="font-size: clamp(2rem, 3.8vw, 2.7rem); font-weight: 800; color: #0f172a; margin-bottom: 14px;">How We Support Your Academic Growth</h2>
-      <p style="color: #64748b; font-size: 1.05rem; max-width: 640px; margin: 0 auto;">More than just completing an assignment, we empower you to understand your coursework with clarity.</p>
+      <div class="section-label" style="color: var(--primary);">Our Commitment</div>
+      <h2 style="font-size: clamp(2rem, 3.8vw, 2.7rem); font-weight: 800; color: #ffffff; margin-bottom: 14px;">How We Support Your Academic Growth</h2>
+      <p style="color: #cbd5e1; font-size: 1.05rem; max-width: 640px; margin: 0 auto;">More than just completing an assignment, we empower you to understand your coursework with clarity.</p>
     </div>
 
     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;">
-      <div style="background: #f8faff; border: 1.5px solid #e2e8f0; border-radius: 20px; padding: 32px 26px; text-align: center;" class="commitment-card reveal">
-        <div style="width: 56px; height: 56px; border-radius: 16px; background: #eff6ff; border: 1.5px solid #dbeafe; display: flex; align-items: center; justify-content: center; margin: 0 auto 18px; color: #2563EB;">
+      <div style="background: linear-gradient(145deg, rgba(13, 27, 49, 0.9) 0%, rgba(7, 21, 40, 0.98) 100%); border: 1.5px solid rgba(0, 194, 255, 0.2); border-radius: 20px; padding: 32px 26px; text-align: center; box-shadow: 0 12px 35px rgba(0,0,0,0.4);" class="commitment-card reveal">
+        <div style="width: 56px; height: 56px; border-radius: 16px; background: rgba(0, 194, 255, 0.12); border: 1.5px solid rgba(0, 194, 255, 0.3); display: flex; align-items: center; justify-content: center; margin: 0 auto 18px; color: #38bdf8;">
           <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
         </div>
-        <h4 style="font-size: 1.15rem; font-weight: 700; color: #0f172a; margin-bottom: 10px;">Conceptual Clarity</h4>
-        <p style="color: #64748b; font-size: 0.92rem; line-height: 1.65;">Every project includes detailed commentary, documentation, and references so you can present your work with total confidence.</p>
+        <h4 style="font-size: 1.15rem; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Conceptual Clarity</h4>
+        <p style="color: #cbd5e1; font-size: 0.92rem; line-height: 1.65;">Every project includes detailed commentary, documentation, and references so you can present your work with total confidence.</p>
       </div>
 
-      <div style="background: #f8faff; border: 1.5px solid #e2e8f0; border-radius: 20px; padding: 32px 26px; text-align: center;" class="commitment-card reveal">
-        <div style="width: 56px; height: 56px; border-radius: 16px; background: #eff6ff; border: 1.5px solid #dbeafe; display: flex; align-items: center; justify-content: center; margin: 0 auto 18px; color: #2563EB;">
+      <div style="background: linear-gradient(145deg, rgba(13, 27, 49, 0.9) 0%, rgba(7, 21, 40, 0.98) 100%); border: 1.5px solid rgba(0, 194, 255, 0.2); border-radius: 20px; padding: 32px 26px; text-align: center; box-shadow: 0 12px 35px rgba(0,0,0,0.4);" class="commitment-card reveal">
+        <div style="width: 56px; height: 56px; border-radius: 16px; background: rgba(0, 194, 255, 0.12); border: 1.5px solid rgba(0, 194, 255, 0.3); display: flex; align-items: center; justify-content: center; margin: 0 auto 18px; color: #38bdf8;">
           <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
         </div>
-        <h4 style="font-size: 1.15rem; font-weight: 700; color: #0f172a; margin-bottom: 10px;">Time-Zone Flexibility</h4>
-        <p style="color: #64748b; font-size: 0.92rem; line-height: 1.65;">Whether you are studying in London, Sydney, New York, or Dubai, our 24/7 coordinators are online across all academic timezones.</p>
+        <h4 style="font-size: 1.15rem; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Time-Zone Flexibility</h4>
+        <p style="color: #cbd5e1; font-size: 0.92rem; line-height: 1.65;">Whether you are studying in London, Sydney, New York, or Dubai, our 24/7 coordinators are online across all academic timezones.</p>
       </div>
 
-      <div style="background: #f8faff; border: 1.5px solid #e2e8f0; border-radius: 20px; padding: 32px 26px; text-align: center;" class="commitment-card reveal">
-        <div style="width: 56px; height: 56px; border-radius: 16px; background: #eff6ff; border: 1.5px solid #dbeafe; display: flex; align-items: center; justify-content: center; margin: 0 auto 18px; color: #2563EB;">
+      <div style="background: linear-gradient(145deg, rgba(13, 27, 49, 0.9) 0%, rgba(7, 21, 40, 0.98) 100%); border: 1.5px solid rgba(0, 194, 255, 0.2); border-radius: 20px; padding: 32px 26px; text-align: center; box-shadow: 0 12px 35px rgba(0,0,0,0.4);" class="commitment-card reveal">
+        <div style="width: 56px; height: 56px; border-radius: 16px; background: rgba(0, 194, 255, 0.12); border: 1.5px solid rgba(0, 194, 255, 0.3); display: flex; align-items: center; justify-content: center; margin: 0 auto 18px; color: #38bdf8;">
           <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
         </div>
-        <h4 style="font-size: 1.15rem; font-weight: 700; color: #0f172a; margin-bottom: 10px;">Distinction Outcomes</h4>
-        <p style="color: #64748b; font-size: 0.92rem; line-height: 1.65;">Over 94% of our assisted capstones and dissertations achieve First-Class honors or Distinction grades on university evaluations.</p>
+        <h4 style="font-size: 1.15rem; font-weight: 700; color: #ffffff; margin-bottom: 10px;">Distinction Outcomes</h4>
+        <p style="color: #cbd5e1; font-size: 0.92rem; line-height: 1.65;">Over 94% of our assisted capstones and dissertations achieve First-Class honors or Distinction grades on university evaluations.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SECTION 7: FREQUENTLY ASKED QUESTIONS ABOUT TRISTARA (DARK THEME) -->
-<section style="padding: 100px 0; background: var(--bg-dark); border-top: 1px solid var(--border-dark);">
+<!-- SECTION 7: FREQUENTLY ASKED QUESTIONS ABOUT TRISTARA (LIGHT THEME) -->
+<section style="padding: 100px 0; background: #f8faff; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0;">
   <div class="container" style="max-width: 860px;">
     <div style="text-align: center; margin-bottom: 60px;" class="reveal">
-      <div class="section-label">Clear Answers</div>
-      <h2 class="section-title">Frequently Asked Questions</h2>
-      <p class="section-desc" style="margin: 0 auto;">Everything you need to know about our enterprise backing, credentials, and ethics.</p>
+      <div class="section-label" style="color: #2563EB;">Clear Answers</div>
+      <h2 class="section-title" style="color: #0b2479 !important;">Frequently Asked Questions</h2>
+      <p class="section-desc" style="margin: 0 auto; color: #475569 !important;">Everything you need to know about our enterprise backing, credentials, and ethics.</p>
     </div>
 
     <div style="display: flex; flex-direction: column; gap: 20px;">
       <!-- FAQ 1 -->
-      <div style="background: var(--card-dark); border: 1px solid var(--border-dark); border-radius: 18px; padding: 26px 28px;" class="reveal">
-        <h4 style="font-size: 1.15rem; font-weight: 700; color: #ffffff; margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
-          <span style="color: var(--primary);">Q:</span> How is Tristara different from typical freelance essay websites?
+      <div style="background: #ffffff; border: 1.5px solid #dce8f8; border-radius: 18px; padding: 26px 28px; box-shadow: 0 10px 30px rgba(11, 36, 121, 0.05);" class="reveal">
+        <h4 style="font-size: 1.15rem; font-weight: 700; color: #0b2479; margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
+          <span style="color: #2563EB; font-weight: 800;">Q:</span> How is Tristara different from typical freelance essay websites?
         </h4>
-        <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.7; margin: 0;">
+        <p style="color: #334155; font-size: 0.95rem; line-height: 1.7; margin: 0;">
           Tristara IT Solutions is a registered corporate enterprise in Surat, India. We do not outsource your coursework to unverified random gig-workers. Your coding, thesis, and quantitative data tasks are built directly by full-time software engineers and postgraduate domain scholars.
         </p>
       </div>
 
       <!-- FAQ 2 -->
-      <div style="background: var(--card-dark); border: 1px solid var(--border-dark); border-radius: 18px; padding: 26px 28px;" class="reveal">
-        <h4 style="font-size: 1.15rem; font-weight: 700; color: #ffffff; margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
-          <span style="color: var(--primary);">Q:</span> Do you guarantee 0% AI-generated text and authentic references?
+      <div style="background: #ffffff; border: 1.5px solid #dce8f8; border-radius: 18px; padding: 26px 28px; box-shadow: 0 10px 30px rgba(11, 36, 121, 0.05);" class="reveal">
+        <h4 style="font-size: 1.15rem; font-weight: 700; color: #0b2479; margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
+          <span style="color: #2563EB; font-weight: 800;">Q:</span> Do you guarantee 0% AI-generated text and authentic references?
         </h4>
-        <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.7; margin: 0;">
+        <p style="color: #334155; font-size: 0.95rem; line-height: 1.7; margin: 0;">
           Yes, absolutely. We strictly forbid artificial intelligence hallucinated text or synthetic bibliographies. Every submission includes an official Turnitin similarity report verifying authentic citations, peer-reviewed DOIs, and zero AI authorship.
         </p>
       </div>
 
       <!-- FAQ 3 -->
-      <div style="background: var(--card-dark); border: 1px solid var(--border-dark); border-radius: 18px; padding: 26px 28px;" class="reveal">
-        <h4 style="font-size: 1.15rem; font-weight: 700; color: #ffffff; margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
-          <span style="color: var(--primary);">Q:</span> What if my tutor requests adjustments after submission?
+      <div style="background: #ffffff; border: 1.5px solid #dce8f8; border-radius: 18px; padding: 26px 28px; box-shadow: 0 10px 30px rgba(11, 36, 121, 0.05);" class="reveal">
+        <h4 style="font-size: 1.15rem; font-weight: 700; color: #0b2479; margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
+          <span style="color: #2563EB; font-weight: 800;">Q:</span> What if my tutor requests adjustments after submission?
         </h4>
-        <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.7; margin: 0;">
+        <p style="color: #334155; font-size: 0.95rem; line-height: 1.7; margin: 0;">
           We provide 14 days of free, unlimited revisions for every project. If your professor or supervisor provides constructive feedback within the original scope, our mentors implement changes immediately at no extra charge.
         </p>
       </div>
 
       <!-- FAQ 4 -->
-      <div style="background: var(--card-dark); border: 1px solid var(--border-dark); border-radius: 18px; padding: 26px 28px;" class="reveal">
-        <h4 style="font-size: 1.15rem; font-weight: 700; color: #ffffff; margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
-          <span style="color: var(--primary);">Q:</span> How is my identity and university information protected?
+      <div style="background: #ffffff; border: 1.5px solid #dce8f8; border-radius: 18px; padding: 26px 28px; box-shadow: 0 10px 30px rgba(11, 36, 121, 0.05);" class="reveal">
+        <h4 style="font-size: 1.15rem; font-weight: 700; color: #0b2479; margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
+          <span style="color: #2563EB; font-weight: 800;">Q:</span> How is my identity and university information protected?
         </h4>
-        <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.7; margin: 0;">
+        <p style="color: #334155; font-size: 0.95rem; line-height: 1.7; margin: 0;">
           We operate under strict Non-Disclosure Agreements (NDA). All university details, rubrics, and project drafts are encrypted and stored in secure, private data stores. We never publish, resell, or share your work with third parties.
         </p>
       </div>

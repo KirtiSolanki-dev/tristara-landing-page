@@ -2,6 +2,7 @@
    TRISTARA IT SOLUTIONS — airplane-workflow.js
    Dynamic SVG curved flight path computation & 
    smooth scroll-driven paper airplane flight animation.
+   (PANDA & LYRA ZIG-ZAG PATTERN)
    =================================================== */
 
 (function initAirplaneWorkflow() {
@@ -64,8 +65,8 @@
       var pt2 = pathEl.getPointAtLength(Math.min(progress * totalLen + 2, totalLen));
       var angle = Math.atan2(pt2.y - pt.y, pt2.x - pt.x) * 180 / Math.PI;
 
-      airplane.style.left    = (pt.x - 18) + 'px';
-      airplane.style.top     = (pt.y - 18) + 'px';
+      airplane.style.left    = (pt.x - 24) + 'px';
+      airplane.style.top     = (pt.y - 24) + 'px';
       airplane.style.transform = 'rotate(' + angle + 'deg)';
       airplane.style.opacity   = (progress > 0.02 && progress < 0.98) ? '1' : '0';
     } catch (e) {

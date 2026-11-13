@@ -1044,3 +1044,2309 @@ h1, h2, h3, h4, h5, h6, p, a, span, li, th, td {
     text-align: center !important;
   }
 }
+
+/* Lyra & Panda Hero Mobile Responsive */
+@media (max-width: 768px) {
+  .lyra-panda-card-showcase {
+    max-width: 320px !important;
+    margin: 0 auto !important;
+  }
+  .hero-floating-badge {
+    padding: 7px 14px !important;
+    gap: 10px !important;
+    font-size: 0.75rem !important;
+  }
+  .hero-tools-strip-container {
+    margin-top: 28px !important;
+    padding-top: 16px !important;
+  }
+  .hero-tools-strip {
+    gap: 10px !important;
+  }
+  .tool-pill {
+    padding: 8px 14px !important;
+  }
+}
+
+/* Exact Mockup Hero Responsive */
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+    text-align: center !important;
+    gap: 24px !important;
+  }
+  .hero-main-subtext {
+    margin: 0 auto 24px !important;
+  }
+  .hero-action-row {
+    justify-content: center !important;
+  }
+  .hero-artwork-img {
+    max-width: 440px !important;
+    margin: 0 auto !important;
+  }
+  .hero-tools-dock {
+    margin-top: 28px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-main-heading {
+    font-size: 2.1rem !important;
+  }
+  .btn-start-now {
+    width: 100% !important;
+    padding: 13px 20px !important;
+  }
+  .hero-artwork-img {
+    max-width: 100% !important;
+  }
+}
+
+
+/* Responsive rules for Exact Mockup Hero */
+@media (max-width: 991px) {
+  .hero-exact-grid {
+    grid-template-columns: 1fr !important;
+    text-align: center !important;
+    gap: 36px !important;
+  }
+  .hero-copy-col {
+    align-items: center !important;
+  }
+  .hero-headline span.hl-line-1,
+  .hero-headline span.hl-line-2 {
+    white-space: normal !important;
+  }
+  .hero-subhead {
+    max-width: 520px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .exact-art-img {
+    max-width: 500px !important;
+    margin: 0 auto !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero.hero-exact-mockup {
+    padding-top: calc(var(--nav-height, 70px) + 20px) !important;
+    padding-bottom: 24px !important;
+  }
+  .hero-headline {
+    font-size: 1.95rem !important;
+    line-height: 1.22 !important;
+  }
+  .hero-subhead {
+    font-size: 0.98rem !important;
+    margin-bottom: 24px !important;
+  }
+  .btn-start-exact {
+    padding: 12px 30px !important;
+    font-size: 0.95rem !important;
+  }
+}
+
+
+/* Responsive rules for Fullscreen Hero & Floating Gadgets */
+@media (max-width: 991px) {
+  .hero.hero-fullscreen {
+    min-height: auto !important;
+    padding-top: calc(var(--nav-height, 70px) + 30px) !important;
+    padding-bottom: 45px !important;
+  }
+  .hero-key-points {
+    align-items: center !important;
+  }
+  .hero-btn-wrap {
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 12px !important;
+  }
+  .btn-explore-secondary {
+    margin-left: 0 !important;
+  }
+  .hero-mini-stats {
+    justify-content: center !important;
+  }
+  .gadget-float-1 {
+    top: -8px !important;
+    left: 5px !important;
+    transform: scale(0.9) !important;
+  }
+  .gadget-float-2 {
+    top: -12px !important;
+    right: 10px !important;
+    transform: scale(0.9) !important;
+  }
+  .gadget-float-3 {
+    bottom: -8px !important;
+    left: 5px !important;
+    transform: scale(0.9) !important;
+  }
+  .gadget-float-4 {
+    bottom: -12px !important;
+    right: 5px !important;
+    transform: scale(0.9) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-mini-stats {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .mini-stat-sep {
+    display: none !important;
+  }
+  .floating-gadget {
+    display: none !important; /* Hide tiny floats on small phones to prevent clutter */
+  }
+}
+
+
+/* Responsive rules for Free-Floating Gadgets */
+@media (max-width: 991px) {
+  .free-floating-gadget {
+    font-size: 2.2rem !important;
+  }
+  .gadget-spread-6 {
+    right: 5px !important;
+  }
+  .gadget-spread-7 {
+    left: 5px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .free-floating-gadget {
+    font-size: 1.8rem !important;
+  }
+  .gadget-spread-1 { top: -15px !important; left: 10px !important; }
+  .gadget-spread-2 { top: -18px !important; right: 15px !important; }
+  .gadget-spread-3 { bottom: -10px !important; left: 10px !important; }
+  .gadget-spread-4 { bottom: -12px !important; right: 15px !important; }
+  .gadget-spread-5 { top: -25px !important; }
+  .gadget-spread-6, .gadget-spread-7 { display: none !important; }
+}
+
+
+/* ==========================================================================
+   ADVANCED UNIVERSAL RESPONSIVENESS SYSTEM (v45)
+   Seamless multi-device adaptability for:
+   1. Laptops & Large Desktops (>= 1025px)
+   2. Desktop Mode on Mobile (980px - 1024px @ High DPR)
+   3. Tablets (Portrait & Landscape: 768px - 1024px)
+   4. Phablets & Standard Mobile Phones (480px - 767px)
+   5. Small Mobile Phones (320px - 479px, iPhone SE, mini phones, Galaxy Fold)
+   ========================================================================== */
+
+/* ===== GLOBAL FLUID VIEWPORT & HORIZONTAL BLEED PREVENTION ===== */
+html, body {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+  -webkit-text-size-adjust: 100% !important;
+  text-size-adjust: 100% !important;
+  box-sizing: border-box !important;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box !important;
+}
+
+/* Ensure all images and embedded media respect container bounds */
+img, svg, picture, video, canvas {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* Container safety padding across all pages */
+.container {
+  width: 100% !important;
+  max-width: 1240px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  box-sizing: border-box !important;
+}
+
+/* ==========================================================================
+   DESKTOP MODE IN MOBILE & TABLETS (768px to 1024px & 980px Viewport)
+   ========================================================================== */
+@media screen and (max-width: 1024px) {
+  .container {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  /* 4-Column Grids adapt to clean 2x2 grids */
+  div[style*="grid-template-columns: repeat(4, 1fr)"],
+  .trust-bar .container,
+  .audit-stage-card-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px !important;
+  }
+
+  /* 3-Column Grids adapt gracefully */
+  div[style*="grid-template-columns: repeat(3, 1fr)"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 22px !important;
+  }
+
+  /* Split 2-Column Sections: Soften large gap from 80px to 40px */
+  .container[style*="grid-template-columns: 1fr 1fr"],
+  .container[style*="grid-template-columns: 1.1fr 0.9fr"],
+  .container[style*="grid-template-columns: 1.05fr 0.95fr"],
+  .step-row[style*="grid-template-columns"] {
+    gap: 40px !important;
+  }
+
+  /* Services module cards padding on tablets */
+  .service-card,
+  .step-row {
+    padding: 36px 28px !important;
+    border-radius: 26px !important;
+  }
+
+  /* Comparison table safety on 980px-1024px */
+  .comparison-table-wrapper,
+  div[style*="overflow-x: auto"] {
+    width: 100% !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+}
+
+/* ==========================================================================
+   TABLET PORTRAIT & MEDIUM MOBILE LANDSCAPE (<= 920px)
+   ========================================================================== */
+@media screen and (max-width: 920px) {
+  /* Collapse all 2-column split content sections into full-width vertical stacks */
+  .container[style*="grid-template-columns: 1fr 1fr"],
+  .container[style*="grid-template-columns: 1.1fr 0.9fr"],
+  .container[style*="grid-template-columns: 0.95fr 1.05fr"],
+  .container[style*="grid-template-columns: 1.05fr 0.95fr"],
+  .step-row[style*="grid-template-columns"],
+  .step-row,
+  .service-card {
+    grid-template-columns: 1fr !important;
+    gap: 36px !important;
+    text-align: left !important;
+  }
+
+  /* Keep content first, figures second for optimal reading flow */
+  .step-row.reverse > :first-child,
+  .step-row > .reveal-left {
+    order: 1 !important;
+    width: 100% !important;
+  }
+
+  .step-row.reverse > :last-child,
+  .step-row > .reveal-right {
+    order: 2 !important;
+    width: 100% !important;
+  }
+
+  /* Figures center gracefully in single-column mode */
+  .step-row img,
+  .reveal-right img,
+  .reveal-left img {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 440px !important;
+  }
+
+  /* 3-Column Grids collapse to single column */
+  div[style*="grid-template-columns: repeat(3, 1fr)"] {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  /* Faculty cards in About page */
+  .faculty-card {
+    padding: 30px 22px !important;
+  }
+}
+
+/* ==========================================================================
+   STANDARD MOBILE PHONES (<= 768px)
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+  .container {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+
+  /* Sections vertical spacing optimization */
+  section {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+
+  /* Page headers compact padding */
+  section[style*="padding: 160px 0 70px"],
+  section[style*="padding: 150px 0 70px"],
+  section[style*="padding: 140px 0 70px"] {
+    padding-top: 105px !important;
+    padding-bottom: 45px !important;
+  }
+
+  /* Headings fluid typography */
+  h1, .hero-headline {
+    font-size: clamp(1.95rem, 6.5vw, 2.6rem) !important;
+    line-height: 1.22 !important;
+  }
+
+  h2, .section-title {
+    font-size: clamp(1.65rem, 5.5vw, 2.2rem) !important;
+    line-height: 1.25 !important;
+  }
+
+  h3 {
+    font-size: 1.25rem !important;
+  }
+
+  p, .section-desc {
+    font-size: 0.98rem !important;
+    line-height: 1.68 !important;
+  }
+
+  /* Services cards mobile styling */
+  .service-card,
+  .step-row {
+    padding: 28px 18px !important;
+    border-radius: 22px !important;
+  }
+
+  /* Checklist boxes switch to vertical single-column */
+  .service-feature-box,
+  div[style*="border-radius: 16px; padding: 20px;"] {
+    padding: 18px 14px !important;
+    border-radius: 16px !important;
+  }
+
+  ul.service-checklist,
+  ul[style*="grid-template-columns: 1fr 1fr"],
+  ul[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+
+  ul.service-checklist li,
+  ul[style*="grid-template-columns: 1fr 1fr"] li {
+    font-size: 0.88rem !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Contact page layout on mobile */
+  .contact-form {
+    padding: 30px 20px !important;
+    border-radius: 22px !important;
+  }
+
+  /* CTA Button Wrappers: Full-width accessible stacking */
+  div[style*="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;"] {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    max-width: 360px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    gap: 12px !important;
+  }
+
+  div[style*="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;"] a,
+  .btn-primary,
+  .btn-secondary,
+  .whatsapp-btn {
+    width: 100% !important;
+    text-align: center !important;
+    justify-content: center !important;
+    padding: 14px 20px !important;
+  }
+
+  /* Comparison table scrollability notice on mobile */
+  .comparison-table-wrapper table,
+  div[style*="overflow-x: auto"] table {
+    min-width: 600px !important;
+  }
+
+  .comparison-table-wrapper th,
+  .comparison-table-wrapper td,
+  div[style*="overflow-x: auto"] th,
+  div[style*="overflow-x: auto"] td {
+    padding: 14px 14px !important;
+    font-size: 0.86rem !important;
+  }
+}
+
+/* ===================================================
+   SMALL & COMPACT MOBILE PHONES (<= 480px)
+   Matches iPhone SE, iPhone 12/13/14/15 Mini, Galaxy Fold
+   =================================================== */
+@media screen and (max-width: 480px) {
+  .container {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+
+  /* 4-column grids collapse to single-column on small screens */
+  div[style*="grid-template-columns: repeat(4, 1fr)"],
+  .audit-stage-card-grid {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+
+  /* Trust Bar stats: Clean 2x2 grid on small mobile */
+  .trust-bar .container {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 14px !important;
+  }
+
+  .trust-bar .trust-stat div[style*="font-size: 1.8rem"] {
+    font-size: 1.45rem !important;
+  }
+
+  .trust-bar .trust-stat div[style*="font-size: 0.9rem"] {
+    font-size: 0.78rem !important;
+    line-height: 1.35 !important;
+  }
+
+  /* Service & Step Cards ultra-clean padding */
+  .service-card,
+  .step-row {
+    padding: 22px 14px !important;
+    border-radius: 18px !important;
+  }
+
+  .step-number {
+    width: 38px !important;
+    height: 38px !important;
+    font-size: 1rem !important;
+    border-radius: 10px !important;
+  }
+
+  .section-label,
+  span[style*="text-transform: uppercase"] {
+    font-size: 0.75rem !important;
+    letter-spacing: 0.5px !important;
+  }
+
+  /* Headings on small mobile */
+  h1, .hero-headline {
+    font-size: 1.8rem !important;
+    line-height: 1.22 !important;
+  }
+
+  h2, .section-title {
+    font-size: 1.5rem !important;
+    line-height: 1.25 !important;
+  }
+
+  h4 {
+    font-size: 1rem !important;
+  }
+
+  /* IDE Terminal Code Box in Module 02 */
+  div[style*="font-family: 'JetBrains Mono'"] {
+    font-size: 0.78rem !important;
+    border-radius: 14px !important;
+  }
+
+  div[style*="font-family: 'JetBrains Mono'"] div[style*="padding: 22px 20px"] {
+    padding: 14px 12px !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Contact Form telephone row wrap safety */
+  .contact-form div[style*="display: flex; gap: 8px;"],
+  .form-group div[style*="display: flex; gap: 8px;"] {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .contact-form select,
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 16px !important; /* Prevents auto-zoom on iOS Safari */
+    min-height: 46px !important;
+  }
+
+  /* Guarantees cards compact sizing */
+  div[style*="box-shadow: 0 10px 25px rgba(37,99,235,0.06)"] {
+    padding: 20px 14px !important;
+    border-radius: 16px !important;
+  }
+
+  /* 3-Metric Counter in About page */
+  div[style*="grid-template-columns: repeat(3, 1fr)"][style*="border-top"] {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    text-align: center !important;
+    padding: 20px 0 !important;
+  }
+}
+
+/* ===================================================
+   ULTRA-COMPACT PHONES (<= 340px)
+   Matches Galaxy Fold outer screen, iPhone 5/SE1
+   =================================================== */
+@media screen and (max-width: 340px) {
+  .container {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .service-card,
+  .step-row {
+    padding: 18px 10px !important;
+    border-radius: 14px !important;
+  }
+
+  h1, .hero-headline {
+    font-size: 1.6rem !important;
+  }
+
+  h2 {
+    font-size: 1.35rem !important;
+  }
+
+  .trust-bar .container {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .whatsapp-btn {
+    padding: 12px 14px !important;
+    font-size: 0.88rem !important;
+  }
+}
+
+/* ===================================================
+   DESKTOP MODE ON MOBILE ENFORCEMENT
+   Ensures 980px - 1080px mobile viewports do not clip
+   =================================================== */
+@media screen and (min-width: 900px) and (max-width: 1080px) {
+  .container {
+    max-width: 920px !important;
+    width: 95% !important;
+  }
+
+  .hero-exact-grid,
+  .step-row {
+    gap: 32px !important;
+  }
+
+  .comparison-table-wrapper {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+}
+
+
+/* Story Compact List — Natural Sentence Flow (No Column Truncation) */
+.story-compact-list {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+}
+
+.story-compact-list li {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 10px !important;
+  font-size: 0.9rem !important;
+  line-height: 1.5 !important;
+  color: #e2e8f0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.story-compact-list .comp-icon {
+  font-size: 1.05rem !important;
+  line-height: 1.4 !important;
+  flex-shrink: 0 !important;
+  display: inline-block !important;
+}
+
+.story-compact-list .story-point-text {
+  flex: 1 !important;
+  min-width: 0 !important;
+  overflow-wrap: break-word !important;
+  word-wrap: break-word !important;
+  line-height: 1.5 !important;
+}
+
+.story-compact-list .point-label {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  margin-right: 5px !important;
+  display: inline !important;
+}
+
+.story-compact-list .point-desc {
+  color: #cbd5e1 !important;
+  font-size: 0.88rem !important;
+  display: inline !important;
+  line-height: 1.5 !important;
+}
+
+.story-swipe-indicator {
+  display: none;
+}
+
+/* ===================================================
+   STORY JOURNEY CARDS — HORIZONTAL SCROLL ON TABLET & MOBILE
+   =================================================== */
+@media screen and (max-width: 900px) {
+  .story-compact-container {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    overflow: hidden !important;
+  }
+
+  .story-swipe-indicator {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    margin: 14px auto 6px !important;
+    font-size: 0.82rem !important;
+    color: #38bdf8 !important;
+    font-weight: 700 !important;
+    background: rgba(0, 194, 255, 0.1) !important;
+    border: 1px solid rgba(0, 194, 255, 0.25) !important;
+    padding: 5px 16px !important;
+    border-radius: 20px !important;
+  }
+
+  .story-compact-grid {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    gap: 16px !important;
+    padding: 10px 8px 24px 8px !important;
+    margin-top: 14px !important;
+    scrollbar-width: thin !important;
+    scrollbar-color: rgba(0, 194, 255, 0.45) rgba(255, 255, 255, 0.05) !important;
+  }
+
+  .story-compact-grid::-webkit-scrollbar {
+    height: 6px !important;
+  }
+  .story-compact-grid::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.06) !important;
+    border-radius: 10px !important;
+  }
+  .story-compact-grid::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #f87171, #00c2ff) !important;
+    border-radius: 10px !important;
+  }
+
+  .story-card-lyra,
+  .story-card-panda {
+    flex: 0 0 86% !important;
+    width: 86% !important;
+    min-width: 280px !important;
+    max-width: 370px !important;
+    scroll-snap-align: center !important;
+    scroll-snap-stop: always !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .story-card-lyra,
+  .story-card-panda {
+    flex: 0 0 88% !important;
+    width: 88% !important;
+    min-width: 265px !important;
+    padding: 16px 14px !important;
+    border-radius: 18px !important;
+  }
+
+  .story-compact-list {
+    gap: 8px !important;
+  }
+
+  .story-compact-list li {
+    font-size: 0.86rem !important;
+    gap: 8px !important;
+  }
+
+  .story-compact-list .point-desc {
+    font-size: 0.83rem !important;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .story-card-lyra,
+  .story-card-panda {
+    flex: 0 0 94% !important;
+    width: 94% !important;
+    min-width: 245px !important;
+    padding: 14px 10px !important;
+  }
+}
+
+
+/* ==========================================================================
+   PANDA'S ACADEMIC GADGET VAULT — RESPONSIVENESS & TYPOGRAPHY SYSTEM (v48)
+   Flawless layout across Large Monitors, Laptops, Tablets & Mobile Screens
+   ========================================================================== */
+
+/* Base & Typography System */
+.gadget-showcase-box {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 960px !important;
+}
+
+.gadget-showcase-box .step-features {
+  margin: 20px 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 13px !important;
+  width: 100% !important;
+}
+
+.gadget-showcase-box .step-feature {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 12px !important;
+  color: #ffffff !important;
+  font-size: 0.96rem !important;
+  font-weight: 600 !important;
+  line-height: 1.5 !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  text-align: left !important;
+}
+
+.gadget-showcase-box .step-feature svg {
+  width: 20px !important;
+  height: 20px !important;
+  min-width: 20px !important;
+  stroke: #22c55e !important;
+  color: #22c55e !important;
+  flex-shrink: 0 !important;
+  margin-top: 2px !important;
+  filter: drop-shadow(0 0 6px rgba(34, 197, 94, 0.6)) !important;
+}
+
+.gadget-showcase-box .step-feature-text,
+.gadget-showcase-box .step-feature span {
+  flex: 1 !important;
+  min-width: 0 !important;
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+  line-height: 1.5 !important;
+  display: inline-block !important;
+}
+
+/* Tablets & Small Laptops (<= 991px) */
+@media screen and (max-width: 991px) {
+  .gadget-vault-section {
+    padding: 65px 0 !important;
+  }
+
+  /* Horizontal swipeable pill navigation */
+  .gadget-tabs-nav {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    justify-content: flex-start !important;
+    gap: 10px !important;
+    padding: 10px 10px 16px 10px !important;
+    margin: 24px auto 30px !important;
+    max-width: 100% !important;
+    scrollbar-width: thin !important;
+    scrollbar-color: rgba(0, 194, 255, 0.4) rgba(255, 255, 255, 0.05) !important;
+  }
+
+  .gadget-tabs-nav::-webkit-scrollbar {
+    height: 5px !important;
+  }
+  .gadget-tabs-nav::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border-radius: 10px !important;
+  }
+  .gadget-tabs-nav::-webkit-scrollbar-thumb {
+    background: #00c2ff !important;
+    border-radius: 10px !important;
+  }
+
+  .gadget-tab-btn {
+    flex: 0 0 auto !important;
+    scroll-snap-align: center !important;
+    white-space: nowrap !important;
+    padding: 10px 18px !important;
+    font-size: 0.88rem !important;
+  }
+
+  .gadget-showcase-box {
+    padding: 34px 26px !important;
+    border-radius: 24px !important;
+    margin: 0 auto !important;
+  }
+
+  .gadget-showcase-content {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+    text-align: left !important;
+  }
+
+  .gadget-showcase-left {
+    text-align: left !important;
+    width: 100% !important;
+  }
+
+  .gadget-showcase-left h3 {
+    font-size: 1.75rem !important;
+    margin: 8px 0 12px !important;
+    text-align: left !important;
+  }
+
+  .gadget-showcase-left p {
+    font-size: 0.98rem !important;
+    line-height: 1.65 !important;
+    margin-bottom: 20px !important;
+    text-align: left !important;
+  }
+
+  .gadget-showcase-right {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 6px !important;
+  }
+
+  .gadget-visual-frame {
+    width: 100% !important;
+    max-width: 220px !important;
+    height: 180px !important;
+    margin: 0 auto !important;
+  }
+}
+
+/* Phones & Phablets (<= 640px) */
+@media screen and (max-width: 640px) {
+  .gadget-vault-section {
+    padding: 46px 0 !important;
+  }
+
+  .gadget-showcase-box {
+    padding: 22px 16px !important;
+    border-radius: 20px !important;
+    border-width: 1.5px !important;
+  }
+
+  .gadget-showcase-content {
+    gap: 20px !important;
+  }
+
+  .gadget-sound-tag {
+    font-size: 0.72rem !important;
+    padding: 4px 10px !important;
+    margin-bottom: 8px !important;
+    transform: rotate(-2deg) !important;
+  }
+
+  .gadget-showcase-left h3 {
+    font-size: 1.45rem !important;
+    line-height: 1.3 !important;
+    margin: 6px 0 10px !important;
+  }
+
+  .gadget-showcase-left p {
+    font-size: 0.9rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 16px !important;
+  }
+
+  .gadget-showcase-box .step-features {
+    margin: 16px 0 !important;
+    gap: 12px !important;
+  }
+
+  .gadget-showcase-box .step-feature {
+    font-size: 0.88rem !important;
+    gap: 10px !important;
+    line-height: 1.45 !important;
+  }
+
+  .gadget-showcase-box .step-feature svg {
+    width: 18px !important;
+    height: 18px !important;
+    min-width: 18px !important;
+    margin-top: 2px !important;
+  }
+
+  .gadget-showcase-left .btn-primary {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    max-width: 320px !important;
+    padding: 12px 18px !important;
+    font-size: 0.92rem !important;
+    font-weight: 700 !important;
+    border-radius: 30px !important;
+    margin: 18px auto 0 !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+  }
+
+  .gadget-visual-frame {
+    max-width: 190px !important;
+    height: 160px !important;
+    border-radius: 18px !important;
+  }
+
+  .gadget-visual-frame svg {
+    max-width: 130px !important;
+    max-height: 140px !important;
+    width: auto !important;
+    height: auto !important;
+  }
+}
+
+/* Very Small Mobile Phones (<= 380px, e.g. iPhone SE, Fold) */
+@media screen and (max-width: 380px) {
+  .gadget-showcase-box {
+    padding: 18px 12px !important;
+    border-radius: 16px !important;
+  }
+
+  .gadget-showcase-left h3 {
+    font-size: 1.3rem !important;
+  }
+
+  .gadget-showcase-left p {
+    font-size: 0.84rem !important;
+  }
+
+  .gadget-showcase-box .step-feature {
+    font-size: 0.82rem !important;
+    gap: 8px !important;
+  }
+
+  .gadget-tab-btn {
+    padding: 8px 14px !important;
+    font-size: 0.82rem !important;
+  }
+
+  .gadget-visual-frame {
+    max-width: 155px !important;
+    height: 135px !important;
+  }
+}
+
+
+
+/* ==========================================================================
+   MOBILE & TABLET HERO REORDER: LYRA & PANDA STAGE AT VERY TOP (v49)
+   The illustration is the first thing users see on phone/small screens,
+   with ample padding & zero element overlap.
+   ========================================================================== */
+
+@media screen and (max-width: 991px) {
+  .hero-exact-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 18px !important;
+    padding-top: 10px !important;
+  }
+
+  /* 1. VISUAL ART STAGE — APPEARS FIRST AT VERY TOP ON MOBILE */
+  .hero-art-col {
+    order: 1 !important;
+    width: 100% !important;
+    max-width: 520px !important;
+    margin: 0 auto 8px auto !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    position: relative !important;
+    z-index: 5 !important;
+  }
+
+  .art-visual-stage {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 440px !important;
+    margin: 0 auto !important;
+    padding: 12px 6px 8px 6px !important; /* Generous breathing room so gadgets stay safely within */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+  }
+
+  .cloud-art-img,
+  .exact-art-img {
+    width: 100% !important;
+    max-width: 380px !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+    filter: drop-shadow(0 14px 28px rgba(29, 104, 255, 0.15)) !important;
+  }
+
+  /* Hide duplicate sparkle stars on mobile to prevent clutter & overlap on character hair */
+  .floating-sparkle {
+    display: none !important;
+  }
+
+  /* Tasteful, safe placement of 5 gadgets inside stage */
+  .free-floating-gadget {
+    position: absolute !important;
+    z-index: 6 !important;
+    font-size: 2.1rem !important;
+    filter: drop-shadow(0 6px 14px rgba(11, 36, 121, 0.25)) !important;
+    transition: transform 0.3s ease !important;
+  }
+
+  .gadget-spread-1 {
+    top: 6px !important;
+    left: 8px !important;
+  }
+  .gadget-spread-2 {
+    top: 6px !important;
+    right: 8px !important;
+  }
+  .gadget-spread-5 {
+    top: 0px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+  .gadget-spread-3 {
+    bottom: 6px !important;
+    left: 8px !important;
+  }
+  .gadget-spread-4 {
+    bottom: 6px !important;
+    right: 8px !important;
+  }
+
+  /* 2. COPY COLUMN — HEADLINES, BADGES, BUTTONS & STATS FOLLOW CLEANLY BELOW */
+  .hero-copy-col {
+    order: 2 !important;
+    width: 100% !important;
+    max-width: 580px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .hero-theme-badge {
+    margin-bottom: 12px !important;
+    font-size: 0.82rem !important;
+  }
+
+  .hero-headline {
+    font-size: clamp(1.85rem, 6.5vw, 2.45rem) !important;
+    margin-bottom: 14px !important;
+    line-height: 1.25 !important;
+    text-align: center !important;
+  }
+
+  .hero-subhead {
+    font-size: 0.96rem !important;
+    line-height: 1.65 !important;
+    max-width: 500px !important;
+    margin: 0 auto 18px auto !important;
+    color: #475569 !important;
+    text-align: center !important;
+  }
+
+  .hero-key-points {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 8px !important;
+    margin-bottom: 22px !important;
+    width: 100% !important;
+  }
+
+  .key-point-item {
+    font-size: 0.88rem !important;
+    text-align: center !important;
+  }
+
+  .hero-btn-wrap {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 12px !important;
+    width: 100% !important;
+    margin-bottom: 20px !important;
+  }
+
+  .btn-start-exact,
+  .btn-explore-secondary {
+    padding: 12px 24px !important;
+    font-size: 0.94rem !important;
+  }
+
+  .hero-mini-stats {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    gap: 16px !important;
+    margin-top: 10px !important;
+    padding-top: 18px !important;
+    border-top: 1px solid rgba(11, 36, 121, 0.1) !important;
+    width: 100% !important;
+  }
+}
+
+/* Phones & Phablets (<= 600px) */
+@media screen and (max-width: 600px) {
+  .hero-exact-grid {
+    gap: 14px !important;
+  }
+
+  .art-visual-stage {
+    max-width: 360px !important;
+    padding: 26px 12px 18px 12px !important;
+  }
+
+  .cloud-art-img,
+  .exact-art-img {
+    max-width: 310px !important;
+  }
+
+  .free-floating-gadget {
+    font-size: 1.8rem !important;
+  }
+
+  .gadget-spread-1 { top: 4px !important; left: 4px !important; }
+  .gadget-spread-2 { top: 4px !important; right: 4px !important; }
+  .gadget-spread-5 { top: 0px !important; }
+  .gadget-spread-3 { bottom: 4px !important; left: 4px !important; }
+  .gadget-spread-4 { bottom: 4px !important; right: 4px !important; }
+
+  .hero-headline {
+    font-size: 1.8rem !important;
+  }
+
+  .hero-btn-wrap {
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 300px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .btn-start-exact,
+  .btn-explore-secondary {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  .hero-mini-stats {
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+
+  .mini-stat-sep {
+    display: none !important;
+  }
+}
+
+/* Very Small Mobile Phones (<= 380px) */
+@media screen and (max-width: 380px) {
+  .art-visual-stage {
+    max-width: 290px !important;
+    padding: 20px 8px 14px 8px !important;
+  }
+
+  .cloud-art-img,
+  .exact-art-img {
+    max-width: 255px !important;
+  }
+
+  .free-floating-gadget {
+    font-size: 1.55rem !important;
+  }
+
+  .hero-headline {
+    font-size: 1.55rem !important;
+  }
+}
+
+
+
+/* ==========================================================================
+   HERO STAGE: CLEAN ORIGINAL DESKTOP & MOBILE-ONLY DIALOGUE BOXES (v72)
+   - Desktop / Laptop (> 991px): Clean original look, NO dialogue boxes, NO aura
+   - Mobile & Tablet (<= 991px): Dialogue boxes & ambient showcase enabled
+   ========================================================================== */
+
+/* 1. DESKTOP / LAPTOP DEFAULTS (> 991px) */
+/* Dialogue pills, mobile aura, and stars are completely hidden on desktop */
+.hero-floating-pill {
+  display: none !important;
+}
+
+.hero-stage-aura {
+  display: none !important;
+}
+
+.ambient-star {
+  display: none !important;
+}
+
+/* Free-Floating Gadgets (NO Circles, Pure Floating Emojis on Desktop) */
+.free-floating-gadget {
+  position: absolute !important;
+  z-index: 10 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: auto !important;
+  height: auto !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  padding: 0 !important;
+  font-size: 2.85rem !important;
+  line-height: 1 !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  user-select: none !important;
+  filter: drop-shadow(0 10px 22px rgba(11, 36, 121, 0.28)) !important;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.35s ease !important;
+}
+
+.free-floating-gadget:hover {
+  transform: scale(1.35) translateY(-6px) !important;
+  filter: drop-shadow(0 16px 28px rgba(29, 104, 255, 0.45)) !important;
+}
+
+/* Animations for floating bobs */
+@keyframes floatFree1 {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-7px) rotate(3deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+@keyframes floatFree2 {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(-3deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+@keyframes floatFree3 {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(7px) rotate(2deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+@keyframes floatFree4 {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(7px) rotate(-2deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+@keyframes floatPillTop {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-7px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes floatPillBottom {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(7px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes twinkleStar {
+  0% { transform: scale(0.85) rotate(0deg); opacity: 0.5; }
+  50% { transform: scale(1.15) rotate(15deg); opacity: 0.95; }
+  100% { transform: scale(0.85) rotate(0deg); opacity: 0.5; }
+}
+
+/* Clean Desktop Coordinates (5 Core Gadgets Safely Outside Artwork) */
+.gadget-spread-1 { top: -48px !important; left: 28px !important; animation: floatFree1 4.5s ease-in-out infinite alternate !important; }
+.gadget-spread-5 { top: -68px !important; left: 52% !important; transform: translateX(-50%) !important; animation: floatFree2 4.2s ease-in-out infinite alternate !important; font-size: 3.1rem !important; }
+.gadget-spread-2 { top: -48px !important; right: 28px !important; animation: floatFree3 4.8s ease-in-out infinite alternate !important; }
+.gadget-spread-3 { bottom: -44px !important; left: 36px !important; animation: floatFree3 5.2s ease-in-out infinite alternate !important; }
+.gadget-spread-4 { bottom: -44px !important; right: 36px !important; animation: floatFree4 4.6s ease-in-out infinite alternate !important; }
+
+
+/* 2. MOBILE & TABLET FULLSCREEN SHOWCASE (<= 991px) */
+@media screen and (max-width: 991px) {
+  .hero.hero-fullscreen {
+    padding-top: 70px !important;
+    padding-bottom: 40px !important;
+    min-height: auto !important;
+  }
+
+  .hero-exact-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 0 !important;
+    padding-top: 0 !important;
+    width: 100% !important;
+  }
+
+  /* Fullscreen Stage Column on Mobile */
+  .hero-art-col {
+    order: 1 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: auto !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    position: relative !important;
+    z-index: 5 !important;
+    padding: 12px 6px 8px 6px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Show Magical Background Aura ONLY on Mobile */
+  .hero-stage-aura {
+    display: block !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 100% !important;
+    max-width: 640px !important;
+    height: 95% !important;
+    background: radial-gradient(ellipse at center, rgba(0, 194, 255, 0.22) 0%, rgba(245, 158, 11, 0.12) 34%, rgba(37, 99, 235, 0.05) 60%, transparent 75%) !important;
+    pointer-events: none !important;
+    z-index: 1 !important;
+    filter: blur(28px) !important;
+  }
+
+  /* Show Floating Dialogue Boxes ONLY on Mobile */
+  .hero-floating-pill {
+    position: relative !important;
+    z-index: 6 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 9px !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+    border: 1.5px solid rgba(0, 194, 255, 0.38) !important;
+    border-radius: 50px !important;
+    padding: 9px 24px !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    font-size: 0.92rem !important;
+    font-weight: 700 !important;
+    color: #0b2479 !important;
+    box-shadow: 0 12px 32px rgba(11, 36, 121, 0.12), 0 0 20px rgba(0, 194, 255, 0.22) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    user-select: none !important;
+    transition: transform 0.3s ease !important;
+  }
+
+  .pill-top-badge {
+    margin-bottom: 106px !important;
+    animation: floatPillTop 4.2s ease-in-out infinite alternate !important;
+  }
+
+  .pill-bottom-badge {
+    margin-top: 108px !important;
+    animation: floatPillBottom 4.8s ease-in-out infinite alternate !important;
+  }
+
+  /* Show Twinkling Stars on Mobile */
+  .ambient-star {
+    display: block !important;
+    position: absolute !important;
+    z-index: 3 !important;
+    pointer-events: none !important;
+    font-size: 1.4rem !important;
+    opacity: 0.85 !important;
+  }
+
+  .ambient-star.star-1 {
+    top: -36px !important;
+    right: 22% !important;
+    animation: twinkleStar 3.5s ease-in-out infinite alternate !important;
+  }
+
+  .ambient-star.star-2 {
+    bottom: -30px !important;
+    left: 22% !important;
+    animation: twinkleStar 4.2s ease-in-out 0.8s infinite alternate !important;
+  }
+
+  .ambient-star.star-3 {
+    top: 32% !important;
+    left: 4% !important;
+    animation: twinkleStar 3.8s ease-in-out 1.5s infinite alternate !important;
+  }
+
+  /* Stage Wrapping Artwork */
+  .art-visual-stage {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 520px !important;
+    height: auto !important;
+    min-height: auto !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Noticeably Larger Character Artwork */
+  .cloud-art-img,
+  .exact-art-img {
+    width: 100% !important;
+    max-width: 540px !important;
+    transform: scale(1.08) !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+    position: relative !important;
+    z-index: 2 !important;
+    filter: drop-shadow(0 22px 50px rgba(29, 104, 255, 0.24)) !important;
+  }
+
+  .free-floating-gadget {
+    width: auto !important;
+    height: auto !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    font-size: 2.65rem !important;
+  }
+
+  /* 5 Canonical Gadgets Pushed Safely Away From Artwork (Zero Overlap) */
+  .gadget-spread-1 { top: -62px !important; left: 16px !important; } .gadget-spread-5 { top: -82px !important; left: 52% !important; transform: translateX(-50%) !important; font-size: 3.1rem !important; } .gadget-spread-2 { top: -62px !important; right: 16px !important; } .gadget-spread-3 { bottom: -58px !important; left: 24px !important; } .gadget-spread-4 { bottom: -58px !important; right: 24px !important; }
+  .gadget-spread-7, .gadget-spread-6 { display: none !important; }
+
+  /* Copy Column Below */
+  .hero-copy-col {
+    order: 2 !important;
+    width: 100% !important;
+    max-width: 580px !important;
+    margin: 0 auto !important;
+    padding-top: 8px !important;
+    padding-bottom: 50px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+}
+
+/* Phones & Small Screens (<= 600px) */
+@media screen and (max-width: 600px) {
+  .hero-art-col {
+    min-height: auto !important;
+    padding: 14px 10px 10px 10px !important;
+  }
+
+  .art-visual-stage {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .cloud-art-img,
+  .exact-art-img {
+    width: 100% !important; max-width: 500px !important; transform: scale(1.08) !important;
+  }
+
+  .free-floating-gadget {
+    font-size: 2.4rem !important;
+  }
+
+  /* Phone Coordinates (Zero Overlap on Characters) */
+  .gadget-spread-1 { top: -52px !important; left: 12px !important; } .gadget-spread-5 { top: -70px !important; left: 52% !important; transform: translateX(-50%) !important; font-size: 2.85rem !important; } .gadget-spread-2 { top: -52px !important; right: 12px !important; } .gadget-spread-3 { bottom: -48px !important; left: 18px !important; } .gadget-spread-4 { bottom: -48px !important; right: 18px !important; }
+
+  .pill-top-badge {
+    margin-bottom: 92px !important;
+    padding: 8px 20px !important;
+    font-size: 0.85rem !important;
+  }
+
+  .pill-bottom-badge {
+    margin-top: 94px !important;
+    padding: 8px 20px !important;
+    font-size: 0.85rem !important;
+  }
+
+  .hero-copy-col {
+    padding-top: 8px !important;
+    padding-bottom: 40px !important;
+  }
+}
+
+/* Very Small Phones (<= 380px, e.g. iPhone SE, Fold) */
+@media screen and (max-width: 380px) {
+  .hero-art-col {
+    min-height: auto !important;
+    padding: 12px 6px 8px 6px !important;
+  }
+
+  .cloud-art-img,
+  .exact-art-img {
+    width: 100% !important; max-width: 380px !important; transform: scale(1.05) !important;
+  }
+
+  .free-floating-gadget {
+    font-size: 2rem !important;
+  }
+
+  .gadget-spread-7,
+  .gadget-spread-6 {
+    display: none !important;
+  }
+
+  .gadget-spread-1 { top: -42px !important; left: 8px !important; } .gadget-spread-5 { top: -56px !important; left: 52% !important; transform: translateX(-50%) !important; font-size: 2.45rem !important; } .gadget-spread-2 { top: -42px !important; right: 8px !important; } .gadget-spread-3 { bottom: -38px !important; left: 14px !important; } .gadget-spread-4 { bottom: -38px !important; right: 14px !important; }
+
+  .pill-top-badge {
+    margin-bottom: 71px !important;
+    padding: 7px 16px !important;
+    font-size: 0.78rem !important;
+  }
+
+  .pill-bottom-badge {
+    margin-top: 74px !important;
+    padding: 7px 16px !important;
+    font-size: 0.78rem !important;
+  }
+}
+
+
+/* ==========================================================================
+   ABOUT PAGE: SECTION 5 (GLOBAL FOOTPRINT) PADDING & MARGIN POLISH (v50)
+   Prevents text from hugging or sticking to the left border on mobile
+   ========================================================================== */
+.about-standards-section {
+  padding: 90px 0 !important;
+  background: #ffffff !important;
+  border-top: 1px solid #e2e8f0 !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+  width: 100% !important;
+}
+
+.about-standards-container {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 60px !important;
+  align-items: center !important;
+  padding-left: 28px !important;
+  padding-right: 28px !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 1240px !important;
+  margin: 0 auto !important;
+}
+
+.about-standards-left {
+  text-align: left !important;
+  padding-left: 0 !important;
+}
+
+.about-standards-left .section-label {
+  display: inline-block !important;
+  margin-bottom: 14px !important;
+}
+
+@media screen and (max-width: 920px) {
+  .about-standards-section {
+    padding: 55px 0 65px !important;
+  }
+
+  .about-standards-container {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 36px !important;
+    padding-left: 22px !important;
+    padding-right: 22px !important;
+  }
+
+  .about-standards-left,
+  .about-standards-right {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-standards-section {
+    padding: 44px 0 50px !important;
+  }
+
+  .about-standards-container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .about-standards-left h2 {
+    font-size: 1.7rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .about-standards-left p {
+    font-size: 0.95rem !important;
+    line-height: 1.65 !important;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .about-standards-container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}
+
+
+
+/* ==========================================================================
+   UNIVERSAL CORNER PADDING & EDGE GUTTER SYSTEM (v51)
+   Prevents text, badges, and cards from sticking to mobile screen corners
+   ========================================================================== */
+
+/* Universal Container Safe Gutters */
+@media screen and (max-width: 991px) {
+  .container {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    padding-left: 22px !important;
+    padding-right: 22px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}
+
+/* ==========================================================================
+   HOW IT WORKS — STAGE SECTIONS CORNER PADDING & TYPOGRAPHY SYSTEM (v51)
+   ========================================================================== */
+.hiw-stage-section {
+  padding: 85px 0 !important;
+  width: 100% !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+}
+
+.hiw-stage-container {
+  padding-left: 28px !important;
+  padding-right: 28px !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+}
+
+@media screen and (max-width: 920px) {
+  .hiw-stage-section {
+    padding: 50px 0 60px !important;
+  }
+
+  .hiw-stage-container {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 36px !important;
+    padding-left: 22px !important;
+    padding-right: 22px !important;
+  }
+
+  .hiw-stage-container .reveal-left,
+  .hiw-stage-container .reveal-right {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    text-align: left !important;
+  }
+
+  /* Step number & badge spacing */
+  .hiw-stage-container .step-number {
+    margin-bottom: 14px !important;
+  }
+
+  .hiw-stage-container .section-label {
+    margin-bottom: 10px !important;
+    display: inline-block !important;
+  }
+
+  /* Headlines & paragraph flow */
+  .hiw-stage-container h2 {
+    font-size: clamp(1.65rem, 5.5vw, 2.2rem) !important;
+    margin-bottom: 14px !important;
+    line-height: 1.25 !important;
+  }
+
+  .hiw-stage-container p {
+    font-size: 0.95rem !important;
+    line-height: 1.65 !important;
+    margin-bottom: 20px !important;
+  }
+
+  /* Checklist card inside feature box: single column on mobile */
+  .service-feature-box {
+    padding: 20px 18px !important;
+    border-radius: 18px !important;
+    margin-bottom: 24px !important;
+    box-sizing: border-box !important;
+  }
+
+  .service-feature-box .service-checklist {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+
+  .service-feature-box .service-checklist li {
+    font-size: 0.88rem !important;
+    line-height: 1.45 !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+    word-break: break-word !important;
+  }
+
+  .service-feature-box .service-checklist li span {
+    margin-top: 1px !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* CTA Button full width or centered */
+  .hiw-stage-container .btn-primary {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    max-width: 320px !important;
+    padding: 13px 24px !important;
+    font-size: 0.92rem !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Stage images centered */
+  .hiw-stage-container .reveal-right img,
+  .hiw-stage-container .reveal-left img {
+    max-width: 380px !important;
+    width: 90% !important;
+    margin: 0 auto !important;
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hiw-stage-section {
+    padding: 42px 0 48px !important;
+  }
+
+  .hiw-stage-container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .service-feature-box {
+    padding: 18px 14px !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .hiw-stage-container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .service-feature-box {
+    padding: 16px 12px !important;
+  }
+}
+
+
+
+/* ==========================================================================
+   STAGE 02 & ALL PIPELINE STAGES: CONSISTENT FLOW & CORNER BUFFER (v52)
+   Fixes Stage 02 (Faculty Pairing) and all stages from hugging mobile corners.
+   ========================================================================== */
+
+@media screen and (max-width: 920px) {
+  /* Ensure Stage 02 and Stage 04 text content comes FIRST, illustration SECOND */
+  .hiw-stage-2 .reveal-right,
+  .hiw-stage-4 .reveal-right {
+    order: 1 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .hiw-stage-2 .reveal-left,
+  .hiw-stage-4 .reveal-left {
+    order: 2 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-top: 10px !important;
+  }
+
+  /* Guaranteed container safe margins for Stage 2 & all stages */
+  .hiw-stage-section .container,
+  .hiw-stage-container {
+    padding-left: 22px !important;
+    padding-right: 22px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Stage 2 dark feature box padding & single column checklist */
+  .hiw-stage-2 .service-feature-box,
+  .hiw-stage-4 .service-feature-box {
+    padding: 20px 18px !important;
+    border-radius: 18px !important;
+    margin-bottom: 24px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .hiw-stage-2 .service-checklist,
+  .hiw-stage-4 .service-checklist {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+
+  .hiw-stage-2 .service-checklist li,
+  .hiw-stage-4 .service-checklist li {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+    color: #cbd5e1 !important;
+    word-break: break-word !important;
+  }
+
+  .hiw-stage-2 .service-checklist li span,
+  .hiw-stage-4 .service-checklist li span {
+    margin-top: 1px !important;
+    flex-shrink: 0 !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hiw-stage-section .container,
+  .hiw-stage-container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .hiw-stage-2 .step-number,
+  .hiw-stage-4 .step-number {
+    margin-bottom: 12px !important;
+  }
+
+  .hiw-stage-2 h2,
+  .hiw-stage-4 h2 {
+    font-size: clamp(1.65rem, 5.5vw, 2.1rem) !important;
+    line-height: 1.25 !important;
+  }
+
+  .hiw-stage-2 p,
+  .hiw-stage-4 p {
+    font-size: 0.94rem !important;
+    line-height: 1.65 !important;
+  }
+
+  .hiw-stage-2 .service-feature-box,
+  .hiw-stage-4 .service-feature-box {
+    padding: 18px 14px !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .hiw-stage-section .container,
+  .hiw-stage-container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}
+
+
+
+/* ==========================================================================
+   HOW IT WORKS MASTER GRID & UNIFIED DIAGRAM SEQUENCE (v54)
+   Eliminates all left-border clipping & unifies card/diagram flow
+   ========================================================================== */
+
+.hiw-stage-section {
+  padding: 95px 0 !important;
+  width: 100% !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+  position: relative !important;
+}
+
+.hiw-stage-grid {
+  display: grid !important;
+  grid-template-columns: 1.08fr 0.92fr !important;
+  gap: 55px !important;
+  align-items: center !important;
+  padding-left: 28px !important;
+  padding-right: 28px !important;
+  width: 100% !important;
+  max-width: 1240px !important;
+  margin: 0 auto !important;
+  box-sizing: border-box !important;
+}
+
+.hiw-content-col {
+  width: 100% !important;
+  box-sizing: border-box !important;
+  text-align: left !important;
+  padding: 0 !important;
+}
+
+.hiw-content-col .step-number {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-bottom: 18px !important;
+}
+
+.hiw-content-col .section-label {
+  display: inline-block !important;
+  margin-bottom: 10px !important;
+}
+
+.hiw-content-col h2 {
+  font-size: clamp(2rem, 3.6vw, 2.6rem) !important;
+  line-height: 1.25 !important;
+  margin-bottom: 18px !important;
+  font-weight: 800 !important;
+}
+
+.hiw-content-col p {
+  font-size: 1.04rem !important;
+  line-height: 1.78 !important;
+  margin-bottom: 24px !important;
+}
+
+.hiw-diagram-col {
+  width: 100% !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+.hiw-diagram-col img {
+  width: 100% !important;
+  max-width: 480px !important;
+  max-height: 440px !important;
+  height: auto !important;
+  display: block !important;
+  margin: 0 auto !important;
+  object-fit: contain !important;
+}
+
+/* Tablet & Mobile Breakpoint (<= 991px) */
+@media screen and (max-width: 991px) {
+  .hiw-stage-section {
+    padding: 55px 0 65px !important;
+  }
+
+  .hiw-stage-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 36px !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    width: 100% !important;
+  }
+
+  /* UNIFIED SEQUENCE: CONTENT FIRST, DIAGRAM SECOND ACROSS ALL STAGES */
+  .hiw-content-col {
+    order: 1 !important;
+    width: 100% !important;
+    max-width: 600px !important;
+    margin: 0 auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    text-align: left !important;
+  }
+
+  .hiw-diagram-col {
+    order: 2 !important;
+    width: 100% !important;
+    max-width: 480px !important;
+    margin: 10px auto 0 !important;
+  }
+
+  .hiw-diagram-col img {
+    max-width: 380px !important;
+    width: 90% !important;
+  }
+}
+
+/* Phones & Phablets (<= 640px) */
+@media screen and (max-width: 640px) {
+  .hiw-stage-section {
+    padding: 44px 0 50px !important;
+  }
+
+  .hiw-stage-grid {
+    padding-left: 22px !important;
+    padding-right: 22px !important;
+    gap: 30px !important;
+  }
+
+  .hiw-content-col {
+    max-width: 100% !important;
+  }
+
+  .hiw-content-col .step-number {
+    width: 44px !important;
+    height: 44px !important;
+    font-size: 1.1rem !important;
+    border-radius: 12px !important;
+    margin-bottom: 14px !important;
+  }
+
+  .hiw-content-col h2 {
+    font-size: clamp(1.6rem, 5.5vw, 2.1rem) !important;
+    line-height: 1.25 !important;
+    margin-bottom: 14px !important;
+  }
+
+  .hiw-content-col p {
+    font-size: 0.94rem !important;
+    line-height: 1.65 !important;
+    margin-bottom: 18px !important;
+  }
+
+  .service-feature-box {
+    padding: 20px 16px !important;
+    border-radius: 18px !important;
+    margin-bottom: 22px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .service-feature-box .service-checklist {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+
+  .service-feature-box .service-checklist li {
+    font-size: 0.88rem !important;
+    line-height: 1.45 !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
+    word-break: break-word !important;
+  }
+
+  .service-feature-box .service-checklist li span {
+    margin-top: 1px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .hiw-content-col .btn-primary {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    max-width: 320px !important;
+    padding: 13px 22px !important;
+    font-size: 0.92rem !important;
+    font-weight: 700 !important;
+    border-radius: 30px !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+    margin-top: 6px !important;
+  }
+
+  .hiw-diagram-col img {
+    max-width: 320px !important;
+  }
+}
+
+/* Very Small Phones (<= 380px) */
+@media screen and (max-width: 380px) {
+  .hiw-stage-grid {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+
+  .service-feature-box {
+    padding: 16px 12px !important;
+  }
+
+  .hiw-content-col h2 {
+    font-size: 1.45rem !important;
+  }
+
+  .hiw-content-col p {
+    font-size: 0.88rem !important;
+  }
+
+  .hiw-diagram-col img {
+    max-width: 270px !important;
+  }
+}
+
+
+
+/* ===================================================
+   ACADEMIC MILESTONES (HOME.PHP) RESPONSIVE STACK
+   =================================================== */
+@media screen and (max-width: 991px) {
+  .achievements {
+    padding: 70px 0 !important;
+  }
+  .achievements .achieve-grid,
+  .achieve-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px !important;
+    margin-top: 36px !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .achievements {
+    padding: 50px 0 !important;
+  }
+  .achievements .container {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+  .achievements .achieve-header {
+    margin-bottom: 24px !important;
+  }
+  .achievements .section-title {
+    font-size: 1.85rem !important;
+    line-height: 1.25 !important;
+  }
+  .achievements .section-desc {
+    font-size: 0.92rem !important;
+    line-height: 1.5 !important;
+  }
+  /* Vertically stack milestone cards with generous width and spacing */
+  .achievements .achieve-grid,
+  .achieve-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+    width: 100% !important;
+    max-width: 420px !important;
+    margin: 28px auto 0 !important;
+    padding: 0 !important;
+  }
+  .achievements .achieve-card,
+  .achieve-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 26px 20px 22px !important;
+    border-radius: 20px !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    box-shadow: 0 8px 24px rgba(11, 36, 121, 0.06) !important;
+  }
+  .achievements .achieve-badge,
+  .achieve-badge {
+    width: 52px !important;
+    height: 52px !important;
+    border-radius: 16px !important;
+    margin: 0 auto 12px !important;
+  }
+  .achievements .achieve-badge svg,
+  .achieve-badge svg {
+    width: 24px !important;
+    height: 24px !important;
+  }
+  .achievements .achieve-number,
+  .achieve-card .achieve-number {
+    font-size: 2.2rem !important;
+    font-weight: 800 !important;
+    line-height: 1.2 !important;
+    margin-bottom: 6px !important;
+  }
+  .achievements .achieve-label,
+  .achieve-card .achieve-label {
+    font-size: 0.94rem !important;
+    font-weight: 600 !important;
+    line-height: 1.45 !important;
+    max-width: 290px !important;
+    margin: 0 auto !important;
+    word-break: normal !important;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .achievements .section-title {
+    font-size: 1.6rem !important;
+  }
+  .achievements .achieve-card,
+  .achieve-card {
+    padding: 22px 16px 18px !important;
+    border-radius: 16px !important;
+  }
+  .achievements .achieve-badge,
+  .achieve-badge {
+    width: 48px !important;
+    height: 48px !important;
+  }
+  .achievements .achieve-number,
+  .achieve-card .achieve-number {
+    font-size: 1.95rem !important;
+  }
+  .achievements .achieve-label,
+  .achieve-card .achieve-label {
+    font-size: 0.88rem !important;
+  }
+}
